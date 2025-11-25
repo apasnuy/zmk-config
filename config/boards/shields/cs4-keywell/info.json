@@ -1,0 +1,21 @@
+{
+  "name": "Default Layer",
+  "version": "1.0",
+  "description": "A default QWERTY keymap layout",
+  "author": "Your Name",
+  "layout": {
+    "rows": 4,
+    "columns": 10,
+    "layers": [
+      {
+        "name": "Default Layer",
+        "bindings": [
+          "&kp Q", "&kp W", "&kp E", "&kp R", "&kp T", "&kp Y", "&kp U", "&kp I", "&kp O", "&kp P",
+          "&kp A", "&kp S", "&kp D", "&kp F", "&kp G", "&kp H", "&kp J", "&kp K", "&kp L", "&kp SEMI",
+          "&kp Z", "&kp X", "&kp C", "&kp V", "&kp B", "&kp N", "&kp M", "&kp COMMA", "&kp PERIOD", "&kp SLASH",
+          "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE", "&kp SPACE"
+        ]
+      }
+    ]
+  }
+}
