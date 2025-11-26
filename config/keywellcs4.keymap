@@ -62,15 +62,15 @@ As such, those are in use within the default layer at this time.*/
         };
 
         kt_on: key_toggle_on_only {
-          compatible = "zmk,behavior-key-toggle";
-          #binding-cells = <1>;
-          toggle-mode = "on";   // only presses, never releases
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            toggle-mode = "on";   // only presses, never releases
         };
 
         kt_off: key_toggle_off_only {
-          compatible = "zmk,behavior-key-toggle";
-          #binding-cells = <1>;
-          toggle-mode = "off";  // only releases, never presses
+            compatible = "zmk,behavior-key-toggle";
+            #binding-cells = <1>;
+            toggle-mode = "off";  // only releases, never presses
         };
     };
 
@@ -87,7 +87,11 @@ As such, those are in use within the default layer at this time.*/
         CmdTAbReleaseTab: CmdTAbReleaseTab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCMD &kp TAB &kt TAB>;
+            bindings =
+                <&kt_on LCMD &kt_on TAB &kt_off TAB>,
+                <&macro_release>,
+                <&kt_off LCMD>;
+
             label = "CMDTABRELEASETAB";
         };
     };
