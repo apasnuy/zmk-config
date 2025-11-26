@@ -12,9 +12,9 @@
  #include <dt-bindings/zmk/outputs.h>
 
  #define DEFAULT 0
- #define LOWER  1
- #define RAISE  2
- #define ADJUST 3
+ #define SYMBOLS_LAYER  1
+ #define BT_LAYER  2
+ #define SUPER_AS_MOVE_TMP  3
 
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
@@ -36,11 +36,12 @@ As such, those are in use within the default layer at this time.*/
                        &kp Q   &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U     &kp I     &kp O      &kp P
                        &kp A   &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J     &kp K     &kp L      &kp SEMI
                        &kp Z   &kp X    &kp C    &kp V     &kp B                                &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH
-                       &kp LCMD &kp LCTRL &kp N3 &kp N4 &kp N5 &kp LSHIFT        &kp BACKSPACE &kp N2 &kp N3 &kp LALT &kp RET &kp SPACE
+                       &kp LCMD &kp LCTRL &kp N3 &kp SYMBOLS_LAYER &kp SUPER_AS_MOVE_TMP &kp LSHIFT        &kp BACKSPACE &kp ESC &kp BT_LAYER &kp LALT &kp RET &kp SPACE
                      >;
               };
-              adjust_layer {
-                     display-name = "Adjust Layer";
+
+              SYMBOLS_LAYER {
+                     display-name = "SYMBOLS_LAYER";
  // ---------------------------------------------------------------------------------------------------------------------------------
  // |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |
  // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
@@ -52,6 +53,37 @@ As such, those are in use within the default layer at this time.*/
        &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4      &trans    &trans    &trans    &trans
        &bt BT_NXT      &bt BT_PRV    &trans          &trans          &out OUT_BLE             &kp LBRC         &kp RBRC    &trans    &trans    &trans
        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+
+                     >;
+              };
+
+
+              bt_layer {
+                     display-name = "BT Layer";
+ // ---------------------------------------------------------------------------------------------------------------------------------
+ // |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |
+ // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
+ // |  BT NXT  | BT PRV  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
+ // |    |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
+ // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
+                     bindings = <
+       &kp EXCL        &kp AT        &kp HASH        &kp DLLR        &kp PRCNT                &kp CARET        &kp AMPS        &kp ASTRK        &kp LPAR        &kp RPAR
+       &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4      &trans    &trans    &trans    &trans
+       &bt BT_NXT      &bt BT_PRV    &trans          &trans          &out OUT_BLE             &kp LBRC         &kp RBRC    &trans    &trans    &trans
+       &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+
+                     >;
+              };
+
+
+              SUPER_AS_MOVE_TMP_layer {
+                     display-name = "SUPER_AS_MOVE_TMP";
+ // ---------------------------------------------------------------------------------------------------------------------------------
+                     bindings = <
+       &trans &trans &trans &trans &trans                      &trans &trans &trans &trans &trans
+       &trans &trans &trans &trans &trans                      &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT
+       &trans &trans &trans &trans &trans                      &trans &trans &trans &trans &trans
+       &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
 
                      >;
               };
