@@ -26,7 +26,6 @@ As such, those are in use within the default layer at this time.*/
 
               default_layer {
                      display-name = "Default Layer";
-                //  BSPC  RET    TAB   CTRL  SHIFT
                 // ---------------------------------------------------------------------------------------------------------------------------------
                 // |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |
                 // |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |
@@ -36,7 +35,7 @@ As such, those are in use within the default layer at this time.*/
                        &kp Q   &kp W    &kp E    &kp R     &kp T                                &kp Y     &kp U     &kp I     &kp O      &kp P
                        &kp A   &kp S    &kp D    &kp F     &kp G                                &kp H     &kp J     &kp K     &kp L      &kp SEMI
                        &kp Z   &kp X    &kp C    &kp V     &kp B                                &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH
-                       &kp LCMD &kp LCTRL &kp N3 &mo SYMBOLS_LAYER &mo SUPER_AS_MOVE_TMP &kp LSHIFT        &kp BACKSPACE &kp ESC &mo BT_LAYER &kp LALT &kp RET &kp SPACE
+                       &kp LCMD &kp LCTRL &kp TAB &mo SYMBOLS_LAYER &mo SUPER_AS_MOVE_TMP &kp LSHIFT        &kp BACKSPACE &kp ESC &mo BT_LAYER &kp LALT &kp RET &kp SPACE
                      >;
               };
 
@@ -48,7 +47,7 @@ As such, those are in use within the default layer at this time.*/
  // |          |          |          |          |          |                                          |          |          |          |          |          |
                      bindings = <
        &kp EXCL        &kp AT        &kp HASH        &kp DLLR        &kp PRCNT                &kp CARET        &kp AMPS        &kp ASTRK        &kp LPAR        &kp RPAR
-       &kp &trans &trans &trans &kp LBRC         &kp RBRC &trans &trans &trans &trans
+       &trans &trans &trans &trans &kp LBRC         &kp RBRC &trans &trans &trans &trans
        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 
                      >;
