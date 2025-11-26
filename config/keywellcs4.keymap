@@ -60,6 +60,18 @@ As such, those are in use within the default layer at this time.*/
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
         };
+
+        kt_on: key_toggle_on_only {
+          compatible = "zmk,behavior-key-toggle";
+          #binding-cells = <1>;
+          toggle-mode = "on";   // only presses, never releases
+        };
+
+        kt_off: key_toggle_off_only {
+          compatible = "zmk,behavior-key-toggle";
+          #binding-cells = <1>;
+          toggle-mode = "off";  // only releases, never presses
+        };
     };
 
     combos {
