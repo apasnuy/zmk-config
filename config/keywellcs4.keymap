@@ -49,15 +49,6 @@ As such, those are in use within the default layer at this time.*/
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        delllll {
-            bindings = <&none>;
-            key-positions = <>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
