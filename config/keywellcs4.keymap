@@ -64,7 +64,7 @@ As such, those are in use within the default layer at this time.*/
  // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
                      bindings = <
        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                &kp N6        &kp N7        &kp N8        &kp N9        &kp N0
-       &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4      &trans    &trans    &ztrans    &trans
+       &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4      &trans    &trans    &trans    &trans
        &bt BT_NXT      &bt BT_PRV    &trans          &trans          &out OUT_BLE             &kp LBRC         &kp RBRC    &trans    &trans    &trans
        &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 
