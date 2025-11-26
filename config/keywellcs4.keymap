@@ -49,6 +49,15 @@ As such, those are in use within the default layer at this time.*/
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ToggleColmak {
+            bindings = <&tog 8>;
+            key-positions = <33 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -149,6 +158,15 @@ As such, those are in use within the default layer at this time.*/
 &trans    &trans  &trans  &trans  &trans  &trans  &kp LS(TAB)  &trans  &trans  &kp TAB
 &kp LCMD  &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
 &trans    &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans   &trans  &trans
+            >;
+        };
+
+        Colemak {
+            bindings = <
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
     };
