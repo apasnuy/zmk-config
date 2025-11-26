@@ -53,8 +53,8 @@ As such, those are in use within the default layer at this time.*/
         compatible = "zmk,combos";
 
         delllll {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <15>;
+            bindings = <&none>;
+            key-positions = <>;
         };
     };
 
