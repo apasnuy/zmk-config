@@ -61,6 +61,16 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
         };
 
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT)>;   // when LEFT_SHIFT is held
+            keep-mods = <0>;       // don't send Shift with Delete
+        };
+
+    };
+
         kt_on: key_toggle_on_only {
             compatible = "zmk,behavior-key-toggle";
             #binding-cells = <1>;
