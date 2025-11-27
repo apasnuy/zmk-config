@@ -87,7 +87,7 @@ As such, those are in use within the default layer at this time.*/
         compatible = "zmk,combos";
 
         ToggleColmak {
-            bindings = <&tog 8>;
+            bindings = <&tog 1>;
             key-positions = <33 41>;
         };
     };
@@ -118,10 +118,19 @@ As such, those are in use within the default layer at this time.*/
             // | SPACE |  LOWER   |  ALT   |  LGUI  | EISUU  | ESC  | ADJUST |                     |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp Q                          &timeless_layer 10 W  &kp E    &kp R              &timeless_layer 5 T    &kp Y       &kp U          &kp I      &kp O         &kp P
-&timeless_layer 9 A            &kp S                 &kp D    &hml LCMD F        &timeless_layer 6 G    &kp H       &kp J          &kp K      &kp L         &kp SEMI
-&timeles_CmdTAbReleaseTab 0 Z  &kp X                 &kp C    &kp V              &kp B                  &kp N       &kp M          &kp COMMA  &kp PERIOD    &kp SLASH
-&kp LCMD                       &kp LCTRL             &kp TAB  &mo SYMBOLS_LAYER  &mo SUPER_AS_MOVE_TMP  &kp LSHIFT  &kp BACKSPACE  &kp ESC    &mo BT_LAYER  &kp LALT   &kp RET  &kp SPACE
+&kp Q                          &timeless_layer 10 W  &kp E    &kp R        &timeless_layer 5 T  &kp Y       &kp U          &kp I      &kp O       &kp P
+&timeless_layer 9 A            &kp S                 &kp D    &hml LCMD F  &timeless_layer 6 G  &kp H       &kp J          &kp K      &kp L       &kp SEMI
+&timeles_CmdTAbReleaseTab 0 Z  &kp X                 &kp C    &kp V        &kp B                &kp N       &kp M          &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCMD                       &kp LCTRL             &kp TAB  &mo 2        &mo 3                &kp LSHIFT  &kp BACKSPACE  &kp ESC    &mo 8       &kp LALT   &kp RET  &kp SPACE
+            >;
+        };
+
+        Colemak {
+            bindings = <
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
 
@@ -138,24 +147,6 @@ As such, those are in use within the default layer at this time.*/
 &trans    &trans  &trans    &trans    &kp LBRC   &kp RBRC   &trans    &trans     &trans    &trans
 &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans     &trans    &trans
 &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans     &trans    &trans    &trans  &trans
-            >;
-        };
-
-        bt_layer {
-            display-name = "BT Layer";
-
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |    1     |    2     |    3     |    4     |    5     |                                          |    6     |    7     |    8     |    9     |    0     |
-            // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
-            // |  BT NXT  | BT PRV  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
-            // |    |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
-            // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
-
-            bindings = <
-&kp N1      &kp N2        &kp N3        &kp N4        &kp N5        &kp N6        &kp N7    &kp N8  &kp N9  &kp N0
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &trans  &trans
-&bt BT_NXT  &bt BT_PRV    &trans        &trans        &out OUT_BLE  &kp LBRC      &kp RBRC  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -208,12 +199,21 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        Colemak {
+        bt_layer {
+            display-name = "BT Layer";
+
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |    1     |    2     |    3     |    4     |    5     |                                          |    6     |    7     |    8     |    9     |    0     |
+            // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
+            // |  BT NXT  | BT PRV  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
+            // |    |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
+            // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
+
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
+&kp N1      &kp N2        &kp N3        &kp N4        &kp N5        &kp N6        &kp N7    &kp N8  &kp N9  &kp N0
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &trans  &trans
+&bt BT_NXT  &bt BT_PRV    &trans        &trans        &out OUT_BLE  &kp LBRC      &kp RBRC  &trans  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
