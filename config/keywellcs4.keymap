@@ -118,10 +118,10 @@ As such, those are in use within the default layer at this time.*/
             // | SPACE |  LOWER   |  ALT   |  LGUI  | EISUU  | ESC  | ADJUST |                     |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp Q                          &timeless_layer 10 W  &kp E    &kp R        &timeless_layer 5 T  &kp Y       &kp U          &kp I      &kp O       &kp P
-&timeless_layer 9 A            &kp S                 &kp D    &hml LCMD F  &timeless_layer 6 G  &kp H       &kp J          &kp K      &kp L       &kp SEMI
-&timeles_CmdTAbReleaseTab 0 Z  &kp X                 &kp C    &kp V        &kp B                &kp N       &kp M          &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCMD                       &kp LCTRL             &kp TAB  &mo 2        &mo 3                &kp LSHIFT  &kp BACKSPACE  &kp ESC    &mo 8       &kp LALT   &kp RET  &kp SPACE
+&kp Q                          &timeless_layer 10 W  &kp E                 &kp R                 &timeless_layer 5 T  &kp Y       &kp U          &kp I      &kp O       &kp P
+&timeless_layer 9 A            &kp S                 &timeless_layer 12 D  &timeless_layer 11 F  &timeless_layer 6 G  &kp H       &kp J          &kp K      &kp L       &kp SEMI
+&timeles_CmdTAbReleaseTab 0 Z  &kp X                 &kp C                 &kp V                 &kp B                &kp N       &kp M          &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCMD                       &kp LCTRL             &kp TAB               &mo 2                 &mo 3                &kp LSHIFT  &kp BACKSPACE  &kp ESC    &mo 8       &kp LALT   &kp RET  &kp SPACE
             >;
         };
 
@@ -232,6 +232,24 @@ As such, those are in use within the default layer at this time.*/
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(F9))  &trans  &trans  &kp LG(F9)
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans
+            >;
+        };
+
+        ASDFLayerF {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans     &trans  &trans
+            >;
+        };
+
+        ASDFLayerD {
+            bindings = <
+&none  &none     &none  &none  &none  &none  &none          &none  &none  &none
+&none  &kp LALT  &none  &none  &none  &none  &kp BACKSPACE  &none  &none  &kp DELETE
+&none  &none     &none  &none  &none  &none  &none          &none  &none  &none
+&none  &none     &none  &none  &none  &none  &none          &none  &none  &none       &none  &none
             >;
         };
     };
