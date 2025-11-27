@@ -69,8 +69,6 @@ As such, those are in use within the default layer at this time.*/
             keep-mods = <0>;       // don't send Shift with Delete
         };
 
-    };
-
         kt_on: key_toggle_on_only {
             compatible = "zmk,behavior-key-toggle";
             #binding-cells = <1>;
