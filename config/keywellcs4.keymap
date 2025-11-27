@@ -132,10 +132,10 @@ As such, those are in use within the default layer at this time.*/
             // | SPACE |  LOWER   |  ALT   |  LGUI  | EISUU  | ESC  | ADJUST |                     |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp Q                          &timeless_layer 10 W  &kp E                 &kp R                 &timeless_layer 5 T  &kp Y     &kp U         &kp I      &kp O       &kp P
-&timeless_layer 9 A            &timeless_layer 13 S  &timeless_layer 12 D  &timeless_layer 11 F  &timeless_layer 6 G  &kp H     &kp J         &kp K      &kp L       &kp SEMI
-&timeles_CmdTAbReleaseTab 0 Z  &kp X                 &kp C                 &kp V                 &kp B                &kp N     &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT                 &kp TAB               &kp LEFT_CONTROL      &mo 2                 &kp CLCK             &kp LCMD  &kp LEFT_ALT  &kp ESC    &mo 8       &kp LSHFT  &kp RET  &kp SPACE
+&kp Q                &timeless_layer 10 W  &kp E                 &kp R                 &timeless_layer 5 T            &kp Y     &kp U         &kp I      &kp O       &kp P
+&timeless_layer 9 A  &timeless_layer 13 S  &timeless_layer 12 D  &timeless_layer 11 F  &timeless_layer 6 G            &kp H     &kp J         &kp K      &kp L       &kp SEMI
+&kp Z                &kp X                 &kp C                 &kp V                 &timeles_CmdTAbReleaseTab 0 B  &kp N     &kp M         &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT       &kp TAB               &kp LEFT_CONTROL      &mo 2                 &kp CLCK                       &kp LCMD  &kp LEFT_ALT  &kp ESC    &mo 8       &kp LSHFT  &kp RET  &kp SPACE
             >;
         };
 
