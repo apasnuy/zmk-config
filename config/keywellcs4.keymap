@@ -158,45 +158,45 @@ As such, those are in use within the default layer at this time.*/
 
             bindings = <
 &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR
-&trans    &trans  &trans    &trans    &kp LBRC   &kp RBRC   &trans    &trans     &trans    &trans
-&trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans     &trans    &trans
-&trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans     &trans    &trans    &trans  &trans
+&none     &none   &none     &none     &kp LBRC   &kp RBRC   &none     &none      &none     &none
+&none     &none   &none     &none     &none      &none      &none     &none      &none     &none
+&none     &none   &none     &none     &none      &none      &none     &none      &none     &none     &none  &none
             >;
         };
 
         TabsNav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LS(TAB))  &trans  &trans  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans       &trans  &trans
+&none  &none  &none  &none  &none  &none  &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none  &kp LC(LS(TAB))  &none  &none  &kp LC(TAB)
+&none  &none  &none  &none  &none  &none  &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none            &none  &none  &none        &none  &none
             >;
         };
 
         SafGroupNav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                     &trans                    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                     &trans                    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                     &trans                    &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none
+&none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
+&none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none
+&none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none  &none
             >;
         };
 
         WorkSpaceAppNavLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LA(J))  &trans  &trans  &kp LA(LS(K))
-&trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans         &trans  &trans
+&none  &none  &none  &none  &none  &none  &none          &none  &none  &none
+&none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
+&none  &none  &none  &none  &none  &none  &none          &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none          &none  &none  &none          &none  &none
             >;
         };
 
         AppWindowsNavLayer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LG(F9))  &trans  &trans  &kp LG(F9)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans
+&none  &none  &none  &none  &none  &none  &none           &none  &none  &none
+&none  &none  &none  &none  &none  &none  &kp LS(LG(F9))  &none  &none  &kp LG(F9)
+&none  &none  &none  &none  &none  &none  &none           &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none           &none  &none  &none       &none  &none
             >;
         };
 
@@ -220,10 +220,10 @@ As such, those are in use within the default layer at this time.*/
 
         ASDFS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
+&none  &none  &none  &none  &none  &none  &none               &none               &none             &none
+&none  &none  &none  &none  &none  &none  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)
+&none  &none  &none  &none  &none  &none  &none               &none               &none             &none
+&none  &none  &none  &none  &none  &none  &none               &none               &none             &none                &none  &none
             >;
         };
 
@@ -239,13 +239,13 @@ As such, those are in use within the default layer at this time.*/
 
             bindings = <
 &kp N1      &kp N2        &kp N3        &kp N4        &kp N5        &kp N6        &kp N7    &kp N8  &kp N9  &kp N0
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans    &trans  &trans  &trans
-&bt BT_NXT  &bt BT_PRV    &trans        &trans        &out OUT_BLE  &kp LBRC      &kp RBRC  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none     &none   &none   &none
+&bt BT_NXT  &bt BT_PRV    &none         &none         &out OUT_BLE  &kp LBRC      &kp RBRC  &none   &none   &none
+&none       &none         &none         &none         &none         &none         &none     &none   &none   &none   &none  &none
             >;
         };
 
-        SUPER_AS_MOVE_TMP_layer {
+        delll_AS_MOVE_TMP_layer {
             display-name = "SUPER_AS_MOVE_TMP";
 
             // ---------------------------------------------------------------------------------------------------------------------------------
