@@ -61,7 +61,7 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
         };
 
-        bspc_del: maclike_backspace_delete {
+        maclike_backspace_delete: maclike_backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
@@ -165,10 +165,10 @@ As such, those are in use within the default layer at this time.*/
             // ---------------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans  &trans
+&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans
+&kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &trans  &maclike_backspace_delete  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans
+&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans     &trans  &trans
             >;
         };
 
