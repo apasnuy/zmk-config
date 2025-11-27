@@ -81,12 +81,14 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <1>;
             toggle-mode = "off";  // only releases, never presses
         };
+
         tog_on: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer On";
             toggle-mode = "on";
         };
+
         tog_of: toggle_layer_on_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -109,9 +111,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on LCMD &kt_on TAB &kt_off TAB &mo 11>,
+                <&kt_on LCMD &kt_on TAB &kt_off TAB &tog_on 11>,
                 <&macro_pause_for_release>,
-                <&kt_off LCMD>;
+                <&kt_off LCMD &tog_of 11>;
 
             label = "CMDTABRELEASETAB";
         };
