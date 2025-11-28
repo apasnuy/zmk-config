@@ -271,5 +271,23 @@ As such, those are in use within the default layer at this time.*/
 &trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans     &trans  &trans
             >;
         };
+
+        RegularSymbolLayer {
+            bindings = <
+&gresc           &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp EXCLAMATION  &kp NUMBER_3  &kp       &kp         &kp          &kp        &kp MINUS      &kp EQUAL     &kp UNDERSCORE        &kp PLUS
+&kp              &kp           &kp       &kp         &kp          &kp        &kp            &kp           &kp                   &kp
+&kp              &kp           &kp       &kp         &kp          &kp        &kp            &kp           &kp                   &kp                    &kp  &kp
+            >;
+        };
+
+        Numbers {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
     };
 };
