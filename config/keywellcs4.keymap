@@ -96,6 +96,26 @@ As such, those are in use within the default layer at this time.*/
             toggle-mode = "off";
         };
 
+        // Regular Symbols To Occasionally Fallback When Can't Remember Where Particular Symbol On A new Symbol Layer
+        // 1-10 keys
+        classicNumberRowKey_1: classicNumberRowKey_1 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_2: classicNumberRowKey_2 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_2>, <&kp AT_SIGN>; mysods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_3: classicNumberRowKey_3 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_3>, <&kp HASH>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_4: classicNumberRowKey_4 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_4>, <&kp DOLLAR>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_5: classicNumberRowKey_5 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_5>, <&kp PERCENT>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_6: classicNumberRowKey_6 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_6>, <&kp CARET>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_7: classicNumberRowKey_7 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_7>, <&kp AMPERSAND>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_8: classicNumberRowKey_8 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_8>, <&kp ASTERISK>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_9: classicNumberRowKey_9 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_0: classicNumberRowKey_0 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+
+        // 11-12 keys ( -/_ and =/+ )
+        classicNumberRowKey_11: classicNumberRowKey_11 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp UNDERSCORE>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+        classicNumberRowKey_12: classicNumberRowKey_12 {    compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp EQUAL>, <&kp PLUS>; mods = <(MOD_LSFT)>; keep-mods = <0>;       };
+
+
+
+
         cyrillic_shortcut_fix_test_p1: cyrillic_shortcut_fix_test_p1 {
             compatible = "zmk,behavior-hold-tap";
             label = "CYRILLIC_SHORTCUT_FIX_TEST_P1";
@@ -272,10 +292,10 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        RegularSymbolLayer {
+        classicNumberRowLayer {
             bindings = <
-&gresc           &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp EXCLAMATION  &kp NUMBER_3  &none     &none       &none        &none      &kp MINUS      &kp EQUAL     &kp UNDERSCORE        &kp PLUS
+&classicNumberRowKey_1           &classicNumberRowKey_2   &classicNumberRowKey_3  &classicNumberRowKey_4  &classicNumberRowKey_5  &classicNumberRowKey_6  &classicNumberRowKey_7  &classicNumberRowKey_8  &classicNumberRowKey_9  &classicNumberRowKey_10
+&none  &none  &none     &none       &none        &none      &none      &none     &classicNumberRowKey_11        &classicNumberRowKey_12
 &none            &none         &none     &none       &none        &none      &none          &none         &none                 &none
 &none            &none         &none     &none       &none        &none      &none          &none         &none                 &none                  &none  &none
             >;
