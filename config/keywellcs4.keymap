@@ -95,6 +95,20 @@ As such, those are in use within the default layer at this time.*/
             display-name = "Toggle Layer On";
             toggle-mode = "off";
         };
+
+        cyrillic_shortcut_fix_test_p1: cyrillic_shortcut_fix_test_p1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CYRILLIC_SHORTCUT_FIX_TEST_P1";
+            bindings = <&mo>, <&gresc>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
