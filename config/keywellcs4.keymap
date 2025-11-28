@@ -113,7 +113,7 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
 
-            mysods = <(MOD_LSFT)>;
+            mods = <(MOD_LSFT)>;
             keep-mods = <0>;
         };
 
