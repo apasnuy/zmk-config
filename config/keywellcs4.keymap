@@ -259,10 +259,10 @@ As such, those are in use within the default layer at this time.*/
             // | SPACE |  LOWER   |  ALT   |  LGUI  | EISUU  | ESC  | ADJUST |                     |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp Q                &timeless_layer 6 W  &kp E                &kp R                   &timeless_layer 3 T            &kp Y    &kp U   &kp I      &kp O       &kp P
-&timeless_layer 5 A  &timeless_layer 9 S  &timeless_layer 8 D  &timeless_layer 7 F     &timeless_layer 4 G            &kp H    &kp J   &kp K      &kp L       &kp SEMI
-&kp Z                &kp X                &kp C                &kp V                   &timeles_CmdTAbReleaseTab 0 B  &kp N    &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&none                &kp LEFT_CONTROL     &none                &mt LA(LC(LCMD)) SPACE  &mt ESCAPE LCMD                &kp TAB  &mo 10  &kp LALT   &none       &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 2 ENTER
+&kp Q                &timeless_layer 6 W  &kp E                &kp R                   &timeless_layer 3 T            &kp Y                   &kp U   &kp I      &kp O       &kp P
+&timeless_layer 5 A  &timeless_layer 9 S  &timeless_layer 8 D  &timeless_layer 7 F     &timeless_layer 4 G            &kp H                   &kp J   &kp K      &kp L       &kp SEMI
+&kp Z                &kp X                &kp C                &kp V                   &timeles_CmdTAbReleaseTab 0 B  &kp N                   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
+&none                &kp LEFT_CONTROL     &none                &mt LA(LC(LCMD)) SPACE  &mt ESCAPE LCMD                &timeless_layer 11 TAB  &mo 10  &kp LALT   &none       &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 2 ENTER
             >;
         };
 
@@ -374,10 +374,10 @@ As such, those are in use within the default layer at this time.*/
 
         Numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp PLUS      &kp N7  &kp N8  &kp N9  &kp ASTERISK
+&trans  &trans  &trans  &trans  &trans  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &kp NUMBER_0  &kp N1  &kp N2  &kp N3  &kp PERIOD
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans        &trans  &kp KP_EQUAL
             >;
         };
 
@@ -387,19 +387,6 @@ As such, those are in use within the default layer at this time.*/
 &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &classicNumberRowKey_11  &classicNumberRowKey_12
 &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                    &none
 &trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                   &trans                   &trans  &trans
-            >;
-        };
-
-        delll_AS_MOVE_TMP_layer {
-            display-name = "SUPER_AS_MOVE_TMP";
-
-            // ---------------------------------------------------------------------------------------------------------------------------------
-
-            bindings = <
-&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans
-&kp LCMD  &kp LCTRL  &kp LALT  &kp LSHFT  &trans  &maclike_backspace_delete  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans
-&trans    &trans     &trans    &trans     &trans  &trans                     &trans    &trans    &trans  &trans     &trans  &trans
             >;
         };
     };
