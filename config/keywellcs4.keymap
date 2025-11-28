@@ -390,7 +390,7 @@ As such, those are in use within the default layer at this time.*/
 &classicNumberRowKey_1  &classicNumberRowKey_2  &classicNumberRowKey_3  &classicNumberRowKey_4  &classicNumberRowKey_5  &classicNumberRowKey_6  &classicNumberRowKey_7  &classicNumberRowKey_8  &classicNumberRowKey_9   &classicNumberRowKey_10
 &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &classicNumberRowKey_11  &classicNumberRowKey_12
 &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                    &none
-&none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                    &none                    &none  &none
+&trans                   &trans                   &trans                   &trans                   &trans                   &trans                   &trans                   &trans                   &trans                    &trans                    &trans  &trans
             >;
         };
 
