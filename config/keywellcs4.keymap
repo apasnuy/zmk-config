@@ -315,10 +315,10 @@ As such, those are in use within the default layer at this time.*/
 
         UA {
             bindings = <
-&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&uc UC_UK_YA  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&uc UC_UK_YA  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &cmdLayerMacro  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
