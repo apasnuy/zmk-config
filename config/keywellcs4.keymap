@@ -275,7 +275,10 @@ As such, those are in use within the default layer at this time.*/
         cmdLayerMacro: cmdLayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_on 3>, <&macro_pause_for_release>, <&tog_of 3>;
+            bindings =
+                <&tog_on 3 &kt_on LCMD>,
+                <&macro_pause_for_release>,
+                <&tog_of 3 &kt_off LCMD>;
 
             label = "CMDLAYER";
         };
@@ -312,10 +315,10 @@ As such, those are in use within the default layer at this time.*/
 
         UA {
             bindings = <
-&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&uc UC_UK_YA  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &cmdLayerMacro  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&uc UC_UK_YA  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
