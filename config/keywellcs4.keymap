@@ -243,6 +243,8 @@ As such, those are in use within the default layer at this time.*/
                 <&kt_off LCMD &tog_of 7>;
 
             label = "CMDTABRELEASETAB";
+            tap-ms = <1>;
+            wait-ms = <1>;
         };
     };
 
