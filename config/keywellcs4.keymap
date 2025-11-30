@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <ukrainian.h>
 
-#include ukrainian.h
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
 #define BT_LAYER  2
