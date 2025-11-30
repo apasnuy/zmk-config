@@ -63,7 +63,7 @@ As such, those are in use within the default layer at this time.*/
         timeles_CmdTAbReleaseTab: timeles_CmdTAbReleaseTab {
             compatible = "zmk,behavior-hold-tap";
             label = "TIMELES_CMDTABRELEASETAB";
-            bindings = <&CmdTAbReleaseTab>, <&kp>;
+            bindings = <&CmdTAbReleaseTabMacro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -238,7 +238,7 @@ As such, those are in use within the default layer at this time.*/
         timelessCmdLayer: timelessCmdLayer {
             compatible = "zmk,behavior-hold-tap";
             label = "TIMELESSCMDLAYER";
-            bindings = <&cmdLayer>, <&kp>;
+            bindings = <&cmdLayerMacro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -259,7 +259,7 @@ As such, those are in use within the default layer at this time.*/
     };
 
     macros {
-        CmdTAbReleaseTab: CmdTAbReleaseTab {
+        CmdTAbReleaseTabMacro: CmdTAbReleaseTabCombo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -267,12 +267,12 @@ As such, those are in use within the default layer at this time.*/
                 <&macro_pause_for_release>,
                 <&tog_of 9 &kt_off LCMD>;
 
-            label = "CMDTABRELEASETAB";
+            label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;
             wait-ms = <1>;
         };
 
-        cmdLayer: cmdLayer {
+        cmdLayerMacro: cmdLayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog_on 3>, <&macro_pause_for_release>, <&tog_of 3>;
@@ -312,19 +312,19 @@ As such, those are in use within the default layer at this time.*/
 
         UA {
             bindings = <
-&trans        &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&uc UC_UK_YA  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans
-&trans        &trans  &trans  &trans  &cmdLayer  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&uc UC_UK_YA  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans        &trans  &trans  &trans  &cmdLayerMacro  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         cmdLayer {
             bindings = <
-&kp Q   &kp W      &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I      &kp O    &kp P
-&kp A   &kp S      &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&kp Z   &kp X      &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp LALT   &trans   &trans    &kp LSHFT  &trans
+&kp Q   &kp W      &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P
+&kp A   &kp S      &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI
+&kp Z   &kp X      &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &kp LCTRL  &trans  &trans  &kp LCMD  &trans  &trans  &kp LALT   &trans   &trans    &kp LSHFT  &trans
             >;
         };
 
