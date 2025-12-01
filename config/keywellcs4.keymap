@@ -162,7 +162,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&kt_on F16 &kt_on L &kt_on E &tog_of 2 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&kt_off F16 &kt_off L &kt_off E &tog_on 2 &kt_off LCMD>;
+                <&kt_off F16 &kt_off L &kt_off E &tog_on 2 &kt_off LCMD &kp F16 &kp L &kp H>;
 
             label = "CMDLAYER";
         };
@@ -173,7 +173,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 2 &kt_on LALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &kt_off LALT &kp F16 &kp L &kp E>;
+                <&tog_on 2 &kt_off LALT &kp F16 &kp L &kp H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -184,7 +184,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 2 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &kt_off LEFT_CONTROL>;
+                <&tog_on 2 &kt_off LEFT_CONTROL &kp F16 &kp L &kp H>;
 
             label = "UNICODECONTROLWA";
         };
