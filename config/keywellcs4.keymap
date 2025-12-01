@@ -84,7 +84,7 @@ As such, those are in use within the default layer at this time.*/
         timeles_behTobehTest: timeles_behTobehTest {
             compatible = "zmk,behavior-hold-tap";
             label = "TIMELES_BEHTOBEHTEST";
-            bindings = <&mo>, <&uc>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -129,9 +129,6 @@ As such, those are in use within the default layer at this time.*/
             toggle-mode = "off";
         };
 
-        // Regular Symbols To Occasionally Fallback When Can't Remember Where Particular Symbol On A new Symbol Layer
-        // 1-10 keys
-        // 11-12 keys ( -/_ and =/+ )
 
         timelessCmdLayer: timelessCmdLayer {
             compatible = "zmk,behavior-hold-tap";
