@@ -341,10 +341,10 @@ As such, those are in use within the default layer at this time.*/
 
         Numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp PLUS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK
-&trans  &trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp N5           &kp KP_NUMBER_6  &kp KP_DIVIDE
-&trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
-&trans  &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans           &trans         &trans  &kp KP_EQUAL
+&trans  &trans  &trans  &trans  &trans  &kp PLUS         &kp N7        &kp N8  &kp N9  &kp ASTRK
+&trans  &trans  &trans  &trans  &trans  &kp MINUS        &kp NUMBER_4  &kp N5  &kp N6  &kp KP_DIVIDE
+&trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp N1        &kp N2  &kp N3  &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans           &trans        &trans  &trans  &trans         &trans  &kp KP_EQUAL
             >;
         };
 
