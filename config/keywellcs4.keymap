@@ -28,12 +28,7 @@
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
 
-
-/ {
-    behaviors {
-
-    // rob"s zmk unicode
-
+// rob"s zmk unicode
 &uc {
     default-mode = <UC_MODE_MACOS>;
     minimum-length = <4>;
@@ -42,6 +37,11 @@ As such, those are in use within the default layer at this time.*/
     // linux-key = <LC(LS(U))>;
     // win-compose-key = <RALT>;
 };
+
+/ {
+    behaviors {
+
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -224,7 +224,7 @@ As such, those are in use within the default layer at this time.*/
         UA {
             bindings = <
 &uc UC_UK_I_SHORT  &uc UC_UK_TS       &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N    &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH     &uc UC_UK_Z   &uc UC_UK_KH
-&uc UC_UK_F        &uc UC_UK_I        &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P    &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L       &uc UC_UK_D   &uc UC_UK_ZH
+&uc UC_UK_F        &uc UC_UK_I        &uc UC_UK_V  &timeless_layer 11 &uc UC_UK_A  &uc UC_UK_P    &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L       &uc UC_UK_D   &uc UC_UK_ZH
 &uc UC_UK_YA       &uc UC_UK_CH       &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y    &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B       &uc UC_UK_YU  &trans
 &trans             &UnicodeControlWA  &trans       &trans       &UnicodeCmdWA  &trans       &trans          &UnicodeOptionWA  &trans        &trans        &trans  &trans
             >;
