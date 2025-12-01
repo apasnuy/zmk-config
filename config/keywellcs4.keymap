@@ -70,7 +70,7 @@ As such, those are in use within the default layer at this time.*/
         timeles_behTobehTest: timeles_behTobehTest {
             compatible = "zmk,behavior-hold-tap";
             label = "TIMELES_BEHTOBEHTEST";
-            bindings = <&CmdTAbReleaseTabMacro>, <&kp>;
+            bindings = <&CmdTAbReleaseTabMacro>, <&uc>;
 
             #binding-cells = <2>;
             flavor = "balanced";
