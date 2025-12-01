@@ -118,7 +118,7 @@ As such, those are in use within the default layer at this time.*/
         tlzhyperLayer: tlzhyperLayer {
             compatible = "zmk,behavior-hold-tap";
             label = "TLZHYPERLAYER";
-            bindings = <&timelessHyper>, <&kp>;
+            bindings = <&timelessHyperMacro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -185,15 +185,15 @@ As such, those are in use within the default layer at this time.*/
             label = "UNICODECONTROLWA";
         };
 
-        timelessHyper: timelessHyper {
+        timelessHyperMacro: timelessHyperMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&tog_on 14 &kt_on F16>,
                 <&macro_pause_for_release>,
-                <&tog_of 14 &kt_off F16>;
+                <&kt_off F16 &tog_of 14>;
 
-            label = "TIMELESSHYPER";
+            label = "TIMELESSHYPERMACRO";
             tap-ms = <1>;
             wait-ms = <1>;
         };
