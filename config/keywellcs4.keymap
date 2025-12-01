@@ -121,11 +121,16 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&timelessHyperMacro>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
+            tapping-term-ms = <200>;
+        };
+
+        delll: delll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DELLL";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <55>;
         };
     };
 
@@ -189,9 +194,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 14 &kt_on F16>,
+                <&kt_on F16 &tog_on 14>,
                 <&macro_pause_for_release>,
-                <&kt_off F16 &tog_of 14>;
+                <&tog_of 14 &kt_off F16>;
 
             label = "TIMELESSHYPERMACRO";
             tap-ms = <1>;
