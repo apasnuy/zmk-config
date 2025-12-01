@@ -117,130 +117,7 @@ As such, those are in use within the default layer at this time.*/
 
         // Regular Symbols To Occasionally Fallback When Can't Remember Where Particular Symbol On A new Symbol Layer
         // 1-10 keys
-
-        classicNumberRowKey_1: classicNumberRowKey_1 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp EXCLAMATION>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_2: classicNumberRowKey_2 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_2>, <&kp AT_SIGN>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_3: classicNumberRowKey_3 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_3>, <&kp HASH>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_4: classicNumberRowKey_4 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_4>, <&kp DOLLAR>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_5: classicNumberRowKey_5 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_5>, <&kp PERCENT>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_6: classicNumberRowKey_6 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_6>, <&kp CARET>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_7: classicNumberRowKey_7 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_7>, <&kp AMPERSAND>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_8: classicNumberRowKey_8 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_8>, <&kp ASTERISK>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_9: classicNumberRowKey_9 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_9>, <&kp LEFT_PARENTHESIS>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_10: classicNumberRowKey_10 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_0>, <&kp RIGHT_PARENTHESIS>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
         // 11-12 keys ( -/_ and =/+ )
-
-        classicNumberRowKey_11: classicNumberRowKey_11 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        classicNumberRowKey_12: classicNumberRowKey_12 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp PLUS>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <0>;
-        };
-
-        cyrillic_shortcut_fix_test_p1: cyrillic_shortcut_fix_test_p1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CYRILLIC_SHORTCUT_FIX_TEST_P1";
-            bindings = <&mo>, <&gresc>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
-            hold-trigger-on-release;
-        };
 
         timelessCmdLayer: timelessCmdLayer {
             compatible = "zmk,behavior-hold-tap";
@@ -463,15 +340,6 @@ As such, those are in use within the default layer at this time.*/
 &trans  &trans  &trans  &trans  &trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_DIVIDE
 &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT
 &trans  &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans           &trans         &trans  &kp KP_EQUAL
-            >;
-        };
-
-        classicNumberRowLayer {
-            bindings = <
-&classicNumberRowKey_1  &classicNumberRowKey_2  &classicNumberRowKey_3  &classicNumberRowKey_4  &classicNumberRowKey_5  &classicNumberRowKey_6  &classicNumberRowKey_7  &classicNumberRowKey_8  &classicNumberRowKey_9   &classicNumberRowKey_10
-&none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &classicNumberRowKey_11  &classicNumberRowKey_12
-&none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                   &none                    &none
-&trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                  &trans                   &trans                   &trans  &trans
             >;
         };
     };
