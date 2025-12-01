@@ -12,16 +12,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-<<<<<<< Updated upstream
-// #include "keys_uk_enhanced.h" meh... seems my config became unstable with it. Plus it gives nothing extra except representation in visual editor
-=======
 /* MEH...
     Keycodes for other locales
     Gives nothing extra except key representation in visual editor
     https://github.com/nickcoutsos/keymap-editor/wiki/Keycodes-for-other-locales
 */
 // #include "keys_uk_enhanced.h"
->>>>>>> Stashed changes
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
@@ -348,9 +344,9 @@ As such, those are in use within the default layer at this time.*/
 
         UA {
             bindings = <
-&trans        &trans             &trans  &trans  &trans         &trans  &trans  &trans            &trans  &trans
-&trans        &trans             &trans  &trans  &trans         &trans  &trans  &trans            &trans  &trans
-&uc UC_UK_YA  &none              &trans  &trans  &trans         &trans  &trans  &trans            &trans  &trans
+&uc UC_UK_I_SHORT        &uc UC_UK_TS             &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N         &uc UC_UK_H  &uc UC_UK_SH  &uc UC_UK_SCH            &uc UC_UK_Z  &uc UC_UK_KH
+&uc UC_UK_F        &uc UC_UK_I             &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P         &uc UC_UK_R  &uc UC_UK_O  &uc UC_UK_L            &uc UC_UK_D  &uc UC_UK_ZH
+&uc UC_UK_YA  &uc UC_UK_CH              &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y         &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B            &uc UC_UK_YU  &trans
 &trans        &UnicodeControlWA  &trans  &trans  &UnicodeCmdWA  &trans  &trans  &UnicodeOptionWA  &trans  &trans  &trans  &trans
             >;
         };
