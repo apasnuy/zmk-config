@@ -27,8 +27,8 @@
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
-
 // rob"s zmk unicode
+
 &uc {
     default-mode = <UC_MODE_MACOS>;
     minimum-length = <4>;
@@ -40,8 +40,6 @@ As such, those are in use within the default layer at this time.*/
 
 / {
     behaviors {
-
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -69,9 +67,9 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
         };
 
-        timeles_CmdTAbReleaseTab: timeles_CmdTAbReleaseTab {
+        timeles_behTobehTest: timeles_behTobehTest {
             compatible = "zmk,behavior-hold-tap";
-            label = "TIMELES_CMDTABRELEASETAB";
+            label = "TIMELES_BEHTOBEHTEST";
             bindings = <&CmdTAbReleaseTabMacro>, <&kp>;
 
             #binding-cells = <2>;
@@ -205,28 +203,28 @@ As such, those are in use within the default layer at this time.*/
             // | SPACE |  LOWER   |  ALT   |  LGUI  | EISUU  | ESC  | ADJUST |                     |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp Q                &timeless_layer 8 W   &kp E                 &kp R                &timeless_layer 5 T            &kp Y                   &kp U   &kp I      &kp O       &kp P
-&timeless_layer 7 A  &timeless_layer 11 S  &timeless_layer 10 D  &timeless_layer 9 F  &timeless_layer 6 G            &kp H                   &kp J   &kp K      &kp L       &kp SEMI
-&kp Z                &kp X                 &kp C                 &kp V                &timeles_CmdTAbReleaseTab 0 B  &kp N                   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&none                &kp LEFT_CONTROL      &none                 &mt F16 SPACE        &kp LCMD                       &timeless_layer 13 TAB  &mo 12  &kp LALT   &tog 2      &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 4 ENTER
+&kp Q                &timeless_layer 8 W   &kp E                 &kp R                &timeless_layer 5 T        &kp Y                   &kp U   &kp I      &kp O       &kp P
+&timeless_layer 7 A  &timeless_layer 11 S  &timeless_layer 10 D  &timeless_layer 9 F  &timeless_layer 6 G        &kp H                   &kp J   &kp K      &kp L       &kp SEMI
+&kp Z                &kp X                 &kp C                 &kp V                &timeles_behTobehTest 0 B  &kp N                   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
+&none                &kp LEFT_CONTROL      &none                 &mt F16 SPACE        &kp LCMD                   &timeless_layer 13 TAB  &mo 12  &kp LALT   &tog 2      &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 4 ENTER
             >;
         };
 
         Colemak {
             bindings = <
-&kp Q   &kp W                 &kp F                 &kp P                &kp G                          &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-&kp A   &timeless_layer 11 R  &timeless_layer 10 S  &timeless_layer 9 T  &kp D                          &kp H   &kp N   &kp E      &kp I    &kp O
-&kp Z   &kp X                 &kp C                 &kp V                &timeles_CmdTAbReleaseTab 0 B  &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans                &trans                &trans               &trans                         &trans  &trans  &trans     &trans   &trans    &trans  &trans
+&kp Q   &kp W                 &kp F                 &kp P                &kp G                      &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+&kp A   &timeless_layer 11 R  &timeless_layer 10 S  &timeless_layer 9 T  &kp D                      &kp H   &kp N   &kp E      &kp I    &kp O
+&kp Z   &kp X                 &kp C                 &kp V                &timeles_behTobehTest 0 B  &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans                &trans                &trans               &trans                     &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
 
         UA {
             bindings = <
-&uc UC_UK_I_SHORT  &uc UC_UK_TS       &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N    &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH     &uc UC_UK_Z   &uc UC_UK_KH
-&uc UC_UK_F        &uc UC_UK_I        &uc UC_UK_V  &timeless_layer 11 &uc UC_UK_A  &uc UC_UK_P    &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L       &uc UC_UK_D   &uc UC_UK_ZH
-&uc UC_UK_YA       &uc UC_UK_CH       &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y    &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B       &uc UC_UK_YU  &trans
-&trans             &UnicodeControlWA  &trans       &trans       &UnicodeCmdWA  &trans       &trans          &UnicodeOptionWA  &trans        &trans        &trans  &trans
+&uc UC_UK_I_SHORT  &uc UC_UK_TS  &uc UC_UK_U        &uc UC_UK_E         &uc UC_UK_N  &uc UC_UK_H    &uc UC_UK_SH  &uc UC_UK_SCH   &uc UC_UK_Z       &uc UC_UK_KH
+&uc UC_UK_F        &uc UC_UK_I   &uc UC_UK_V        &timeless_layer 11  &uc UC_UK_A  &uc UC_UK_P    &uc UC_UK_R   &uc UC_UK_O     &uc UC_UK_L       &uc UC_UK_D
+&uc UC_UK_ZH       &uc UC_UK_YA  &uc UC_UK_CH       &uc UC_UK_S         &uc UC_UK_M  &uc UC_UK_Y    &uc UC_UK_T   &uc UC_UK_SOFT  &uc UC_UK_B       &uc UC_UK_YU
+&trans             &trans        &UnicodeControlWA  &trans              &trans       &UnicodeCmdWA  &trans        &trans          &UnicodeOptionWA  &trans        &trans  &trans
             >;
         };
 
