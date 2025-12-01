@@ -165,7 +165,7 @@ As such, those are in use within the default layer at this time.*/
                 <&kt_off F12 &kt_off F &kt_off I &tog_on 2 &kt_off LCMD>;
 
             label = "CMDLAYER";
-            wait-ms = <40>;
+            wait-ms = <200>;
         };
 
         UnicodeOptionWA: UnicodeOptionWA {
