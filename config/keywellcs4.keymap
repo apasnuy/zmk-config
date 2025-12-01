@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_uk_enhanced.h"
+// #include "keys_uk_enhanced.h" meh... seems my config became unstable with it. Plus it gives nothing extra except representation in visual editor
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
