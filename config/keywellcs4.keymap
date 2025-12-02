@@ -113,9 +113,9 @@ As such, those are in use within the default layer at this time.*/
             toggle-mode = "off";
         };
 
-        tlzhyperLayer: tlzhyperLayer {
+        Hyper_MT_Macro_Kp_Timeless: holdTapMacroKp {
             compatible = "zmk,behavior-hold-tap";
-            label = "TLZHYPERLAYER";
+            label = "Hyper";
             bindings = <&timelessHyperMacro>, <&kp>;
 
             #binding-cells = <2>;
@@ -206,10 +206,10 @@ As such, those are in use within the default layer at this time.*/
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&EscQ                &timeless_layer 7 W   &kp E                &kp R                   &timeless_layer 4 T            &kp Y                   &kp U   &kp I      &kp O       &kp P
-&timeless_layer 6 A  &timeless_layer 10 S  &timeless_layer 9 D  &timeless_layer 8 F     &timeless_layer 5 G            &kp H                   &kp J   &kp K      &kp L       &kp SEMI
-&kp Z                &kp X                 &kp C                &kp V                   &timeles_CmdTAbReleaseTab 0 B  &kp N                   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&none                &kp LEFT_CONTROL      &none                &tlzhyperLayer 0 SPACE  &kp LCMD                       &timeless_layer 12 TAB  &mo 11  &kp LALT   &tog 2      &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 3 ENTER
+&EscQ                &timeless_layer 7 W   &kp E                &kp R                                &timeless_layer 4 T            &kp Y                   &kp U   &kp I      &kp O       &kp P
+&timeless_layer 6 A  &timeless_layer 10 S  &timeless_layer 9 D  &timeless_layer 8 F                  &timeless_layer 5 G            &kp H                   &kp J   &kp K      &kp L       &kp SEMI
+&kp Z                &kp X                 &kp C                &kp V                                &timeles_CmdTAbReleaseTab 0 B  &kp N                   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
+&none                &kp LEFT_CONTROL      &none                &Hyper_MT_Macro_Kp_Timeless 0 SPACE  &kp LCMD                       &timeless_layer 12 TAB  &mo 11  &kp LALT   &tog 2      &none      &mt LEFT_SHIFT ESCAPE  &timeless_layer 3 ENTER
             >;
         };
 
