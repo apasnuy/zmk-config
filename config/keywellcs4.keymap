@@ -341,7 +341,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         NonEnSysLanShortCutsFix {
-            display-name = "not implemented";
+            display-name = "not implemented ";
             bindings = <
 &EscQ                   &Layer_HT_Timeless 7 W      &kp E                   &kp R                       &Layer_HT_Timeless 4 T   &kp Y                      &kp U   &kp I                      &kp O       &kp P
 &Layer_HT_Timeless 6 A  &Layer_HT_Timeless 10 S     &Layer_HT_Timeless 9 D  &Layer_HT_Timeless 8 F      &Layer_HT_Timeless 5 G   &kp H                      &kp J   &kp K                      &kp L       &kp SEMI
