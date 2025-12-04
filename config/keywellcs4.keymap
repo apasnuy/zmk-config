@@ -221,6 +221,13 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
             wait-ms = <1>;
         };
+
+        emojiNum1: emojiNum1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp M &kp I &kp L &kp E &kp N &kp U &kp M>;
+            label = "EMOJINUM1";
+        };
     };
 
     keymap {
@@ -238,10 +245,10 @@ As such, those are in use within the default layer at this time.*/
 
         defv2 {
             bindings = <
-&kp Q   &kp W                &kp E            &kp R          &kp T  &kp Y                   &kp U        &kp I        &kp O                &kp P
-&kp A   &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F    &kp G  &deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &kp SEMI
-&kp Z   &kp X                &kp C            &kp V          &kp B  &kp N                   &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&tog 1  &trans               &none            &mt F16 SPACE  &mo 5  &mt LEFT_SHIFT ESCAPE   &mo 13       &none        &tog 3               &Backspase_MacLike_mod_morph  &lt 14 ENTER  &lt 4 SPACE
+&kp Q   &kp W                &kp E            &kp R          &kp T      &kp Y                   &kp U        &kp I        &kp O                &kp P
+&kp A   &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F    &kp G      &deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &kp SEMI
+&kp Z   &kp X                &kp C            &kp V          &kp B      &kp N                   &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&tog 1  &trans               &none            &mt F16 SPACE  &lt 5 TAB  &mt LEFT_SHIFT ESCAPE   &mo 13       &none        &tog 3               &Backspase_MacLike_mod_morph  &lt 14 ENTER  &lt 4 SPACE
             >;
         };
 
@@ -387,6 +394,15 @@ As such, those are in use within the default layer at this time.*/
 &Layer_HT_Timeless 8 A  &Layer_HT_Timeless 12 S     &Layer_HT_Timeless 11 D  &Layer_HT_Timeless 10 F     &Layer_HT_Timeless 7 G   &kp H                      &kp J   &kp K                      &kp L       &kp SEMI
 &kp Z                   &kp X                       &kp C                    &kp V                       &AltTab_HT_Timeless 0 B  &kp N                      &kp M   &kp COMMA                  &kp PERIOD  &kp SLASH
 &none                   &ControlShortcutsUnicodeWA  &none                    &Hyper_HT_Timeless 0 SPACE  &CmdShortcutsUnicodeWA   &Layer_HT_Timeless 14 TAB  &mo 13  &OptionShortcutsUnicodeWA  &tog 3      &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 7 ENTER
+            >;
+        };
+
+        emoji {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
