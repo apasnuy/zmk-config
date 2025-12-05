@@ -222,7 +222,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        emojiNum1: emojiNum1 {
+        emojiPOC: emojiNum1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp M &kp I &kp L &kp E &kp N &kp U &kp M>;
@@ -399,10 +399,10 @@ As such, those are in use within the default layer at this time.*/
 
         emoji {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &emojiNum1  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &emojiPOC  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
