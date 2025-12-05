@@ -253,10 +253,10 @@ As such, those are in use within the default layer at this time.*/
 
         Colemak {
             bindings = <
-&kp Q   &kp W                &kp F        &kp P        &kp G   &kp J   &kp L        &kp U        &kp Y                &kp SEMI
-&kp A   &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T  &kp D   &kp H   &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &kp O
-&kp Z   &kp X                &kp C        &kp V        &kp B   &kp K   &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&trans  &trans               &trans       &trans       &trans  &trans  &trans       &trans       &trans               &trans    &trans  &trans
+&kp Q         &kp W                &kp F        &kp P        &kp G   &kp J   &kp L        &kp U        &kp Y                &kp SEMI
+&hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T  &kp D   &kp H   &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
+&kp Z         &kp X                &kp C        &kp V        &kp B   &kp K   &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&trans        &trans               &trans       &trans       &trans  &trans  &trans       &trans       &trans               &trans        &trans  &trans
             >;
         };
 
