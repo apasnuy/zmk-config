@@ -411,9 +411,9 @@ As such, those are in use within the default layer at this time.*/
         NonEnSysLanShortCutsFix {
             display-name = "not implemented ";
             bindings = <
-&EscQ                   &Layer_HT_Timeless 9 W      &kp E                    &kp R                       &Layer_HT_Timeless 7 T   &kp Y                      &kp U   &kp I                      &kp O       &kp P
-&Layer_HT_Timeless 8 A  &Layer_HT_Timeless 12 S     &Layer_HT_Timeless 11 D  &Layer_HT_Timeless 10 F     &Layer_HT_Timeless 7 G   &kp H                      &kp J   &kp K                      &kp L       &kp SEMI
-&kp Z                   &kp X                       &kp C                    &kp V                       &AltTab_HT_Timeless 0 B  &kp N                      &kp M   &kp COMMA                  &kp PERIOD  &kp SLASH
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &emojiPOC  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
 &none                   &ControlShortcutsUnicodeWA  &none                    &Hyper_HT_Timeless 0 SPACE  &CmdShortcutsUnicodeWA   &Layer_HT_Timeless 14 TAB  &mo 13  &OptionShortcutsUnicodeWA  &tog 3      &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 7 ENTER
             >;
         };
