@@ -159,6 +159,45 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
         };
+
+        CMD_non_en_fix: CMD_non_en_fix {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CMD_NON_EN_FIX";
+            bindings = <&CmdShortcutsNonEN_WA>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35>;
+        };
+
+        Control_non_en_fix: Control_non_en_fix {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CONTROL_NON_EN_FIX";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+            bindings = <&ControlShortcutsNonEN_WA>;
+        };
+
+        Option_non_en_fix: Option_non_en_fix {
+            compatible = "zmk,behavior-hold-tap";
+            label = "OPTION_NON_EN_FIX";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35>;
+            bindings = <&OptionShortcutsNonEn_WA>;
+        };
     };
 
     combos {
@@ -175,9 +214,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 10 &kt_on LCMD &kp TAB>,
+                <&tog_on 11 &kt_on LCMD &kp TAB>,
                 <&macro_pause_for_release>,
-                <&tog_of 10 &kt_off LCMD>;
+                <&tog_of 11 &kt_off LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;
@@ -188,9 +227,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 18 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 3 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 18 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -199,9 +238,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 18 &kt_on LALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 3 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 18 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -210,9 +249,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 18 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 3 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 18 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -221,9 +260,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 15>,
+                <&kt_on F16 &tog_on 16>,
                 <&macro_pause_for_release>,
-                <&tog_of 15 &kt_off F16>;
+                <&tog_of 16 &kt_off F16>;
 
             label = "TIMELESSHYPERMACRO";
             tap-ms = <1>;
@@ -255,7 +294,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LCMD>,
+                <&tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
                 <&macro_pause_for_release>,
                 <&tog_on 3 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
@@ -266,7 +305,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LALT>,
+                <&tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LALT>,
                 <&macro_pause_for_release>,
                 <&tog_on 3 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
@@ -277,7 +316,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 3 &kt_on LEFT_CONTROL>,
+                <&tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
                 <&tog_on 3 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
@@ -293,7 +332,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q         &kp W                &kp E            &kp R                       &kp T      &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml GLOBE A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F                 &kp G      &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &hmr GLOBE SEMICOLON
 &kp Z         &kp X                &kp C            &kp V                       &kp B      &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&none         &trans               &none            &Hyper_HT_Timeless 0 SPACE  &lt 5 TAB  &mt LEFT_SHIFT ESCAPE     &mo 13       &mo 17       &tog 3               &Backspase_MacLike_mod_morph  &lt 14 ENTER  &lt 4 SPACE
+&none         &trans               &none            &Hyper_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &mo 14       &mo 4        &tog 18              &Backspase_MacLike_mod_morph  &lt 15 ENTER  &lt 5 SPACE
             >;
         };
 
@@ -315,12 +354,22 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        UA_Unicoded {
+        NonEnSysLanShortCutsFix {
+            display-name = "not implemented ";
             bindings = <
-&uc UC_UK_I_SHORT  &uc UC_UK_TS                &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N             &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH              &uc UC_UK_Z   &uc UC_UK_KH
-&uc UC_UK_F        &uc UC_UK_I                 &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P             &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                &uc UC_UK_D   &uc UC_UK_ZH
-&uc UC_UK_YA       &uc UC_UK_CH                &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y             &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                &uc UC_UK_YU  &trans
-&trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
+&trans  &trans             &trans                &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &CMD_non_en_fix 0  &Option_non_en_fix 0  &CMD_non_en_fix 0  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans             &trans                &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&none   &trans             &trans                &trans             &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans
+            >;
+        };
+
+        emoji {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &emojiPOC  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -343,8 +392,8 @@ As such, those are in use within the default layer at this time.*/
         ASDFHJKL {
             display-name = "ASDFHJKL";
             bindings = <
-&none  &mo 9             &none     &none     &mo 6                   &none                           &none     &none     &none         &none
-&mo 8  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 7                   &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&none  &mo 10            &none     &none     &mo 7                   &none                           &none     &none     &none         &none
+&mo 9  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &mo 8                   &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &none  &none             &none     &none     &CmdTAbReleaseTabMacro  &none                           &none     &none     &none         &none
 &none  &trans            &trans    &trans    &trans                  &trans                          &trans    &trans    &none         &trans     &trans  &trans
             >;
@@ -441,32 +490,22 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        NonEnSysLanShortCutsFix {
-            display-name = "not implemented ";
-            bindings = <
-&trans  &trans                      &trans  &trans                      &trans                  &trans                     &trans  &trans                     &trans  &trans
-&trans  &trans                      &trans  &trans                      &trans                  &trans                     &trans  &trans                     &trans  &trans
-&trans  &trans                      &trans  &trans                      &trans                  &trans                     &trans  &trans                     &trans  &trans
-&none   &ControlShortcutsUnicodeWA  &none   &Hyper_HT_Timeless 0 SPACE  &CmdShortcutsUnicodeWA  &Layer_HT_Timeless 14 TAB  &mo 13  &OptionShortcutsUnicodeWA  &tog 3  &none   &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 7 ENTER
-            >;
-        };
-
-        emoji {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &emojiPOC  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
         default_layerBKP {
             display-name = "Default Layer";
             bindings = <
-&EscQ                   &Layer_HT_Timeless 9 W   &kp E                    &kp R                    &Layer_HT_Timeless 7 T   &kp Y                      &kp U   &kp I      &kp O       &kp P
-&Layer_HT_Timeless 8 A  &Layer_HT_Timeless 12 S  &Layer_HT_Timeless 11 D  &Layer_HT_Timeless 10 F  &Layer_HT_Timeless 7 G   &kp H                      &kp J   &kp K      &kp L       &kp SEMI
+&EscQ                   &Layer_HT_Timeless 10 W  &kp E                    &kp R                    &Layer_HT_Timeless 8 T   &kp Y                      &kp U   &kp I      &kp O       &kp P
+&Layer_HT_Timeless 9 A  &Layer_HT_Timeless 13 S  &Layer_HT_Timeless 12 D  &Layer_HT_Timeless 11 F  &Layer_HT_Timeless 8 G   &kp H                      &kp J   &kp K      &kp L       &kp SEMI
 &kp Z                   &kp X                    &kp C                    &kp V                    &AltTab_HT_Timeless 0 B  &kp N                      &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&tog 0                  &kp LEFT_CONTROL         &none                    &lt 15 SPACE             &kp LCMD                 &Layer_HT_Timeless 14 TAB  &mo 13  &kp LALT   &tog 3      &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 4 ENTER
+&tog 0                  &kp LEFT_CONTROL         &none                    &lt 16 SPACE             &kp LCMD                 &Layer_HT_Timeless 15 TAB  &mo 14  &kp LALT   &tog 18     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 5 ENTER
+            >;
+        };
+
+        UA_Unicoded {
+            bindings = <
+&uc UC_UK_I_SHORT  &uc UC_UK_TS                &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N             &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH              &uc UC_UK_Z   &uc UC_UK_KH
+&uc UC_UK_F        &uc UC_UK_I                 &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P             &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                &uc UC_UK_D   &uc UC_UK_ZH
+&uc UC_UK_YA       &uc UC_UK_CH                &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y             &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                &uc UC_UK_YU  &trans
+&trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
             >;
         };
     };
