@@ -358,10 +358,10 @@ As such, those are in use within the default layer at this time.*/
         NonEnSysLanShortCutsFix {
             display-name = "not implemented ";
             bindings = <
-&trans  &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &CMD_non_en_fix 0 S  &Option_non_en_fix 0 D  &CMD_non_en_fix 0 F  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
-&none   &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans
+&trans  &trans                   &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &Control_non_en_fix 0 S  &Option_non_en_fix 0 D  &CMD_non_en_fix 0 F  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                   &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&none   &trans                   &trans                  &trans               &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans
             >;
         };
 
