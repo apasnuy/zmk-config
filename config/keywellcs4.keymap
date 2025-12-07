@@ -164,6 +164,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-hold-tap";
             label = "CMD_NON_EN_FIX";
             bindings = <&CmdShortcutsNonEN_WA>, <&kp>;
+
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -357,10 +358,10 @@ As such, those are in use within the default layer at this time.*/
         NonEnSysLanShortCutsFix {
             display-name = "not implemented ";
             bindings = <
-&trans  &trans             &trans                &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &CMD_non_en_fix 0  &Option_non_en_fix 0  &CMD_non_en_fix 0  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans             &trans                &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&none   &trans             &trans                &trans             &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans
+&trans  &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &CMD_non_en_fix 0 S  &Option_non_en_fix 0 D  &CMD_non_en_fix 0 F  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &trans  &trans
+&none   &trans               &trans                  &trans               &trans  &trans  &trans  &trans  &none   &trans  &trans  &trans
             >;
         };
 
