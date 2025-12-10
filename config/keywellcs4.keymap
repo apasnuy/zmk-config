@@ -218,9 +218,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 16 &kt_on LCMD &kp TAB>,
+                <&tog_on 17 &kt_on LCMD &kp TAB>,
                 <&macro_pause_for_release>,
-                <&tog_of 16 &kt_off LCMD>;
+                <&tog_of 17 &kt_off LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;
@@ -231,9 +231,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 20 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 21 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -242,9 +242,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on LALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 20 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 21 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -253,9 +253,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 20 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 21 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -364,6 +364,17 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
             wait-ms = <1>;
         };
+
+        iPadKarabinerL: iPadKarabinerL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_on 15 &kt_on L>,
+                <&macro_pause_for_release>,
+                <&tog_of 15 &kt_off L>;
+
+            label = "IPADKARABINERL";
+        };
     };
 
     keymap {
@@ -374,7 +385,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q         &kp W                &kp F        &kp P                          &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                    &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
 &kp Z         &kp X                &kp C        &kp V                          &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&none         &none                &mo 15       &HyperMac_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &none                &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
+&none         &none                &mo 16       &HyperMac_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &none                &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
             >;
         };
 
@@ -506,6 +517,15 @@ As such, those are in use within the default layer at this time.*/
 
         iPad_Hyper_and_Karabiner_Layers {
             bindings = <
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans     &trans   &trans    &trans  &trans
+            >;
+        };
+
+        iPad_Hyper_and_Karabiner_Lay_L {
+            bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
 &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
@@ -554,9 +574,9 @@ As such, those are in use within the default layer at this time.*/
             display-name = "Default Layer";
             bindings = <
 &EscQ                   &Layer_HT_Timeless 10 W  &kp E                    &kp R                    &Layer_HT_Timeless 8 T   &kp Y                     &kp U   &kp I      &kp O       &kp P
-&Layer_HT_Timeless 9 A  &Layer_HT_Timeless 18 S  &Layer_HT_Timeless 17 D  &Layer_HT_Timeless 16 F  &Layer_HT_Timeless 8 G   &kp H                     &kp J   &kp K      &kp L       &kp SEMI
+&Layer_HT_Timeless 9 A  &Layer_HT_Timeless 19 S  &Layer_HT_Timeless 18 D  &Layer_HT_Timeless 17 F  &Layer_HT_Timeless 8 G   &kp H                     &kp J   &kp K      &kp L       &kp SEMI
 &kp Z                   &kp X                    &kp C                    &kp V                    &AltTab_HT_Timeless 0 B  &kp N                     &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&tog 1                  &kp LEFT_CONTROL         &none                    &lt 11 SPACE             &kp LCMD                 &Layer_HT_Timeless 4 TAB  &mo 15  &kp LALT   &tog 20     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 3 ENTER
+&tog 1                  &kp LEFT_CONTROL         &none                    &lt 11 SPACE             &kp LCMD                 &Layer_HT_Timeless 4 TAB  &mo 16  &kp LALT   &tog 21     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 3 ENTER
             >;
         };
 
@@ -566,15 +586,6 @@ As such, those are in use within the default layer at this time.*/
 &uc UC_UK_F        &uc UC_UK_I                 &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P             &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                &uc UC_UK_D   &uc UC_UK_ZH
 &uc UC_UK_YA       &uc UC_UK_CH                &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y             &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                &uc UC_UK_YU  &trans
 &trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
-            >;
-        };
-
-        iPad_Hyper_and_Karabiner_Lay_L {
-            bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
     };
