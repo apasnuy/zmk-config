@@ -205,7 +205,7 @@ As such, those are in use within the default layer at this time.*/
         compatible = "zmk,combos";
 
         ToggleColmak {
-            bindings = <&tog 2>;
+            bindings = <&tog 0>;
             key-positions = <33 41>;
         };
     };
@@ -280,14 +280,14 @@ As such, those are in use within the default layer at this time.*/
         iPad: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 1>;
+            bindings = <&bt BT_SEL 1 &tog_on 2>;
             label = "IPAD";
         };
 
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1>;
+            bindings = <&bt BT_SEL 0 &tog_of 2>;
             label = "MAC";
         };
 
@@ -328,6 +328,15 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
+        Colemak {
+            bindings = <
+&kp Q         &kp W                &kp F        &kp P        &kp G   &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
+&hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T  &kp D   &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
+&kp Z         &kp X                &kp C        &kp V        &kp B   &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&trans        &trans               &trans       &trans       &trans  &trans                    &trans       &trans       &trans               &trans        &trans  &trans
+            >;
+        };
+
         defv2 {
             bindings = <
 &kp Q         &kp W                &kp E            &kp R                       &kp T      &kp Y                     &kp U        &kp I        &kp O                &kp P
@@ -343,15 +352,6 @@ As such, those are in use within the default layer at this time.*/
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &mt LA(LC(LCMD)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        Colemak {
-            bindings = <
-&kp Q         &kp W                &kp F        &kp P        &kp G   &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
-&hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T  &kp D   &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
-&kp Z         &kp X                &kp C        &kp V        &kp B   &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&trans        &trans               &trans       &trans       &trans  &trans                    &trans       &trans       &trans               &trans        &trans  &trans
             >;
         };
 
@@ -497,7 +497,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ                   &Layer_HT_Timeless 10 W  &kp E                    &kp R                    &Layer_HT_Timeless 8 T   &kp Y                      &kp U   &kp I      &kp O       &kp P
 &Layer_HT_Timeless 9 A  &Layer_HT_Timeless 13 S  &Layer_HT_Timeless 12 D  &Layer_HT_Timeless 11 F  &Layer_HT_Timeless 8 G   &kp H                      &kp J   &kp K      &kp L       &kp SEMI
 &kp Z                   &kp X                    &kp C                    &kp V                    &AltTab_HT_Timeless 0 B  &kp N                      &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&tog 0                  &kp LEFT_CONTROL         &none                    &lt 16 SPACE             &kp LCMD                 &Layer_HT_Timeless 15 TAB  &mo 14  &kp LALT   &tog 18     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 5 ENTER
+&tog 1                  &kp LEFT_CONTROL         &none                    &lt 16 SPACE             &kp LCMD                 &Layer_HT_Timeless 15 TAB  &mo 14  &kp LALT   &tog 18     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 5 ENTER
             >;
         };
 
