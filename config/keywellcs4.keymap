@@ -375,6 +375,13 @@ As such, those are in use within the default layer at this time.*/
 
             label = "IPADKARABINERL";
         };
+
+        iPadKarabinerLU: iPadKarabinerLU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on GLOBE &kp SPACE &kt_off GLOBE &tog_on 1>;
+            label = "IPADKARABINERLU";
+        };
     };
 
     keymap {
