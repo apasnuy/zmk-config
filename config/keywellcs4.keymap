@@ -379,14 +379,14 @@ As such, those are in use within the default layer at this time.*/
         iPadKarabinerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on GLOBE &kp SPACE &kt_off GLOBE &tog_on 1>;
+            bindings = <&kp LC(SPACE) &tog_on 1>;
             label = "IPADKARABINERLU";
         };
 
         iPadKarabinerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on GLOBE &kp SPACE &kt_off GLOBE &tog_of 1>;
+            bindings = <&kp LC(SPACE) &tog_of 1>;
             label = "IPADKARABINERLE";
         };
     };
