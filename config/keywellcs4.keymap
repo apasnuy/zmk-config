@@ -522,28 +522,28 @@ As such, those are in use within the default layer at this time.*/
 
         iPad {
             bindings = <
-&trans  &trans  &trans  &trans                           &trans  &trans  &iPadKarabinerL  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                           &trans  &trans  &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &trans                           &trans  &trans  &trans           &trans  &trans  &trans
-&trans  &trans  &trans  &Hyper_iPad_HT_Timeless 0 SPACE  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &Hyper_iPad_HT_Timeless 0 SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         iPad_Hyper_and_Karabiner_Layers {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &iPadKarabinerLU  &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &iPadKarabinerLE  &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA         &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans            &trans   &trans    &trans  &trans
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans     &trans   &trans    &trans  &trans
             >;
         };
 
         iPad_Hyper_and_Karabiner_Lay_L {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &iPadKarabinerLU  &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &iPadKarabinerLE  &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA         &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans   &trans    &trans  &trans
             >;
         };
 
