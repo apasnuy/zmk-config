@@ -204,7 +204,7 @@ As such, those are in use within the default layer at this time.*/
     combos {
         compatible = "zmk,combos";
 
-        ToggleUk {
+        ToggleUkOrQwerty {
             bindings = <&tog 1>;
             key-positions = <33 41>;
         };
@@ -333,7 +333,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q         &kp W                &kp F        &kp P                       &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                 &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
 &kp Z         &kp X                &kp C        &kp V                       &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&none         &trans               &mo 13       &Hyper_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &mo 13       &mo 5        &tog 2               &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
+&none         &trans               &mo 13       &Hyper_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &tog 2               &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
             >;
         };
 
