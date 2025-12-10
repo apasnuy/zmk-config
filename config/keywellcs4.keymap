@@ -273,14 +273,14 @@ As such, those are in use within the default layer at this time.*/
         iPad: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 14>;
+            bindings = <&bt BT_SEL 1 &tog_on 13>;
             label = "IPAD";
         };
 
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 14>;
+            bindings = <&bt BT_SEL 0 &tog_of 13>;
             label = "MAC";
         };
 
@@ -472,21 +472,21 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        iPad_Hyper_and_Karabiner_Layers {
-            bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
-            >;
-        };
-
         iPad {
             bindings = <
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &mt LA(LC(LCMD)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        iPad_Hyper_and_Karabiner_Layers {
+            bindings = <
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
 
@@ -543,6 +543,15 @@ As such, those are in use within the default layer at this time.*/
 &uc UC_UK_F        &uc UC_UK_I                 &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P             &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                &uc UC_UK_D   &uc UC_UK_ZH
 &uc UC_UK_YA       &uc UC_UK_CH                &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y             &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                &uc UC_UK_YU  &trans
 &trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
+            >;
+        };
+
+        iPad_Hyper_and_Karabiner_Lay_L {
+            bindings = <
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans  &trans
             >;
         };
     };
