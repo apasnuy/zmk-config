@@ -382,6 +382,13 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kt_on GLOBE &kp SPACE &kt_off GLOBE &tog_on 1>;
             label = "IPADKARABINERLU";
         };
+
+        iPadKarabinerLE: iPadKarabinerLE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on GLOBE &kp SPACE &kt_off GLOBE &tog_of 1>;
+            label = "IPADKARABINERLE";
+        };
     };
 
     keymap {
@@ -524,10 +531,10 @@ As such, those are in use within the default layer at this time.*/
 
         iPad_Hyper_and_Karabiner_Layers {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans     &trans   &trans    &trans  &trans
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &iPadKarabinerLU  &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &iPadKarabinerLE  &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA         &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans            &trans   &trans    &trans  &trans
             >;
         };
 
