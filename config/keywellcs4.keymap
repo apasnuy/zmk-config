@@ -201,14 +201,7 @@ As such, those are in use within the default layer at this time.*/
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        ToggleUkOrQwerty {
-            bindings = <&tog 1>;
-            key-positions = <33 41>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         CmdTAbReleaseTabMacro: CmdTAbReleaseTabCombo {
@@ -333,7 +326,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q         &kp W                &kp F        &kp P                       &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                 &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
 &kp Z         &kp X                &kp C        &kp V                       &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&none         &trans               &mo 13       &Hyper_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &tog 2               &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
+&none         &none                &mo 13       &Hyper_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &none                &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
             >;
         };
 
@@ -352,7 +345,7 @@ As such, those are in use within the default layer at this time.*/
 &trans  &trans                   &trans                  &trans               &trans  &trans  &trans               &trans                  &trans                   &trans
 &trans  &Control_non_en_fix 0 S  &Option_non_en_fix 0 D  &CMD_non_en_fix 0 F  &trans  &trans  &CMD_non_en_fix 0 J  &Option_non_en_fix 0 K  &Control_non_en_fix 0 L  &trans
 &trans  &trans                   &trans                  &trans               &trans  &trans  &trans               &trans                  &trans                   &trans
-&none   &trans                   &trans                  &trans               &trans  &trans  &trans               &trans                  &none                    &trans  &trans  &trans
+&trans  &trans                   &trans                  &trans               &trans  &trans  &trans               &trans                  &trans                   &trans  &trans  &trans
             >;
         };
 
@@ -454,12 +447,12 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        BT_Layer {
-            display-name = "BT Layer";
+        Adjust {
+            display-name = "BT, workarounds";
             bindings = <
-&none       &none         &none         &none         &none         &none  &none  &none  &none  &none
+&tog_on 1   &none         &tog 2        &none         &none         &none  &none  &none  &none  &none
 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &Mac   &iPad  &none  &none  &none
-&bt BT_NXT  &bt BT_PRV    &none         &none         &out OUT_BLE  &none  &none  &none  &none  &none
+&bt BT_NXT  &bt BT_PRV    &tog_of 1     &none         &out OUT_BLE  &none  &none  &none  &none  &none
 &none       &none         &none         &none         &none         &none  &none  &none  &none  &bt BT_CLR  &none  &none
             >;
         };
