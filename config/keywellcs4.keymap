@@ -356,9 +356,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 11>,
+                <&kt_on LA(LC(LCMD)) &tog_on 14>,
                 <&macro_pause_for_release>,
-                <&tog_of 11 &kt_off F16>;
+                <&tog_of 14 &kt_off LA(LC(LCMD))>;
 
             label = "IPADHYPERTIMELESSMACRO";
             tap-ms = <1>;
