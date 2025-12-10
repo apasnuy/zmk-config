@@ -327,6 +327,13 @@ As such, those are in use within the default layer at this time.*/
 
             label = "MACKARABINERL";
         };
+
+        MacKarabinerLU: MacKarabinerLU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U &tog_on 1>;
+            label = "MACKARABINERLU";
+        };
     };
 
     keymap {
