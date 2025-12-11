@@ -369,7 +369,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 15 &kt_on L>,
+                <&kt_on L &tog_on 15>,
                 <&macro_pause_for_release>,
                 <&tog_of 15 &kt_off L>;
 
@@ -379,14 +379,22 @@ As such, those are in use within the default layer at this time.*/
         iPadKarabinerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE) &tog_on 1>;
+            bindings =
+                <&kt_on LCTRL &tog_on 1>,
+                <&macro_wait_time 100>,
+                <&kp SPACE>;
+
             label = "IPADKARABINERLU";
         };
 
         iPadKarabinerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE) &tog_of 1>;
+            bindings =
+                <&kt_on LCTRL &tog_of 1>,
+                <&macro_wait_time 100>,
+                <&kp SPACE>;
+
             label = "IPADKARABINERLE";
         };
     };
