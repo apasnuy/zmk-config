@@ -570,5 +570,14 @@ As such, those are in use within the default layer at this time.*/
 &trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
             >;
         };
+
+        Symbols2 {
+            bindings = <
+&kp  &kp  &kp    &kp    &kp  &kp  &kp    &kp        &kp         &kp
+&kp  &kp  &kp A  &kp A  &kp  &kp  &kp A  &kp A      &kp         &kp
+&kp  &kp  &kp    &kp    &kp  &kp  &kp A  &kp COMMA  &kp PERIOD  &kp
+&kp  &kp  &kp    &kp    &kp  &kp  &kp    &kp        &kp         &kp  &kp  &kp
+            >;
+        };
     };
 };
