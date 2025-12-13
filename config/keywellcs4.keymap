@@ -382,7 +382,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&kt_on LCTRL &tog_on 1>,
                 <&macro_wait_time 100>,
-                <&kp SPACE>;
+                <&kp SPACE &kt_off LCTRL>;
 
             label = "IPADKARABINERLU";
         };
@@ -393,7 +393,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&kt_on LCTRL &tog_of 1>,
                 <&macro_wait_time 100>,
-                <&kp SPACE>;
+                <&kp SPACE &kt_off LEFT_CONTROL>;
 
             label = "IPADKARABINERLE";
         };
