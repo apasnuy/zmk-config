@@ -574,7 +574,7 @@ As such, those are in use within the default layer at this time.*/
         Symbols2 {
             bindings = <
 &kp  &kp  &kp    &kp                   &kp  &kp  &kp                    &kp        &kp         &kp
-&kp  &kp  &kp A  &kp LEFT_PARENTHESIS  &kp  &kp  &kp RIGHT_PARENTHESIS  &kp A      &kp         &kp
+&kp  &kp  &kp A  &kp LEFT_PARENTHESIS  &kp  &kp  &kp RIGHT_PARENTHESIS  &kp SEMI   &kp         &kp
 &kp  &kp  &kp    &kp                   &kp  &kp  &kp A                  &kp COMMA  &kp PERIOD  &kp
 &kp  &kp  &kp    &kp                   &kp  &kp  &kp                    &kp        &kp         &kp  &kp  &kp
             >;
