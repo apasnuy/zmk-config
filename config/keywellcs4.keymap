@@ -218,9 +218,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 17 &kt_on LCMD &kp TAB>,
+                <&tog_on 0 &kt_on LCMD &kp TAB>,
                 <&macro_pause_for_release>,
-                <&tog_of 17 &kt_off LCMD>;
+                <&tog_of 0 &kt_off LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;
@@ -231,9 +231,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 17 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 21 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 17 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -242,9 +242,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 17 &kt_on LALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 21 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 17 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -253,9 +253,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 21 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 17 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 21 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 17 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -559,43 +559,6 @@ As such, those are in use within the default layer at this time.*/
 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &Mac   &iPad   &trans  &mo 13  &none
 &bt BT_NXT  &bt BT_PRV    &tog_of 1     &none         &out OUT_BLE  &none  &none   &none   &none   &none
 &none       &none         &none         &none         &none         &none  &none   &none   &none   &bt BT_CLR  &none  &none
-            >;
-        };
-
-        notusedASDFLayerF {
-            bindings = <
-&none     &none           &none   &none   &none   &none   &none           &none           &none         &none
-&kp LALT  &kp LEFT_SHIFT  &none   &none   &none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT
-&none     &none           &none   &none   &none   &none   &none           &none           &none         &none
-&trans    &trans          &trans  &trans  &trans  &trans  &trans          &trans          &trans        &trans     &trans  &trans
-            >;
-        };
-
-        notusedASDFLayerD {
-            bindings = <
-&none     &none   &none   &none   &none   &none   &none          &none   &none   &none
-&kp LALT  &none   &none   &none   &none   &none   &kp BACKSPACE  &none   &none   &kp DELETE
-&none     &none   &none   &none   &none   &none   &none          &none   &none   &none
-&trans    &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans      &trans  &trans
-            >;
-        };
-
-        notusedASDF_S {
-            bindings = <
-&none         &none           &none   &none   &none   &none   &none               &none               &none             &none
-&kp LEFT_ALT  &kp LEFT_SHIFT  &none   &none   &none   &none   &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(RIGHT_ARROW)
-&none         &none           &none   &none   &none   &none   &none               &none               &none             &none
-&trans        &trans          &trans  &trans  &trans  &trans  &trans              &trans              &trans            &trans               &trans  &trans
-            >;
-        };
-
-        default_layerBKP {
-            display-name = "Default Layer";
-            bindings = <
-&EscQ                   &Layer_HT_Timeless 10 W  &kp E                    &kp R                    &Layer_HT_Timeless 8 T   &kp Y                     &kp U   &kp I      &kp O       &kp P
-&Layer_HT_Timeless 9 A  &Layer_HT_Timeless 19 S  &Layer_HT_Timeless 18 D  &Layer_HT_Timeless 17 F  &Layer_HT_Timeless 8 G   &kp H                     &kp J   &kp K      &kp L       &kp SEMI
-&kp Z                   &kp X                    &kp C                    &kp V                    &AltTab_HT_Timeless 0 B  &kp N                     &kp M   &kp COMMA  &kp PERIOD  &kp SLASH
-&tog 1                  &kp LEFT_CONTROL         &none                    &lt 11 SPACE             &kp LCMD                 &Layer_HT_Timeless 4 TAB  &mo 16  &kp LALT   &tog 21     &none      &mt LEFT_SHIFT ESCAPE  &Layer_HT_Timeless 3 ENTER
             >;
         };
 
