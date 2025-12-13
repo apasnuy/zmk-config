@@ -368,10 +368,7 @@ As such, those are in use within the default layer at this time.*/
         iPadKarabinerL: iPadKarabinerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kt_on L &tog_on 15>,
-                <&macro_pause_for_release>,
-                <&tog_of 15 &kt_off L>;
+            bindings = <&tog_on 15>, <&macro_pause_for_release>, <&tog_of 15>;
 
             label = "IPADKARABINERL";
         };
