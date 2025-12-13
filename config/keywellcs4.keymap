@@ -404,7 +404,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q         &kp W                &kp F        &kp P                          &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml GLOBE A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                    &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr GLOBE O
 &kp Z         &kp X                &kp C        &kp V                          &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&none         &none                &mo 16       &HyperMac_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &none                &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 3 SPACE
+&none         &none                &mo 16       &HyperMac_HT_Timeless 0 SPACE  &lt 6 TAB  &mt LEFT_SHIFT ESCAPE     &none        &mo 5        &none                &Backspase_MacLike_mod_morph  &lt 4 ENTER  &lt 18 SPACE
             >;
         };
 
@@ -576,7 +576,7 @@ As such, those are in use within the default layer at this time.*/
 &kp EXCL   &kp UNDER  &kp LEFT_BRACKET  &kp LESS_THAN         &kp GRAVE    &kp HASH    &kp GREATER_THAN       &kp RIGHT_BRACKET  &kp SINGLE_QUOTE   &kp TILDE
 &kp EQUAL  &kp MINUS  &kp PLUS          &kp LEFT_PARENTHESIS  &kp CARET    &kp DOLLAR  &kp RIGHT_PARENTHESIS  &kp SEMI           &kp DOUBLE_QUOTES  &kp AMPS
 &kp PIPE   &kp SLASH  &kp ASTERISK      &kp LEFT_BRACE        &kp PERCENT  &kp AT      &kp RIGHT_BRACE        &kp COMMA          &kp PERIOD         &kp QUESTION
-&kp        &kp        &kp               &kp                   &kp          &kp         &kp                    &kp                &kp                &kp           &kp  &kp
+&trans     &trans     &trans            &trans                &trans       &trans      &trans                 &trans             &trans             &trans        &trans  &trans
             >;
         };
     };
