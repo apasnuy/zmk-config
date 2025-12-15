@@ -39,16 +39,6 @@ As such, those are in use within the default layer at this time.*/
 / {
     behaviors {
 
-       hold_tap_uc: hold_tap_uc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_UC";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            // Hold action: outputs 'ü' unicode character
-            // Tap action: outputs the 'K' keycode
-            bindings = <&uc 0x00FC 0x0000 &kp K>;
-        };
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
