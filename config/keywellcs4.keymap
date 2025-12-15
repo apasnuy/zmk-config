@@ -409,9 +409,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 18 &kt_on LC(LALT)>,
+                <&tog_on 18 &kt_on LALT &kt_on LCTRL>,
                 <&macro_pause_for_release>,
-                <&tog_of 18 &kt_off LC(LALT)>;
+                <&tog_of 18 &kt_off LALT &kt_off LCTRL>;
 
             label = "UA_SYMBOLS_FIX_MACRO";
             tap-ms = <1>;
