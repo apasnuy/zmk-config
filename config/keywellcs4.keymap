@@ -602,10 +602,10 @@ As such, those are in use within the default layer at this time.*/
 
         Non_EN_Symbols_Fix {
             bindings = <
-&kp EXCL   &kp UNDER  &kp LA(LEFT_BRACKET)  &kp LA(LESS_THAN)     &kp LA(GRAVE)  &kp LC(HASH)  &kp LA(GREATER_THAN)   &kp LA(RIGHT_BRACKET)  &kp AMPS               &kp LC(TILDE)
-&kp EQUAL  &kp MINUS  &kp PLUS              &kp LEFT_PARENTHESIS  &kp CARET      &kp DOLLAR    &kp RIGHT_PARENTHESIS  &kp SEMI               &kp LC(DOUBLE_QUOTES)  &kp LC(LS(APOSTROPHE))
-&kp PIPE   &kp SLASH  &kp ASTERISK          &kp LEFT_BRACE        &kp PERCENT    &kp AT        &kp RIGHT_BRACE        &kp COMMA              &kp PERIOD             &kp QUESTION
-&trans     &trans     &trans                &trans                &trans         &trans        &trans                 &trans                 &trans                 &trans                  &trans  &trans
+&kp EXCL   &kp UNDER  &kp LC(LEFT_BRACKET)  &kp LC(LESS_THAN)     &kp LA(GRAVE)  &kp LC(NUMBER_3)  &kp LC(GREATER_THAN)   &kp LA(RIGHT_BRACKET)  &kp AMPS               &kp LC(TILDE)
+&kp EQUAL  &kp MINUS  &kp PLUS              &kp LEFT_PARENTHESIS  &kp CARET      &kp DOLLAR        &kp RIGHT_PARENTHESIS  &kp SEMI               &kp LC(DOUBLE_QUOTES)  &kp LC(LS(APOSTROPHE))
+&kp PIPE   &kp SLASH  &kp ASTERISK          &kp LEFT_BRACE        &kp PERCENT    &kp AT            &kp RIGHT_BRACE        &kp COMMA              &kp PERIOD             &kp QUESTION
+&trans     &trans     &trans                &trans                &trans         &trans            &trans                 &trans                 &trans                 &trans                  &trans  &trans
             >;
         };
     };
