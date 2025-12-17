@@ -440,7 +440,7 @@ As such, those are in use within the default layer at this time.*/
         Symbols_Non_EN {
             bindings = <
 &kp LS(N1)                 &kp UNDER          &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LS(COMMA)))         &kp LC(LA(GRAVE))  &kp LA(N3)  &kp LA(LC(LS(PERIOD)))         &kp LA(LC(RIGHT_BRACKET))  &kp LA(N7)                    &kp LA(M)
-&kp EQUAL                  &kp MINUS          &kp PLUS                  &kp LEFT_PARENTHESIS          &kp LA(N6)         &kp LA(N7)  &kp RIGHT_PARENTHESIS          &kp LA(LC(SEMI))           &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
+&kp EQUAL                  &kp MINUS          &kp PLUS                  &kp LEFT_PARENTHESIS          &kp LA(N6)         &kp LA(N4)  &kp RIGHT_PARENTHESIS          &kp LA(LC(SEMI))           &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
 &kp LA(LS(LC(BACKSLASH)))  &kp LA(LC(SLASH))  &kp LA(N8)                &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)         &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(COMMA))          &kp LA(LC(PERIOD))            &kp LA(LS(LC(SLASH)))
 &trans                     &trans             &trans                    &trans                        &trans             &trans      &trans                         &trans                     &trans                        &trans                  &trans  &trans
             >;
