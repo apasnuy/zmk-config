@@ -625,7 +625,7 @@ As such, those are in use within the default layer at this time.*/
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none        &mkp MCLK    &mkp LCLK    &none        &none            &none        &mkp MB4     &mkp MCLK    &mkp MB5     &none                
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 &none        &none        &trans           &mkp LCLK    &mkp RCLK    &none                                             
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans   &trans    &trans  &trans
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
             >;
         };
