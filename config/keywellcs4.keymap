@@ -7,12 +7,13 @@
 // rob"s zmk unicode
 
 #include <behaviors/unicode.dtsi>
+#include <includes/mouse.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <includes/mouse.dtsi>
+
 /* MEH...
     Keycodes for other locales
     Gives nothing extra except key representation in visual editor
@@ -419,7 +420,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp Q              &kp W                &kp F        &kp P                          &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                    &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
-&kp Z              &kp X                &kp C        &kp V                          &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &lt 21 C     &kp V                          &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &kp CAPS           &none                &mo 18       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB  &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 6 ENTER  &lt 5 SPACE
             >;
         };
@@ -428,7 +429,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp Q              &kp W                &kp E            &kp R        &kp T   &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G   &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
-&kp Z              &kp X                &kp C            &kp V        &kp B   &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &lt 21 C         &kp V        &kp B   &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &trans             &trans               &trans           &trans       &trans  &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
             >;
         };
@@ -495,7 +496,7 @@ As such, those are in use within the default layer at this time.*/
 &none      &mo 12            &none      &none      &mo 9                   &none                           &none           &none           &none         &none
 &mo 11     &kp LEFT_CONTROL  &kp LALT   &kp LCMD   &mo 10                  &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
 &kp LG(Z)  &kp LG(X)         &kp LG(C)  &kp LG(V)  &CmdTAbReleaseTabMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none      &trans            &trans     &trans     &trans                  &trans                          &trans          &trans          &none         &trans           &mkp LCLK  &mkp RCLK
+&none      &trans            &trans     &trans     &trans                  &trans                          &trans          &trans          &none         &trans           &trans  &trans
             >;
         };
 
@@ -618,15 +619,10 @@ As such, those are in use within the default layer at this time.*/
         mouse_layer {
             display-name = "MSE";
             bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &mkp MB4     &mkp MB4     &mkp RCLK    &none        &none            &mkp RCLK  &msc SCRL_DOWN &mmv MOVE_UP &msc SCRL_UP &none                
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL    &kp LGUI     &kp LALT     &kp LSHFT    &none        &msc SCRL_LEFT &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT 
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none        &mkp MCLK    &mkp LCLK    &none        &none            &none        &mkp MB4     &mkp MCLK    &mkp MB5     &none                
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-&none      &trans            &trans     &trans     &trans                  &trans                          &trans          &trans          &none         &trans           &mkp LCLK  &mkp RCLK
-//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+&mkp MB4   &mkp MB4   &mkp RCLK  &none      &none   &mkp RCLK       &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none
+&kp LCTRL  &kp LGUI   &kp LALT   &kp LSHFT  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none      &mkp MCLK  &mkp LCLK  &none      &none   &none           &mkp MB4        &mkp MCLK       &mkp MB5         &none
+&none      &trans     &trans     &trans     &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
     };
