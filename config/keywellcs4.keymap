@@ -620,10 +620,10 @@ As such, those are in use within the default layer at this time.*/
         mouse_layer {
             display-name = "MSE";
             bindings = <
-&mkp MB4  &mkp MB4  &mkp RCLK  &none   &none   &mkp RCLK       &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none
-&trans    &trans    &trans     &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none     &mo 9     &mo 8      &trans  &none   &none           &mkp MB4        &mkp MCLK       &mkp MB5         &none
-&none     &trans    &trans     &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
+&trans  &trans  &trans  &none   &none   &none           &msc SCRL_UP    &mmv MOVE_UP    &none            &none
+&trans  &trans  &trans  &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none   &mo 9   &mo 8   &trans  &none   &none           &msc SCRL_DOWN  &none           &none            &none
+&none   &trans  &trans  &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
     };
