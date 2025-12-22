@@ -23,6 +23,7 @@
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
 #define NAV  8
+#define NAV_1  9
 
 #include "includes/mouse.dtsi"
 
