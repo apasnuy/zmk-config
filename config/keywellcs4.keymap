@@ -25,6 +25,7 @@
 #define NAV  8
 
 #include "includes/mouse.dtsi"
+
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
@@ -420,7 +421,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp Q              &kp W                &kp F        &kp P                          &kp G      &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                    &kp D      &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
-&kp Z              &kp X                &lt 21 C     &kp V                          &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &kp C        &lt 21 V                       &kp B      &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &kp CAPS           &none                &mo 18       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB  &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 6 ENTER  &lt 5 SPACE
             >;
         };
@@ -429,7 +430,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp Q              &kp W                &kp E            &kp R        &kp T   &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G   &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
-&kp Z              &kp X                &lt 21 C         &kp V        &kp B   &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &kp C            &lt 21 V     &kp B   &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &trans             &trans               &trans           &trans       &trans  &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
             >;
         };
@@ -621,7 +622,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &mkp MB4  &mkp MB4  &mkp RCLK  &none   &none   &mkp RCLK       &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &none
 &trans    &trans    &trans     &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none     &trans    &trans     &mo 8   &none   &none           &mkp MB4        &mkp MCLK       &mkp MB5         &none
+&none     &mo 9     &mo 8      &trans  &none   &none           &mkp MB4        &mkp MCLK       &mkp MB5         &none
 &none     &trans    &trans     &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
