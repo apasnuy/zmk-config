@@ -451,7 +451,7 @@ As such, those are in use within the default layer at this time.*/
 
         Colemak {
             bindings = <
-&kp Q              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
+&EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml LALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
 &kp Z              &kp X                &kp C        &lt 21 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &kp CAPS           &none                &mo 18       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB                &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 6 ENTER  &lt 5 SPACE
@@ -460,7 +460,7 @@ As such, those are in use within the default layer at this time.*/
 
         UK_and_QWERTY {
             bindings = <
-&kp Q              &kp W                &kp E            &kp R        &kp T                    &kp Y                     &kp U        &kp I        &kp O                &kp P
+&EscQ              &kp W                &kp E            &kp R        &kp T                    &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G                    &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr LALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
 &kp Z              &kp X                &kp C            &lt 21 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &trans             &trans               &trans           &trans       &trans                   &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
