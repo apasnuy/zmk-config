@@ -256,6 +256,7 @@ As such, those are in use within the default layer at this time.*/
         Globe {
             bindings = <&kp GLOBE>;
             key-positions = <33 34>;
+            layers = <0 1>;
         };
     };
 
