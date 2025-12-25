@@ -412,33 +412,25 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        iPadKarabinerL: iPadKarabinerL {
+        iPadLayerL: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog_on 17>, <&macro_pause_for_release>, <&tog_of 17>;
 
-            label = "IPADKARABINERL";
+            label = "IPADLAYERL";
         };
 
-        iPadKarabinerLU: iPadKarabinerLU {
+        iPadLayerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kt_off LA(LC(LEFT_COMMAND)) &kt_on LCTRL &tog_on 1 &tog_on 3>,
-                <&macro_wait_time 100>,
-                <&kp SPACE &kt_off LCTRL>;
-
+            bindings = <&kt_off LA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 1 &tog_on 3>;
             label = "IPADKARABINERLU";
         };
 
-        iPadKarabinerLE: iPadKarabinerLE {
+        iPadLayerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kt_off LA(LC(LCMD)) &kt_on LCTRL &tog_of 1 &tog_of 3>,
-                <&macro_wait_time 100>,
-                <&kp SPACE &kt_off LEFT_CONTROL>;
-
+            bindings = <&kt_off LA(LC(LCMD)) &kp CAPSLOCK &tog_of 1 &tog_of 3>;
             label = "IPADKARABINERLE";
         };
 
@@ -606,19 +598,19 @@ As such, those are in use within the default layer at this time.*/
 
         iPad_Hyper_and_Karabiner_Layers {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadKarabinerL  &kp U      &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N            &kp E      &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M            &kp COMMA  &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans     &trans   &trans    &trans  &trans
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadLayerL  &kp U      &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N        &kp E      &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M        &kp COMMA  &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans   &trans    &trans  &trans
             >;
         };
 
         iPad_Hyper_and_Karabiner_Lay_L {
             bindings = <
-&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &iPadKarabinerLU  &kp Y    &kp SEMI
-&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &iPadKarabinerLE  &kp I    &kp O
-&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA         &kp DOT  &kp FSLH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans   &trans    &trans  &trans
+&kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &iPadLayerLU  &kp Y    &kp SEMI
+&kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &iPadLayerLE  &kp I    &kp O
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA     &kp DOT  &kp FSLH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans   &trans    &trans  &trans
             >;
         };
 
