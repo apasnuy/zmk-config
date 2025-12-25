@@ -337,7 +337,7 @@ As such, those are in use within the default layer at this time.*/
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 15>;
+            bindings = <&bt BT_SEL 0 &tog_of 15 &bt BT_DISC 1>;
             label = "MAC";
         };
 
