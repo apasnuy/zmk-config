@@ -569,7 +569,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        Mac_Hyper_and_Karabiner_Layers {
+        Mac_Hyper_and_Krbnr_Outd_Layers {
             bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &MacKarabinerOutdL  &kp U      &kp Y    &kp SEMI
 &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N               &kp E      &kp I    &kp O
