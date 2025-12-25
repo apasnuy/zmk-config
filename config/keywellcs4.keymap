@@ -330,14 +330,14 @@ As such, those are in use within the default layer at this time.*/
         iPad: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 15>;
+            bindings = <&bt BT_SEL 1 &tog_on 15 &kt_off LALT>;
             label = "IPAD";
         };
 
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 15 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 15 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &kt_off LALT>;
             label = "MAC";
         };
 
@@ -443,6 +443,13 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 2 &kt_off LEFT_SHIFT &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "SHIFTSHORTCUTSNONEN_WA";
+        };
+
+        JumpDesktop: JumpDesktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog_of 15 &kt_on LALT>;
+            label = "JUMPDESKTOP";
         };
     };
 
