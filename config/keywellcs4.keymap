@@ -480,7 +480,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        UK_ShortCuts_Fix_and_Symb_Ref {
+        MacOS_UK_ShortCuts_Fix {
             display-name = "UK-ShortCutsFix";
             bindings = <
 &trans                 &trans                   &trans                  &trans               &trans  &trans  &trans               &trans                  &trans                   &trans
