@@ -468,6 +468,28 @@ As such, those are in use within the default layer at this time.*/
 
             label = "CMDSHORTCUTSNONQWERTY_WA";
         };
+
+        iPadControlShortcutNonQwerty_WA: iPadControlShortcutNonQwerty_WA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_of 22 &kt_on LEFT_CONTROL>,
+                <&macro_pause_for_release>,
+                <&tog_on 22 &kt_off LEFT_CONTROL>;
+
+            label = "IPADCONTROLSHORTCUTNONQWERTY_WA";
+        };
+
+        iPadOptionShortcutsNonQwerty_WA: iPadOptionShortcutsNonQwerty_WA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&tog_of 22 &kt_on RIGHT_ALT>,
+                <&macro_pause_for_release>,
+                <&tog_on 22 &kt_off RIGHT_ALT>;
+
+            label = "IPADOPTIONSHORTCUTSNONQWERTY_WA";
+        };
     };
 
     keymap {
