@@ -57,10 +57,10 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
         };
 
-        Layer_HT_Timeless: Layer_HT_Timeless {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HT_TIMELESS";
-            bindings = <&mo>, <&kp>;
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "balanced";
@@ -68,19 +68,7 @@ As such, those are in use within the default layer at this time.*/
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-        };
-
-        AltTab_HT_Timeless: AltTab_HT_Timeless {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALTTAB_HT_TIMELESS";
-            bindings = <&CmdTAbReleaseTabMacro>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
         Backspase_MacLike_mod_morph: maclike_backspace_delete {
@@ -90,6 +78,50 @@ As such, those are in use within the default layer at this time.*/
 
             mods = <(MOD_LSFT)>;   // when LEFT_SHIFT is held
             keep-mods = <0>;       // don't send Shift with Delete
+        };
+
+        EscQ: EscQ {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESCQ";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp ESCAPE>;
+
+            tapping-term-ms = <302>;
+        };
+
+        H_deleteWordOnDoubleTap: H_deleteWordOnDoubleTap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "H_DELETEWORDONDOUBLETAP";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp LA(BACKSPACE)>;
+        };
+
+        backspaseOrDeleteWordOnDouble: backspaseOrDeleteWordOnDouble {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACKSPASEORDELETEWORDONDOUBLE";
+            #binding-cells = <0>;
+            bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
+        };
+
+       slash_and_backslash_EN_tapdance: slash_and_backslash_EN_tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH_AND_BACKSLASH_EN_TAPDANCE";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        };
+
+        slash_and_backslash_NonEN_tpdnc: slash_and_backslash_NonEN_tpdnc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH_AND_BACKSLASH_NONEN_TPDNC";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(SLASH))>, <&kp LA(LC(BACKSLASH))>;
+        };
+
+        B_Sticky_CMD_Onehanded: B_Sticky_CMD_Onehanded {
+            compatible = "zmk,behavior-tap-dance";
+            label = "B_STICKY_CMD_ONEHANDED";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&sk LEFT_COMMAND>;
         };
 
         kt_on: key_toggle_on_only {
@@ -128,43 +160,6 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        EscQ: EscQ {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCQ";
-            #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp ESCAPE>;
-
-            tapping-term-ms = <302>;
-        };
-
-        hmr: hmr {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
-        };
-
-        H_deleteWordOnDoubleTap: H_deleteWordOnDoubleTap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "H_DELETEWORDONDOUBLETAP";
-            #binding-cells = <0>;
-            bindings = <&kp H>, <&kp LA(BACKSPACE)>;
-        };
-
-        backspaseOrDeleteWordOnDouble: backspaseOrDeleteWordOnDouble {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACKSPASEORDELETEWORDONDOUBLE";
-            #binding-cells = <0>;
-            bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
-        };
-
         MacOS_CMD_non_en_fix_LHRM: MacOS_CMD_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
             label = "MACOS_CMD_NON_EN_FIX_LHRM";
@@ -177,89 +172,6 @@ As such, those are in use within the default layer at this time.*/
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
-        };
-
-        MacOS_Control_non_en_fix_LHRM: MacOS_Control_non_en_fix_LHRM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CONTROL_NON_EN_FIX_LHRM";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
-            bindings = <&MacOSControlShortcutsNonEN_WA>, <&kp>;
-        };
-
-        MacOS_Option_non_en_fix_LHRM: MacOS_Option_non_en_fix_LHRM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_OPTION_NON_EN_FIX_LHRM";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
-            bindings = <&MacOSOptionShortcutsNonEn_WA>, <&kp>;
-        };
-
-        Hyper_iPad_HT_Timeless: Hyper_iPad_HT_Timeless {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HYPER_IPAD_HT_TIMELESS";
-            bindings = <&HyperiPadTimelessMacro>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <173>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
-        };
-
-        slash_and_backslash_EN_tapdance: slash_and_backslash_EN_tapdance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SLASH_AND_BACKSLASH_EN_TAPDANCE";
-            #binding-cells = <0>;
-            bindings = <&kp SLASH>, <&kp BACKSLASH>;
-        };
-
-        slash_and_backslash_NonEN_tpdnc: slash_and_backslash_NonEN_tpdnc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SLASH_AND_BACKSLASH_NONEN_TPDNC";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(SLASH))>, <&kp LA(LC(BACKSLASH))>;
-        };
-
-        MacOS_Shift_non_en_fix_LHRM: MacOS_Shift_non_en_fix_LHRM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_SHIFT_NON_EN_FIX_LHRM";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29 5>;
-            bindings = <&ShiftShortcutsNonEN_WA>, <&kp>;
-        };
-
-        B_Sticky_CMD_Onehanded: B_Sticky_CMD_Onehanded {
-            compatible = "zmk,behavior-tap-dance";
-            label = "B_STICKY_CMD_ONEHANDED";
-            #binding-cells = <0>;
-            bindings = <&kp B>, <&sk LEFT_COMMAND>;
-        };
-
-        iOS_CMD_non_qwerty_fix_LHRM: iOS_CMD_non_qwerty_fix_LHRM {
-            compatible = "zmk,behavior-hold-tap";
-            label = "IOS_CMD_NON_QWERTY_FIX_LHRM";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29 5>;
-            bindings = <&iPadCmdShortcutsNonQwerty_WA>, <&kp>;
         };
 
         MacOS_CMD_non_en_fix_RHRM: MacOS_CMD_non_en_fix_RHRM {
@@ -276,18 +188,17 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        MacOS_Control_non_en_fix_RHRM: MacOS_Control_non_en_fix_RHRM {
+        MacOS_Option_non_en_fix_LHRM: MacOS_Option_non_en_fix_LHRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MACOS_CONTROL_NON_EN_FIX_RHRM";
+            label = "MACOS_OPTION_NON_EN_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
-            bindings = <&MacOSControlShortcutsNonEN_WA>, <&kp>;
-
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+            bindings = <&MacOSOptionShortcutsNonEn_WA>, <&kp>;
         };
 
         MacOS_Option_non_en_fix_RHRM: MacOS_Option_non_en_fix_RHRM {
@@ -304,6 +215,47 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
+        MacOS_Control_non_en_fix_LHRM: MacOS_Control_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MACOS_CONTROL_NON_EN_FIX_LHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29>;
+            bindings = <&MacOSControlShortcutsNonEN_WA>, <&kp>;
+        };
+
+        MacOS_Control_non_en_fix_RHRM: MacOS_Control_non_en_fix_RHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MACOS_CONTROL_NON_EN_FIX_RHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            bindings = <&MacOSControlShortcutsNonEN_WA>, <&kp>;
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+
+
+        MacOS_Shift_non_en_fix_LHRM: MacOS_Shift_non_en_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MACOS_SHIFT_NON_EN_FIX_LHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29 5>;
+            bindings = <&ShiftShortcutsNonEN_WA>, <&kp>;
+        };
+
         MacOS_Shift_non_en_fix_RHRM: MacOS_Shift_non_en_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
             label = "MACOS_SHIFT_NON_EN_FIX_RHRM";
@@ -317,6 +269,30 @@ As such, those are in use within the default layer at this time.*/
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
+
+        Hyper_iPad_HT_Timeless: Hyper_iPad_HT_Timeless {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HYPER_IPAD_HT_TIMELESS";
+            bindings = <&HyperiPadTimelessMacro>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <173>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
+        };
+
+        iOS_CMD_non_qwerty_fix_LHRM: iOS_CMD_non_qwerty_fix_LHRM {
+            compatible = "zmk,behavior-hold-tap";
+            label = "IOS_CMD_NON_QWERTY_FIX_LHRM";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <5 6 7 8 15 16 17 18 25 26 27 28 36 37 38 39 40 41 30 31 32 33 34 35 9 19 29 5>;
+            bindings = <&iPadCmdShortcutsNonQwerty_WA>, <&kp>;
+        };
+
 
         iOS_CMD_non_qwerty_fix_RHRM: iOS_CMD_non_qwerty_fix_RHRM {
             compatible = "zmk,behavior-hold-tap";
@@ -420,7 +396,7 @@ As such, those are in use within the default layer at this time.*/
     combos {
         compatible = "zmk,combos";
 
-        Globe {
+        combo_Globe {
             bindings = <&kp GLOBE>;
             key-positions = <33 34>;
             layers = <0 1 15>;
@@ -441,7 +417,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        CmdShortcutsUnicodeWA: UnicodeCmdWA {
+        CmdShortcutsUnicodeWAMacro: UnicodeCmdWA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -452,7 +428,7 @@ As such, those are in use within the default layer at this time.*/
             label = "UnicodeCmdWA";
         };
 
-        OptionShortcutsUnicodeWA: UnicodeOptionWA {
+        OptionShortcutsUnicodeWAMacro: UnicodeOptionWA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -463,7 +439,7 @@ As such, those are in use within the default layer at this time.*/
             label = "UNICODEOPTIONWA";
         };
 
-        ControlShortcutsUnicodeWA: UnicodeControlWA {
+        ControlShortcutsUnicodeWAMacro: UnicodeControlWA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -472,6 +448,27 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 20 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
+        };
+
+        emojiPOCMacro: emojiNum1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp M &kp I &kp L &kp E &kp N &kp U &kp M>;
+            label = "EMOJINUM1";
+        };
+
+        iPadMacro: iPad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &tog_on 15 &kt_off LALT>;
+            label = "IPAD";
+        };
+
+        MacMacro: Mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &tog_of 3 &tog_of 15 &tog_of 16 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &kt_off LALT>;
+            label = "MAC";
         };
 
         HyperMacTimelessMacro: HyperMacTimelessMacro {
@@ -485,27 +482,6 @@ As such, those are in use within the default layer at this time.*/
             label = "HYPERMACTIMELESSMACRO";
             tap-ms = <1>;
             wait-ms = <1>;
-        };
-
-        emojiPOC: emojiNum1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp M &kp I &kp L &kp E &kp N &kp U &kp M>;
-            label = "EMOJINUM1";
-        };
-
-        iPad: iPad {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_on 15 &kt_off LALT>;
-            label = "IPAD";
-        };
-
-        Mac: Mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 3 &tog_of 15 &tog_of 16 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &kt_off LALT>;
-            label = "MAC";
         };
 
         MacOSCmdShortcutsNonEN_WA: MacOSCmdShortcutsNonEN_WA {
@@ -542,6 +518,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacKarabinerOutdL: MacKarabinerL {
+        //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -553,6 +530,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacKarabinerOutdLU: MacKarabinerLU {
+        //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp U &tog_on 1 &tog_on 2 &tog_on 3>;
@@ -560,6 +538,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacKarabinerOutdLE: MacKarabinerLE {
+        //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &tog_of 1 &tog_of 2 &tog_of 3>;
@@ -741,7 +720,7 @@ As such, those are in use within the default layer at this time.*/
         emoji {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &emojiPOC  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &emojiPOCMacro  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -794,6 +773,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         Mac_Hyper_and_Krbnr_Outd_Layers {
+        //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
             bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &MacKarabinerOutdL  &kp U      &kp Y    &kp SEMI
 &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N               &kp E      &kp I    &kp O
@@ -803,6 +783,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         Mac_Hyper_and_KrbnrOutd_Layer_L {
+        //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
             bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &MacKarabinerOutdLU  &kp Y    &kp SEMI
 &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &MacKarabinerOutdLE  &kp I    &kp O
@@ -852,7 +833,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "BT, workarounds";
             bindings = <
 &tog_on 1  &none       &tog 2      &none         &tog 4        &JumpDesktop  &trans  &trans  &none  &none
-&none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans  &trans  &iPad  &none
+&none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans  &trans  &iPadMacro  &none
 &trans     &trans      &tog_of 1   &none         &out OUT_BLE  &none         &Mac    &trans  &none  &none
 &none      &none       &none       &none         &none         &none         &none   &none   &none  &bt BT_CLR  &none  &none
             >;
@@ -863,7 +844,7 @@ As such, those are in use within the default layer at this time.*/
 &uc UC_UK_I_SHORT  &uc UC_UK_TS                &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N             &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH              &uc UC_UK_Z   &uc UC_UK_KH
 &uc UC_UK_F        &uc UC_UK_I                 &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P             &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                &uc UC_UK_D   &uc UC_UK_ZH
 &uc UC_UK_YA       &uc UC_UK_CH                &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y             &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                &uc UC_UK_YU  &trans
-&trans             &ControlShortcutsUnicodeWA  &trans       &trans       &CmdShortcutsUnicodeWA  &trans       &trans          &OptionShortcutsUnicodeWA  &trans        &trans        &trans
+&trans             &ControlShortcutsUnicodeWAMacro  &trans       &trans       &CmdShortcutsUnicodeWAMacro  &trans       &trans          &OptionShortcutsUnicodeWAMacro  &trans        &trans        &trans
             >;
         };
 
