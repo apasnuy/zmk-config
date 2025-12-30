@@ -436,6 +436,8 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 2 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSCMDSHORTCUTSNONEN_WA";
+            tap-ms = <1>;
+            wait-ms = <1>;
         };
 
         MacOSOptionShortcutsNonEn_WA: MacOSOptionShortcutsNonEn_WA {
@@ -447,6 +449,8 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 2 &kt_off RALT &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSOPTIONSHORTCUTSNONEN_WA";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         MacOSControlShortcutsNonEN_WA: ControlShortcutsNonEN_WA {
@@ -458,6 +462,8 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 2 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "CONTROLSHORTCUTSNONEN_WA";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         MacKarabinerOutdL: MacKarabinerL {
