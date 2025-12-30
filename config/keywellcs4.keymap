@@ -652,7 +652,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &trans  &trans  &trans  &none   &none   &none           &msc SCRL_DOWN  &mmv MOVE_UP    &none            &none
 &trans  &trans  &trans  &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none   &mo 11  &mo 10  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
+&none   &mo 23  &mo 22  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
 &none   &trans  &trans  &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
@@ -679,10 +679,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-&none           &mo 13            &none      &none     &mo 11                  &none                           &none           &none           &none         &none
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT   &kp LCMD  &mo 12                  &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&kp LG(Z)       &kp LG(X)         &kp LG(C)  &mo 14    &CmdTAbReleaseTabMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none           &trans            &trans     &trans    &trans                  &trans                          &trans          &trans          &none         &trans           &trans  &trans
+&none           &mo 13            &none     &none     &mo 11                  &none                           &none           &none           &none         &none
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 12                  &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&kp LG(Z)       &mo 23            &mo 22    &mo 14    &CmdTAbReleaseTabMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none           &trans            &trans    &trans    &trans                  &trans                          &trans          &trans          &none         &trans           &trans  &trans
             >;
         };
 
@@ -787,6 +787,24 @@ As such, those are in use within the default layer at this time.*/
 &uc UC_UK_F        &uc UC_UK_I                      &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P                  &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                     &uc UC_UK_D   &uc UC_UK_ZH
 &uc UC_UK_YA       &uc UC_UK_CH                     &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y                  &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                     &uc UC_UK_YU  &trans
 &trans             &ControlShortcutsUnicodeWAMacro  &trans       &trans       &CmdShortcutsUnicodeWAMacro  &trans       &trans          &OptionShortcutsUnicodeWAMacro  &trans        &trans        &trans
+            >;
+        };
+
+        mouse_warp {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mouse_precision {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
