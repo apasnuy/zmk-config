@@ -445,9 +445,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 19 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 19 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 20 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -456,9 +456,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 19 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 19 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 20 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -467,9 +467,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 19 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 20 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 19 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 20 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -570,9 +570,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on LA(LC(LCMD)) &tog_on 16>,
+                <&kt_on LA(LC(LCMD)) &tog_on 17>,
                 <&macro_pause_for_release>,
-                <&tog_of 16 &kt_off LA(LC(LCMD))>;
+                <&tog_of 17 &kt_off LA(LC(LCMD))>;
 
             label = "HYPERIPADTIMELESSMACRO";
             tap-ms = <1>;
@@ -582,7 +582,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerL: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_on 17>, <&macro_pause_for_release>, <&tog_of 17>;
+            bindings = <&tog_on 18>, <&macro_pause_for_release>, <&tog_of 18>;
 
             label = "IPADLAYERL";
             wait-ms = <1>;
@@ -629,9 +629,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 22 &kt_on LCMD>,
+                <&tog_of 16 &tog_of 1 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 22 &kt_off LCMD>;
+                <&tog_on 16 &tog_on 1 &kt_off LCMD>;
 
             label = "CMDSHORTCUTSNONQWERTY_WA";
         };
@@ -640,9 +640,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 22 &kt_on LEFT_CONTROL>,
+                <&tog_of 16 &tog_of 1 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 22 &kt_off LEFT_CONTROL>;
+                <&tog_on 16 &tog_on 1 &kt_off LEFT_CONTROL>;
 
             label = "IPADCONTROLSHORTCUTNONQWERTY_WA";
         };
@@ -651,9 +651,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 22 &kt_on RIGHT_ALT>,
+                <&tog_of 16 &tog_of 1 &kt_on RIGHT_ALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 22 &kt_off RIGHT_ALT>;
+                <&tog_on 16 &tog_on 1 &kt_off RIGHT_ALT>;
 
             label = "IPADOPTIONSHORTCUTSNONQWERTY_WA";
         };
@@ -662,9 +662,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 22 &kt_on LEFT_SHIFT>,
+                <&tog_of 16 &tog_of 1 &kt_on LEFT_SHIFT>,
                 <&macro_pause_for_release>,
-                <&tog_on 22 &kt_off LEFT_SHIFT>;
+                <&tog_on 16 &tog_on 1 &kt_off LEFT_SHIFT>;
 
             label = "IPADSHIFTSHORTCUTNONQWERTY_WA";
         };
@@ -677,8 +677,8 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
-&kp Z              &kp X                &kp C        &lt 21 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&kp CAPS           &none                &mo 18       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB                &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 6 ENTER  &lt 5 SPACE
+&kp Z              &kp X                &kp C        &lt 22 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp CAPS           &none                &mo 19       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB                &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 6 ENTER  &lt 5 SPACE
             >;
         };
 
@@ -686,7 +686,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscQ              &kp W                &kp E            &kp R        &kp T                    &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G                    &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr RALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
-&kp Z              &kp X                &kp C            &lt 21 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &kp C            &lt 22 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &trans             &trans               &trans           &trans       &trans                   &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
             >;
         };
@@ -820,6 +820,16 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
+        WA_iPad_UK_Pho_Colemak_Shortcut {
+            display-name = "UK-ShortCutsFix";
+            bindings = <
+&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
+&iOS_Shift_non_qwerty_fix_LHRM 0 A  &iOS_Control_non_qwerty_fix_LHRM 0 S  &iOS_Option_non_qwerty_fix_LHRM 0 D  &iOS_CMD_non_qwerty_fix_LHRM 0 F  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 J  &iOS_Option_non_qwerty_fix_RHRM 0 K  &iOS_Control_non_qwerty_fix_RHRM 0 L  &iOS_Shift_non_qwerty_fix_RHRM 0 SEMICOLON
+&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
+&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans                                      &trans  &trans
+            >;
+        };
+
         iPad_Hyper_and_Layers {
             bindings = <
 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadLayerL  &kp U      &kp Y    &kp SEMI
@@ -880,16 +890,6 @@ As such, those are in use within the default layer at this time.*/
 &trans  &trans  &trans  &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &none   &mo 9   &mo 8   &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
 &none   &trans  &trans  &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
-            >;
-        };
-
-        WA_iPad_UK_Pho_Colemak_Shortcut {
-            display-name = "UK-ShortCutsFix";
-            bindings = <
-&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
-&iOS_Shift_non_qwerty_fix_LHRM 0 A  &iOS_Control_non_qwerty_fix_LHRM 0 S  &iOS_Option_non_qwerty_fix_LHRM 0 D  &iOS_CMD_non_qwerty_fix_LHRM 0 F  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 J  &iOS_Option_non_qwerty_fix_RHRM 0 K  &iOS_Control_non_qwerty_fix_RHRM 0 L  &iOS_Shift_non_qwerty_fix_RHRM 0 SEMICOLON
-&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
-&trans                              &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans                                      &trans  &trans
             >;
         };
     };
