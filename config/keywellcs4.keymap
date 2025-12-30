@@ -504,7 +504,7 @@ As such, those are in use within the default layer at this time.*/
         Mac: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 15 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &kt_off LALT>;
+            bindings = <&bt BT_SEL 0 &tog_of 3 &tog_of 15 &tog_of 16 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &kt_off LALT>;
             label = "MAC";
         };
 
@@ -592,7 +592,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off LA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 1 &tog_on 3>;
+            bindings = <&kt_off LA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 1 &tog_on 3 &tog_on 16>;
             label = "IPADKARABINERLU";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -601,7 +601,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off LA(LC(LCMD)) &kp CAPSLOCK &tog_of 1 &tog_of 3>;
+            bindings = <&kt_off LA(LC(LCMD)) &kp CAPSLOCK &tog_of 1 &tog_of 3 &tog_of 16>;
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
