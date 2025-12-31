@@ -364,9 +364,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 24 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 23 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -375,9 +375,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 24 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 23 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -386,9 +386,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 24 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 23 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -586,8 +586,8 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
-&kp Z              &kp X                &kp C        &lt 23 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&kp CAPS           &none                &mo 23       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB                &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 23 ENTER  &lt 5 SPACE
+&kp Z              &kp X                &kp C        &lt 22 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp CAPS           &none                &mo 22       &HyperMac_HT_Timeless 0 SPACE  &lt 8 TAB                &kp ESCAPE                &none        &mo 7        &none                &Backspase_MacLike_mod_morph  &lt 22 ENTER  &lt 5 SPACE
             >;
         };
 
@@ -595,7 +595,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscQ              &kp W                &kp E            &kp R        &kp T                    &kp Y                     &kp U        &kp I        &kp O                &kp P
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G                    &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr RALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
-&kp Z              &kp X                &kp C            &lt 23 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
+&kp Z              &kp X                &kp C            &lt 22 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
 &trans             &trans               &trans           &trans       &trans                   &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
             >;
         };
@@ -661,7 +661,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &none           &mo 11            &none     &none     &mo 9                   &none                           &none           &none           &none         &none
 &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 10                  &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&kp LG(Z)       &mo 22            &mo 23    &mo 12    &CmdTAbReleaseTabMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&kp LG(Z)       &mo 24            &mo 22    &mo 12    &CmdTAbReleaseTabMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &none           &trans            &trans    &trans    &trans                  &trans                          &trans          &trans          &none         &trans           &trans  &trans
             >;
         };
@@ -766,7 +766,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &trans  &trans  &trans  &none   &none   &none           &msc SCRL_DOWN  &mmv MOVE_UP    &none            &none
 &trans  &trans  &trans  &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none   &mo 22  &mo 23  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
+&none   &mo 24  &mo 22  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
 &none   &trans  &trans  &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
@@ -789,16 +789,6 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        Adjust {
-            display-name = "BT, workarounds";
-            bindings = <
-&tog_on 1  &none       &tog 2      &none         &tog 4        &JumpDesktop  &trans     &trans  &none       &tog 24
-&none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans     &trans  &iPadMacro  &none
-&trans     &trans      &tog_of 1   &none         &out OUT_BLE  &none         &MacMacro  &trans  &none       &none
-&none      &none       &none       &none         &none         &none         &none      &none   &none       &bt BT_CLR  &none  &none
-            >;
-        };
-
         UA_Unicoded {
             bindings = <
 &uc UC_UK_I_SHORT  &uc UC_UK_TS                     &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N                  &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH                   &uc UC_UK_Z   &uc UC_UK_KH
@@ -810,10 +800,20 @@ As such, those are in use within the default layer at this time.*/
 
         UA_Uq {
             bindings = <
-&kp Z  &kp I     &kp A  &kp H  &kp N  &kp B  &kp E  &kp S      &kp J    &kp G
-&kp F  &kp V     &kp D  &kp U  &kp L  &kp P  &kp Y  &kp R      &kp K    &kp O
-&kp P  &kp LBKT  &kp W  &kp M  &kp X  &kp Y  &kp C  &kp COMMA  &kp DOT  &kp SLASH
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp Z   &kp I     &kp A   &kp H   &kp N   &kp B   &kp E   &kp S      &kp J    &kp G
+&kp F   &kp V     &kp D   &kp U   &kp L   &kp P   &kp Y   &kp R      &kp K    &kp O
+&kp P   &kp LBKT  &kp W   &kp M   &kp X   &kp Y   &kp C   &kp COMMA  &kp DOT  &kp SLASH
+&trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans     &trans  &trans
+            >;
+        };
+
+        Adjust {
+            display-name = "BT, workarounds";
+            bindings = <
+&tog_on 1  &none       &tog 2      &none         &tog 4        &JumpDesktop  &trans     &trans  &none       &tog 23
+&none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans     &trans  &iPadMacro  &none
+&trans     &trans      &tog_of 1   &none         &out OUT_BLE  &none         &MacMacro  &trans  &none       &none
+&none      &none       &none       &none         &none         &none         &none      &none   &none       &bt BT_CLR  &none  &none
             >;
         };
     };
