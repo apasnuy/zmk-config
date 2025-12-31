@@ -810,9 +810,9 @@ As such, those are in use within the default layer at this time.*/
 
         UA_Uq {
             bindings = <
-&kp Z  &kp I     &kp A  &kp H  &kp N  &kp B  &kp E  &kp S      &kp J    &kp G
-&kp F  &kp V     &kp D  &kp U  &kp L  &kp P  &kp Y  &kp R      &kp K    &kp O
-&kp P  &kp LBKT  &kp W  &kp M  &kp X  &kp Y  &kp C  &kp COMMA  &kp DOT  &kp SLASH
+&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
+&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
+&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
             >;
         };
     };
