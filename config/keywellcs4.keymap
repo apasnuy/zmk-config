@@ -766,7 +766,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &trans  &trans  &trans  &none   &none   &none           &msc SCRL_DOWN  &mmv MOVE_UP    &none            &none
 &trans  &trans  &trans  &trans  &none   &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none   &mo 24  &mo 22  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
+&none   &mo 21  &mo 20  &trans  &none   &none           &msc SCRL_UP    &none           &none            &none
 &none   &trans  &trans  &trans  &trans  &trans          &trans          &trans          &none            &trans           &mkp LCLK  &mkp RCLK
             >;
         };
