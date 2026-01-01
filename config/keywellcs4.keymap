@@ -344,21 +344,32 @@ As such, those are in use within the default layer at this time.*/
             key-positions = <33 34>;
             layers = <0 1 15>;
         };
+
+        arst {
+            bindings = <&CmdTAbAppSWMacro>;
+            key-positions = <34 24>;
+            layers = <0 1>;
+            timeout-ms = <33333>;
+        };
     };
 
     macros {
         CmdTAbAppSWMacro: CmdTAbReleaseTabCombo {
-        //  wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
-        //  protocol level and then processed out of order
+            //  wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
+            //  protocol level and then processed out of order
+
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LCMD &kp TAB>,
-                <&macro_wait_time 300>, // wait while macos triggers wisual selector. if keys will be released earlier it will switch app wo visual selector
-                <&macro_release &kp TAB>,
-                <&macro_wait_time 1>,        // 1 to max release speet. order don't matter at this step
+                <&macro_press>,
+                <&kp LCMD &kp TAB>,
+                <&macro_wait_time 300>,
+                <&macro_release>,
+                <&kp TAB>,
+                <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp LCMD>;
+                <&macro_release>,
+                <&kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;  // not used as no taps
@@ -664,10 +675,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-&none           &mo 11            &none     &none     &mo 9              &none                           &none           &none           &none         &none
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 10             &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
-&kp LG(Z)       &mo 21            &mo 20    &mo 12    &CmdTAbAppSWMacro  &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none           &trans            &trans    &trans    &trans             &trans                          &trans          &trans          &none         &trans           &trans  &trans
+&none           &mo 11            &none     &none     &mo 9   &none                           &none           &none           &none         &none
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 10  &backspaseOrDeleteWordOnDouble  &kp LEFT        &kp DOWN        &kp UP_ARROW  &kp RIGHT
+&kp LG(Z)       &mo 21            &mo 20    &mo 12    &none   &none                           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none           &trans            &trans    &trans    &trans  &trans                          &trans          &trans          &none         &trans           &trans  &trans
             >;
         };
 
