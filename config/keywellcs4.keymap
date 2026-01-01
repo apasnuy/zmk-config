@@ -802,7 +802,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp Z   &kp I             &kp A   &kp G   &kp U      &kp Q   &kp K   &kp E      &kp B    &none
 &kp F   &kp H             &kp C   &kp N   &kp L      &kp X   &kp Y   &kp T      &kp S    &kp J
-&kp P   &kp LEFT_BRACKET  &kp W   &kp D   &kp COMMA  &kp R   &kp C   &kp COMMA  &kp DOT  &kp SLASH
+&kp P   &kp LEFT_BRACKET  &kp W   &kp D   &kp COMMA  &kp R   &kp M   &kp COMMA  &kp DOT  &kp SLASH
 &trans  &trans            &trans  &trans  &trans     &trans  &trans  &trans     &trans   &trans     &trans  &trans
             >;
         };
