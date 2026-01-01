@@ -352,9 +352,11 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kt_on LCMD &kp TAB>,
+                <&kp LCMD>,
+                <&macro_press>,
+                <&kp TAB>,
                 <&macro_pause_for_release>,
-                <&kt_off LCMD>;
+                <&kp LCMD &kp TAB>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <30>;
