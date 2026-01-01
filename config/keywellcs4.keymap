@@ -343,6 +343,13 @@ As such, those are in use within the default layer at this time.*/
 
             tapping-term-ms = <302>;
         };
+
+        e_deleteWordOnDoubleTap: e_deleteWordOnDoubleTap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_DELETEWORDONDOUBLETAP";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp LA(BACKSPACE)>;
+        };
     };
 
     combos {
