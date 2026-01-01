@@ -334,6 +334,15 @@ As such, those are in use within the default layer at this time.*/
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
+
+        EscUKPhonotic: EscUKPhonotic {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESCUKPHONOTIC";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp ESCAPE>;
+
+            tapping-term-ms = <302>;
+        };
     };
 
     combos {
