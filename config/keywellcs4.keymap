@@ -632,7 +632,8 @@ As such, those are in use within the default layer at this time.*/
         };
 
         UK_Phonetic {
-        // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
+            // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
+
             bindings = <
 &EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E        &kp B                &kp SEMI
 &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
@@ -778,7 +779,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "UK-ShortCutsFix";
             bindings = <
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
-&trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &iOS_Option_non_qwerty_fix_LHRM 0 C  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &iOS_Option_non_qwerty_fix_RHRM 0 T  &iOS_Control_non_qwerty_fix_RHRM 0 J  &trans
+&trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &iOS_Option_non_qwerty_fix_LHRM 0 C  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &iOS_Option_non_qwerty_fix_RHRM 0 T  &iOS_Control_non_qwerty_fix_RHRM 0 S  &trans
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans  &trans  &trans
             >;
