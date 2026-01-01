@@ -355,20 +355,21 @@ As such, those are in use within the default layer at this time.*/
 
     macros {
         CmdTAbAppSWMacro: CmdTAbReleaseTabCombo {
-            //  wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
+            //    - ! Don't asign to holds of hold-taps as in standard user press CMD+TAB faster and it will not trigger in time
+            //    - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
             //  protocol level and then processed out of order
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCMD &kp TAB>,
+                <&kp LCMD &mo 8 &kp TAB>,
                 <&macro_wait_time 300>,
                 <&macro_release>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
+                <&macro_release &mo 8>,
                 <&kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
