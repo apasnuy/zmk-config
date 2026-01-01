@@ -826,10 +826,10 @@ As such, those are in use within the default layer at this time.*/
 
         UA_Uq {
             bindings = <
-&kp Z   &kp I             &kp A   &kp G   &kp U      &kp Q   &kp K   &kp E      &kp B      &none
-&kp F   &kp H             &kp C   &kp N   &kp L      &kp X   &kp Y   &kp T      &kp S      &kp J
-&kp P   &kp LEFT_BRACKET  &kp W   &kp D   &kp COMMA  &kp R   &kp V   &kp LSHFT  &kp LSHFT  &kp LSHFT
-&trans  &trans            &trans  &trans  &trans     &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&EscUKPhonotic     &kp I                &kp A             &kp G                &kp U      &kp Q   &kp K   &kp E      &kp B      &none
+&hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RIGHT_ALT C  &hml LEFT_COMMAND N  &kp L      &kp X   &kp Y   &kp T      &kp S      &kp J
+&kp P              &kp LEFT_BRACKET     &kp W             &kp D                &kp COMMA  &kp R   &kp V   &kp LSHFT  &kp LSHFT  &kp LSHFT
+&trans             &trans               &trans            &trans               &trans     &trans  &trans  &trans     &trans     &trans     &trans  &trans
             >;
         };
 
