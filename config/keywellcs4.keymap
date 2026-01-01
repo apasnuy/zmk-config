@@ -631,20 +631,21 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        UK_QWERTY {
+        UK_Phonetic {
+        // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
             bindings = <
-&EscQ              &kp W                &kp E            &kp R        &kp T                    &kp Y                     &kp U        &kp I        &kp O                &kp P
-&hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LCMD F  &kp G                    &H_deleteWordOnDoubleTap  &hmr LCMD J  &hmr RALT K  &hmr LEFT_CONTROL L  &hmr LEFT_SHIFT SEMICOLON
-&kp Z              &kp X                &kp C            &lt 19 V     &B_Sticky_CMD_Onehanded  &kp N                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&trans             &trans               &trans           &trans       &trans                   &trans                    &trans       &trans       &trans               &trans                     &trans  &trans
+&EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E        &kp B                &kp SEMI
+&hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P              &kp LEFT_BRACKET     &kp W        &kp D                &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &kp COMMA    &kp PERIOD           &kp SLASH
+&trans             &trans               &trans       &trans               &trans                            &trans                    &trans               &trans       &trans               &trans             &trans  &trans
             >;
         };
 
-        UK_QWERTY_MacOS_ShortCuts_Fix {
+        UK_Phonetic_MacOS_ShortCuts_Fix {
             display-name = "UK-ShortCutsFix";
             bindings = <
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans
-&trans  &MacOS_Control_non_en_fix_LHRM 0 S  &MacOS_Option_non_en_fix_LHRM 0 D  &MacOS_CMD_non_en_fix_LHRM 0 F  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 J  &MacOS_Option_non_en_fix_RHRM 0 K  &MacOS_Control_non_en_fix_RHRM 0 L  &trans
+&trans  &MacOS_Control_non_en_fix_LHRM 0 H  &MacOS_Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &MacOS_Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 J  &trans
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans  &trans  &trans
             >;
@@ -773,11 +774,11 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        iPad_UK_QWERTY_Shortcut_WA {
+        iPad_UK_Phonetic_Shortcut_WA {
             display-name = "UK-ShortCutsFix";
             bindings = <
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
-&trans  &iOS_Control_non_qwerty_fix_LHRM 0 S  &iOS_Option_non_qwerty_fix_LHRM 0 D  &iOS_CMD_non_qwerty_fix_LHRM 0 F  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 J  &iOS_Option_non_qwerty_fix_RHRM 0 K  &iOS_Control_non_qwerty_fix_RHRM 0 L  &trans
+&trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &iOS_Option_non_qwerty_fix_LHRM 0 C  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &iOS_Option_non_qwerty_fix_RHRM 0 T  &iOS_Control_non_qwerty_fix_RHRM 0 J  &trans
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans
 &trans  &trans                                &trans                               &trans                            &trans  &trans  &trans                            &trans                               &trans                                &trans  &trans  &trans
             >;
