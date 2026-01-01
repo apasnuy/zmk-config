@@ -371,7 +371,7 @@ As such, those are in use within the default layer at this time.*/
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSWMacro>;
             key-positions = <34 24>;
-            layers = <0 1>;
+            layers = <0 1 2 3 15 16>;
             timeout-ms = <33333>;
         };
     };
@@ -653,7 +653,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         UK_QWERTY_Symbols_thumbkey {
-            display-name = "t";
+            display-name = "UK_QWERTY_Symbols_thumbkey";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
