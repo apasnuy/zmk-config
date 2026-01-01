@@ -364,7 +364,7 @@ As such, those are in use within the default layer at this time.*/
             bindings =
                 <&macro_press>,
                 <&kp LCMD &mo 8 &kp TAB>,
-                <&macro_wait_time 300>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
