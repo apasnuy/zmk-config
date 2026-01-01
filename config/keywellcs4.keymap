@@ -345,7 +345,7 @@ As such, those are in use within the default layer at this time.*/
             layers = <0 1 15>;
         };
 
-        arst {
+        combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSWMacro>;
             key-positions = <34 24>;
             layers = <0 1>;
@@ -369,8 +369,8 @@ As such, those are in use within the default layer at this time.*/
                 <&kp TAB>,
                 <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
-                <&macro_release &mo 8>,
-                <&kp LCMD>;
+                <&macro_release>,
+                <&mo 8 &kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;  // not used as no taps
