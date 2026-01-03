@@ -637,7 +637,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E        &kp B                &kp SEMI
 &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-&kp P              &kp LEFT_BRACKET     &kp W        &kp D                &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &kp COMMA    &kp PERIOD           &kp SLASH
+&kp P              &lt 21 LEFT_BRACKET  &lt 22 W     &lt 20 D             &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &kp COMMA    &kp PERIOD           &kp SLASH
 &trans             &trans               &trans       &trans               &trans                            &trans                    &trans               &trans       &trans               &trans             &trans  &trans
             >;
         };
