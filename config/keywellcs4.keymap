@@ -404,9 +404,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 23 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 24 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -415,9 +415,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 23 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 24 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -426,9 +426,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 23 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 24 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 23 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 24 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -627,7 +627,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
 &kp Z              &lt 21 X             &lt 19 C     &lt 20 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&kp CAPS           &none                &mo 24       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &none        &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
+&kp CAPS           &none                &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &none        &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
             >;
         };
 
@@ -831,6 +831,15 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
+        mouse_regular {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 21  &mo 19  &mo 20  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         UA_Unicoded {
             bindings = <
 &uc UC_UK_I_SHORT  &uc UC_UK_TS                     &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N                  &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH                   &uc UC_UK_Z   &uc UC_UK_KH
@@ -852,7 +861,7 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 1  &none       &tog 2      &none         &tog 6        &JumpDesktop  &trans     &trans  &none       &tog 23
+&tog_on 1  &none       &tog 2      &none         &tog 6        &JumpDesktop  &trans     &trans  &none       &tog 24
 &none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans     &trans  &iPadMacro  &none
 &trans     &trans      &tog_of 1   &none         &out OUT_BLE  &none         &MacMacro  &trans  &none       &none
 &none      &none       &none       &none         &none         &none         &none      &none   &none       &bt BT_CLR  &none  &none
@@ -870,6 +879,11 @@ As such, those are in use within the default layer at this time.*/
 
         MousePrecisionConditional {
             if-layers = <21>;
+            then-layer = <19>;
+        };
+
+        MouseRegularConditional {
+            if-layers = <22>;
             then-layer = <19>;
         };
     };
