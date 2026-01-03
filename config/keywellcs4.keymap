@@ -646,7 +646,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "UK-ShortCutsFix";
             bindings = <
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans
-&trans  &MacOS_Control_non_en_fix_LHRM 0 H  &MacOS_Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &MacOS_Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 J  &trans
+&trans  &MacOS_Control_non_en_fix_LHRM 0 H  &MacOS_Option_non_en_fix_LHRM 0 C  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &MacOS_Option_non_en_fix_RHRM 0 T  &MacOS_Control_non_en_fix_RHRM 0 S  &trans
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans
 &trans  &trans                              &trans                             &trans                          &trans  &trans  &trans                          &trans                             &trans                              &trans  &trans  &trans
             >;
