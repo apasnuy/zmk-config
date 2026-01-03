@@ -692,10 +692,10 @@ As such, those are in use within the default layer at this time.*/
 
         Symbols_EN {
             bindings = <
-&kp EXCL               &kp UNDER                         &kp LEFT_BRACKET  &kp LESS_THAN         &kp GRAVE    &kp HASH    &kp GREATER_THAN       &kp RIGHT_BRACKET  &kp AMPS           &kp TILDE
-&hml LEFT_SHIFT EQUAL  &kp MINUS                         &kp PLUS          &kp LEFT_PARENTHESIS  &kp CARET    &kp DOLLAR  &kp RIGHT_PARENTHESIS  &kp SEMI           &kp DOUBLE_QUOTES  &hmr LEFT_SHIFT APOSTROPHE
-&kp PIPE               &slash_and_backslash_EN_tapdance  &kp ASTERISK      &kp LEFT_BRACE        &kp PERCENT  &kp AT      &kp RIGHT_BRACE        &kp COMMA          &kp PERIOD         &kp QUESTION
-&trans                 &trans                            &trans            &trans                &trans       &trans      &trans                 &trans             &trans             &trans                      &trans  &trans
+&kp EXCL               &kp UNDER                         &kp LEFT_BRACKET  &kp LESS_THAN                       &kp GRAVE    &kp HASH    &kp GREATER_THAN                     &kp RIGHT_BRACKET  &kp AMPS           &kp TILDE
+&hml LEFT_SHIFT EQUAL  &kp MINUS                         &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET    &kp DOLLAR  &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI           &kp DOUBLE_QUOTES  &hmr LEFT_SHIFT APOSTROPHE
+&kp PIPE               &slash_and_backslash_EN_tapdance  &kp ASTERISK      &kp LEFT_BRACE                      &kp PERCENT  &kp AT      &kp RIGHT_BRACE                      &kp COMMA          &kp PERIOD         &kp QUESTION
+&trans                 &trans                            &trans            &trans                              &trans       &trans      &trans                               &trans             &trans             &trans                      &trans  &trans
             >;
         };
 
