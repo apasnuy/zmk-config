@@ -148,7 +148,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         UK_Period_Symbol: UK_Period_Symbol {
-            // Keep it like EN first segister only. Second  - ppo.
+            // Keep it consistent with EN first register only. Second  - ppo.
             compatible = "zmk,behavior-mod-morph";
             label = "UK_PERIOD_SYMBOL";
             bindings = <&kp SLASH>, <&none>;
@@ -159,7 +159,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         UK_Comma_Symbol: UK_Comma_Symbol {
-            // Keep it like EN first segister only. Second  - ppo
+            //  Keep it consistent with EN first register only. Second  - ppo
             compatible = "zmk,behavior-mod-morph";
             label = "UK_COMMA_SYMBOL";
             bindings = <&kp LS(SLASH)>, <&none>;
@@ -170,7 +170,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         UK_Question_Symbol: UK_Question_Symbol {
-            // Keep it like EN. Both first and second registers
+            //  Keep it consistent with EN 1st and 2nd registers
             compatible = "zmk,behavior-mod-morph";
             label = "UK_QUESTION_SYMBOL";
             bindings = <&kp LC(RA(SLASH))>, <&kp LS(NUMBER_7)>;
