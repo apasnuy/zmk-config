@@ -124,6 +124,62 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp B>, <&sk LEFT_COMMAND>;
         };
 
+        EscUKPhonotic: EscUKPhonotic {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESCUKPHONOTIC";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp ESCAPE>;
+
+            tapping-term-ms = <302>;
+        };
+
+        X_deleteWordOnDoubleTap: X_deleteWordOnDoubleTap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "X_DELETEWORDONDOUBLETAP";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp LA(BACKSPACE)>;
+        };
+
+        Sticky_CMD_Onehanded_UK_Phoneti: Sticky_CMD_Onehanded_UK_Phoneti {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STICKY_CMD_ONEHANDED_UK_PHONETI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&sk LEFT_COMMAND>;
+        };
+
+        UK_Period_Symbol: UK_Period_Symbol {
+            // Keep it like EN key but wo shited version
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_PERIOD_SYMBOL";
+            bindings = <&kp SLASH>, <&none>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        UK_Comma_Symbol: UK_Comma_Symbol {
+            // Keep it like EN key but wo shited version
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_COMMA_SYMBOL";
+            bindings = <&kp LS(SLASH)>, <&none>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT)>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        UK_Question_Symbol: UK_Question_Symbol {
+            // Keep it like EN key but wo shited version
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_QUESTION_SYMBOL";
+            bindings = <&kp LC(RA(SLASH))>, <&kp LS(NUMBER_7)>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         kt_on: key_toggle_on_only {
             compatible = "zmk,behavior-key-toggle";
             #binding-cells = <1>;
@@ -333,59 +389,6 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&iPadOptionShortcutNonQwerty_WA>, <&kp>;
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35 36 37 38 39 40 41>;
-        };
-
-        EscUKPhonotic: EscUKPhonotic {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCUKPHONOTIC";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp ESCAPE>;
-
-            tapping-term-ms = <302>;
-        };
-
-        X_deleteWordOnDoubleTap: X_deleteWordOnDoubleTap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "X_DELETEWORDONDOUBLETAP";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&kp LA(BACKSPACE)>;
-        };
-
-        Sticky_CMD_Onehanded_UK_Phoneti: Sticky_CMD_Onehanded_UK_Phoneti {
-            compatible = "zmk,behavior-tap-dance";
-            label = "STICKY_CMD_ONEHANDED_UK_PHONETI";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&sk LEFT_COMMAND>;
-        };
-
-        UK_Period_Symbol: UK_Period_Symbol {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UK_PERIOD_SYMBOL";
-            bindings = <&kp SLASH>, <&none>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            mods = <(MOD_RSFT|MOD_LSFT)>;
-        };
-
-        UK_Comma_Symbol: UK_Comma_Symbol {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UK_COMMA_SYMBOL";
-            bindings = <&kp LS(SLASH)>, <&none>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT)>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        UK_Question_Symbol: UK_Question_Symbol {
-            compatible = "zmk,behavior-mod-morph";
-            label = "UK_QUESTION_SYMBOL";
-            bindings = <&kp LC(RA(SLASH))>, <&kp LS(NUMBER_7)>;
-
-            #binding-cells = <0>;
-            keep-mods = <(MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
