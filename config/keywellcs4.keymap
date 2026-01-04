@@ -471,9 +471,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
+                <&tog_of 1 &tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 1 &tog_on 2 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSCMDSHORTCUTSNONEN_WA";
             tap-ms = <1>;
@@ -484,9 +484,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RALT>,
+                <&tog_of 1 &tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &kt_off RALT &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 1 &tog_on 2 &kt_off RALT &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSOPTIONSHORTCUTSNONEN_WA";
             wait-ms = <1>;
@@ -497,9 +497,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
+                <&tog_of 1 &tog_of 2 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 1 &tog_on 2 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "CONTROLSHORTCUTSNONEN_WA";
             wait-ms = <1>;
