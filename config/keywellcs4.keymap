@@ -381,11 +381,11 @@ As such, those are in use within the default layer at this time.*/
         UK_Question_Symbol: UK_Question_Symbol {
             compatible = "zmk,behavior-mod-morph";
             label = "UK_QUESTION_SYMBOL";
-            bindings = <&kp LS(NUMBER_7)>, <&none>;
+            bindings = <&kp LC(RA(SLASH))>, <&kp LS(NUMBER_7)>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
-            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
