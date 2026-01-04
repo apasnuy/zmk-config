@@ -357,6 +357,36 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&sk LEFT_COMMAND>;
         };
+
+        UK_Period_Symbol: UK_Period_Symbol {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_PERIOD_SYMBOL";
+            bindings = <&kp SLASH>, <&none>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        UK_Comma_Symbol: UK_Comma_Symbol {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_COMMA_SYMBOL";
+            bindings = <&kp LS(SLASH)>, <&none>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT)>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        UK_Question_Symbol: UK_Question_Symbol {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UK_QUESTION_SYMBOL";
+            bindings = <&kp LS(NUMBER_7)>, <&none>;
+
+            #binding-cells = <0>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -627,7 +657,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
 &kp Z              &lt 21 X             &lt 22 C     &lt 20 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&kp CAPS           &none                &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &none        &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
+&kp CAPS           &none                &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &trans       &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
             >;
         };
 
@@ -635,10 +665,10 @@ As such, those are in use within the default layer at this time.*/
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-&EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E        &kp B                &kp SEMI
-&hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-&kp P              &lt 21 LEFT_BRACKET  &lt 22 W     &lt 20 D             &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &kp COMMA    &kp PERIOD           &kp SLASH
-&trans             &trans               &trans       &trans               &trans                            &trans                    &trans               &trans       &trans               &trans             &trans  &trans
+&EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E             &kp B                &kp SEMI
+&hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T       &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P              &lt 21 LEFT_BRACKET  &lt 22 W     &lt 20 D             &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &UK_Comma_Symbol  &UK_Period_Symbol    &UK_Question_Symbol
+&trans             &trans               &trans       &trans               &trans                            &trans                    &trans               &trans            &trans               &trans               &trans  &trans
             >;
         };
 
