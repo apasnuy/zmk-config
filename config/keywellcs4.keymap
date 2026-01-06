@@ -360,7 +360,6 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp O>;
             key-positions = <1 17>;
             timeout-ms = <150>;
-            layers = <1>;
         };
 
         UK_JU {
@@ -664,7 +663,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         iPad_UK_Phonetic_Shortcut_WA {
-            display-name = "UK-ShortCutsFix";
+            display-name = "UK-iPad-ShortCutsFix";
             bindings = <
 &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans
 &trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &trans
