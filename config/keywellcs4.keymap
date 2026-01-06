@@ -360,21 +360,21 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp O>;
             key-positions = <1 17>;
             timeout-ms = <150>;
-            layers = <1 2 5 4>;
+            layers = <1>;
         };
 
         UK_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 12>;
             timeout-ms = <150>;
-            layers = <1 2 5 4>;
+            layers = <2>;
         };
 
         UK_Ji {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <12 18>;
             timeout-ms = <150>;
-            layers = <1 2 5 4>;
+            layers = <1 2>;
         };
 
         UK_G_tverde {
