@@ -359,6 +359,7 @@ As such, those are in use within the default layer at this time.*/
         test {
             bindings = <&kp LA(W)>;
             key-positions = <41 1>;
+            timeout-ms = <150>;
         };
     };
 
