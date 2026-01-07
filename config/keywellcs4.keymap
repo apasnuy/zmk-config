@@ -378,7 +378,7 @@ As such, those are in use within the default layer at this time.*/
 
         UK_G_tverde {
             bindings = <&kp GRAVE>;
-            key-positions = <4 17>;
+            key-positions = <18 4>;
             timeout-ms = <150>;
             layers = <1 2 5 4>;
         };
