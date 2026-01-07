@@ -356,11 +356,39 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <333>;
         };
 
+        UK_sch_s {
+            bindings = <&kp O>;
+            key-positions = <1 17>;
+            timeout-ms = <150>;
+        };
+
+        UK_JU {
+            bindings = <&kp PERIOD>;
+            key-positions = <7 12>;
+            timeout-ms = <150>;
+            layers = <2>;
+            require-prior-idle-ms = <(-1)>;
+        };
+
         UK_Ji {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <3 4>;
             timeout-ms = <300>;
             layers = <0 1 2>;
+        };
+
+        UK_G_tverde {
+            bindings = <&kp GRAVE>;
+            key-positions = <4 17>;
+            timeout-ms = <150>;
+            layers = <0>;
+        };
+
+        UK_ZJ {
+            bindings = <&kp SEMI>;
+            key-positions = <5 12>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5>;
         };
 
         arst {
