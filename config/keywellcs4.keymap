@@ -360,7 +360,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <3 4>;
             timeout-ms = <300>;
-            layers = <0 1 2>;
+            layers = <2>;
         };
 
         arst {
