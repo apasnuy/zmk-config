@@ -356,10 +356,38 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <33333>;
         };
 
-        rt {
-            bindings = <&CmdTAbAppSWMacro>;
-            key-positions = <3 2>;
-            timeout-ms = <80>;
+        UK_sch {
+            bindings = <&kp O>;
+            key-positions = <1 17>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5 3>;
+        };
+
+        UK_JU {
+            bindings = <&kp PERIOD>;
+            key-positions = <7 12>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5 3>;
+        };
+
+        UK_Ji {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <12 18>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5 3>;
+        };
+
+        UK_G_tverde {
+            bindings = <&kp GRAVE>;
+            key-positions = <18 4>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5 3>;
+        };
+
+        UK_ZJ {
+            bindings = <&kp SEMI>;
+            key-positions = <5 12>;
+            timeout-ms = <150>;
             layers = <1 2 4 5 3>;
         };
     };
