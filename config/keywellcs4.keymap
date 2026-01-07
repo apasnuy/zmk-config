@@ -356,7 +356,7 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <33333>;
         };
 
-        UK_sch {
+        UK_sch- {
             bindings = <&kp O>;
             key-positions = <1 17>;
             timeout-ms = <150>;
