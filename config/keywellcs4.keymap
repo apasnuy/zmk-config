@@ -356,7 +356,7 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <33333>;
         };
 
-        UK_sch {
+        UK_SC {
             bindings = <&kp O>;
             key-positions = <1 17>;
             timeout-ms = <150>;
@@ -370,7 +370,7 @@ As such, those are in use within the default layer at this time.*/
             layers = <1 2 4 5 3>;
         };
 
-        UK_Ji {
+        UK_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <12 18>;
             timeout-ms = <150>;
@@ -387,6 +387,13 @@ As such, those are in use within the default layer at this time.*/
         UK_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <5 12>;
+            timeout-ms = <150>;
+            layers = <1 2 4 5 3>;
+        };
+
+        UK_Miaki_ZNAK {
+            bindings = <&kp M>;
+            key-positions = <17 24>;
             timeout-ms = <150>;
             layers = <1 2 4 5 3>;
         };
