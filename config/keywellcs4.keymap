@@ -349,7 +349,7 @@ As such, those are in use within the default layer at this time.*/
             layers = <0 1 4>;
         };
 
-        UK_Ji_ssst {
+        UK_Ji {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <3 4>;
             timeout-ms = <85>;
