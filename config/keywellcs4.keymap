@@ -356,11 +356,14 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <33333>;
         };
 
-        test {
-            bindings = <&kp LA(W)>;
-            key-positions = <41 1>;
-            timeout-ms = <150>;
+
+        rt {
+            bindings = <&CmdTAbAppSWMacro>;
+            key-positions = <3 2>;
+            timeout-ms = <80>;
+            layers = <0 1 2 4 5 3>;
         };
+
     };
 
     macros {
