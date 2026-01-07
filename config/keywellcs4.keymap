@@ -362,6 +362,13 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <300>;
             layers = <2>;
         };
+
+        arst {
+            bindings = <&CmdTAbAppSWMacro>;
+            key-positions = <1 2>;
+            timeout-ms = <300>;
+            layers = <0 1>;
+        };
     };
 
     macros {
