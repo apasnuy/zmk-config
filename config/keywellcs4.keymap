@@ -623,10 +623,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-                &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
-&kp LEFT_SHIFT  &kp A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
-                &kp Z              &lt 21 X             &lt 22 C     &lt 20 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-                &kp N1               &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &trans       &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
+&EscQ           &kp W         &kp F                &kp P                          &kp G                    &kp J       &kp L                     &kp U        &kp Y        &kp SEMI
+&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T              &kp D       &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr LEFT_SHIFT O
+&kp Z           &lt 21 X      &lt 22 C             &lt 20 V                       &B_Sticky_CMD_Onehanded  &kp K       &kp M                     &kp COMMA    &kp DOT      &kp FSLH
+                &kp N1        &mo 25               &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE  &trans                    &mo 9        &none        &Backspase_MacLike_mod_morph  &lt 8 ENTER        &lt 7 SPACE
             >;
         };
 
@@ -634,131 +634,131 @@ As such, those are in use within the default layer at this time.*/
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-                 &EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E             &kp B                &kp SEMI
-&kp LEFT_SHIFT   &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T       &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-                 &kp P              &lt 21 LEFT_BRACKET  &lt 22 W     &lt 20 D             &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &UK_Comma_Symbol  &UK_Period_Symbol    &UK_Question_Symbol
-                &trans               &trans       &trans               &trans                            &trans                    &trans               &trans            &trans               &trans               &trans  &trans
+&EscUKPhonotic  &kp I                &kp A                &kp G        &kp U                             &kp Q   &kp K                     &kp E                &kp B              &kp SEMI
+&kp LEFT_SHIFT  &hml LEFT_SHIFT F    &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N               &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P           &lt 21 LEFT_BRACKET  &lt 22 W             &lt 20 D     &Sticky_CMD_Onehanded_UK_Phoneti  &kp R   &kp V                     &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
+                &trans               &trans               &trans       &trans                            &trans  &trans                    &trans               &trans             &trans               &trans             &trans
             >;
         };
 
         UK_Phonetic_MacOS_ShortCuts_Fix {
             display-name = "UK-ShortCutsFix";
             bindings = <
-                 &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans
-&kp LEFT_SHIFT   &trans  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &trans
-                 &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans
-                  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans  &trans  &trans
+&trans          &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
+&kp LEFT_SHIFT  &trans  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &trans
+&trans          &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
+                &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans  &trans
             >;
         };
 
         UK_QWERTY_Symbols_thumbkey {
             display-name = "UK_QWERTY_Symbols_thumbkey";
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 6 SPACE
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 6 SPACE
             >;
         };
 
         iPad {
             bindings = <
-                 &trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &Hyper_iPad_HT_Timeless 0 SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &Hyper_iPad_HT_Timeless 0 SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         iPad_UK_Phonetic_Shortcut_WA {
             display-name = "UK-ShortCutsFix";
             bindings = <
-                 &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans
-&kp LEFT_SHIFT   &trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &trans
-                 &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans
-                 &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans  &trans  &trans
+&trans          &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+&kp LEFT_SHIFT  &trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &trans
+&trans          &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+                &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans  &trans
             >;
         };
 
         Symbols_UK_QWERTY {
             bindings = <
-                 &kp LS(N1)                 &kp UNDER                         &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LS(COMMA)))         &kp LC(LA(GRAVE))  &kp LA(N3)  &kp LA(LC(LS(PERIOD)))         &kp LA(LC(RIGHT_BRACKET))  &kp LA(N7)                    &kp LA(M)
-&kp LEFT_SHIFT   &hml LEFT_SHIFT EQUAL      &kp MINUS                         &kp PLUS                  &kp LEFT_PARENTHESIS          &kp LA(N6)         &kp LA(N4)  &kp RIGHT_PARENTHESIS          &kp LA(LC(SEMI))           &kp LC(LA(LS(SINGLE_QUOTE)))  &hmr LEFT_SHIFT LC(LA(APOSTROPHE))
-                 &kp LA(LS(LC(BACKSLASH)))  &slash_and_backslash_NonEN_tpdnc  &kp LA(N8)                &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)         &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(COMMA))          &kp LA(LC(PERIOD))            &kp LA(LS(LC(SLASH)))
-                 &trans                            &trans                    &trans                        &trans             &trans      &trans                         &trans                     &trans                        &trans                              &trans  &trans
+&kp LS(N1)                 &kp UNDER                         &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LS(COMMA)))         &kp LC(LA(GRAVE))     &kp LA(N3)  &kp LA(LC(LS(PERIOD)))         &kp LA(LC(RIGHT_BRACKET))  &kp LA(N7)          &kp LA(M)
+&kp LEFT_SHIFT             &hml LEFT_SHIFT EQUAL             &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp LA(N6)  &kp LA(N4)                     &kp RIGHT_PARENTHESIS      &kp LA(LC(SEMI))    &kp LC(LA(LS(SINGLE_QUOTE)))  &hmr LEFT_SHIFT LC(LA(APOSTROPHE))
+&kp LA(LS(LC(BACKSLASH)))  &slash_and_backslash_NonEN_tpdnc  &kp LA(N8)                &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(COMMA))          &kp LA(LC(PERIOD))  &kp LA(LS(LC(SLASH)))
+                           &trans                            &trans                    &trans                        &trans                &trans      &trans                         &trans                     &trans              &trans                        &trans                              &trans
             >;
         };
 
         Symbols_EN {
             bindings = <
-                 &kp EXCL               &kp UNDER                         &kp LEFT_BRACKET  &kp LESS_THAN                       &kp GRAVE    &kp HASH    &kp GREATER_THAN                     &kp RIGHT_BRACKET  &kp AMPS           &kp TILDE
-&kp LEFT_SHIFT   &hml LEFT_SHIFT EQUAL  &kp MINUS                         &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET    &kp DOLLAR  &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI           &kp DOUBLE_QUOTES  &hmr LEFT_SHIFT APOSTROPHE
-                 &kp PIPE               &slash_and_backslash_EN_tapdance  &kp ASTERISK      &kp LEFT_BRACE                      &kp PERCENT  &kp AT      &kp RIGHT_BRACE                      &kp COMMA          &kp PERIOD         &kp QUESTION
-                 &trans                            &trans            &trans                              &trans       &trans      &trans                               &trans             &trans             &trans                      &trans  &trans
+&kp EXCL        &kp UNDER                         &kp LEFT_BRACKET  &kp LESS_THAN   &kp GRAVE                           &kp HASH   &kp GREATER_THAN  &kp RIGHT_BRACKET                    &kp AMPS    &kp TILDE
+&kp LEFT_SHIFT  &hml LEFT_SHIFT EQUAL             &kp MINUS         &kp PLUS        &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR        &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES  &hmr LEFT_SHIFT APOSTROPHE
+&kp PIPE        &slash_and_backslash_EN_tapdance  &kp ASTERISK      &kp LEFT_BRACE  &kp PERCENT                         &kp AT     &kp RIGHT_BRACE   &kp COMMA                            &kp PERIOD  &kp QUESTION
+                &trans                            &trans            &trans          &trans                              &trans     &trans            &trans                               &trans      &trans             &trans                      &trans
             >;
         };
 
         Numbers {
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &none       &kp N7        &kp N8  &kp N9  &none
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &none       &kp NUMBER_4  &kp N5  &kp N6  &kp NUMBER_0
-                 &trans  &trans  &trans  &trans  &trans  &kp KP_DOT  &kp N1        &kp N2  &kp N3  &none
-                 &trans  &trans  &trans  &trans  &trans      &trans        &trans  &trans  &trans        &trans  &none
+&trans          &trans  &trans  &trans  &trans  &none       &kp N7  &kp N8        &kp N9  &none
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &none   &kp NUMBER_4  &kp N5  &kp N6  &kp NUMBER_0
+&trans          &trans  &trans  &trans  &trans  &kp KP_DOT  &kp N1  &kp N2        &kp N3  &none
+                &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans  &trans  &trans        &none
             >;
         };
 
         emoji {
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &emojiPOCMacro  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOCMacro  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-                 &none           &mo 13            &none     &none     &mo 11  &kp HOME                        &kp PAGE_UP    &none     &none         &none
-&kp LEFT_SHIFT   &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 12  &backspaseOrDeleteWordOnDouble  &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT
-                 &kp LG(Z)       &none             &none     &mo 14    &none   &kp END                         &kp PAGE_DOWN  &none     &none         &none
-                 &trans            &trans    &trans    &trans  &trans                          &trans         &trans    &none         &trans     &trans  &trans
+&none           &mo 13          &none             &none     &mo 11    &kp HOME  &kp PAGE_UP                     &none     &none     &none
+&kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &mo 12    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LG(Z)       &none           &none             &mo 14    &none     &kp END   &kp PAGE_DOWN                   &none     &none     &none
+                &trans          &trans            &trans    &trans    &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
 
         HRM_4-TabsNav {
             bindings = <
-                 &none  &none  &none  &none  &none  &none  &none            &none  &none  &none
-&kp LEFT_SHIFT   &none  &none  &none  &none  &none  &none  &kp LC(LS(TAB))  &none  &none  &kp LC(TAB)
-                 &none  &none  &none  &none  &none  &none  &none            &none  &none  &none
-                 &none  &none  &none  &none  &none  &none            &none  &none  &none        &none  &none
+&none           &none  &none  &none  &none  &none  &none  &none            &none  &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &kp LC(LS(TAB))  &none  &none  &kp LC(TAB)
+&none           &none  &none  &none  &none  &none  &none  &none            &none  &none
+                &none  &none  &none  &none  &none  &none  &none            &none  &none  &none        &none
             >;
         };
 
         HRM_4-SafGroupNav {
             bindings = <
-                 &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none
-&kp LEFT_SHIFT   &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
-                 &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none
-                 &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none  &none
+&none           &none  &none  &none  &none  &none  &none  &none  &none                      &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
+&none           &none  &none  &none  &none  &none  &none  &none  &none                      &none
+                &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
             >;
         };
 
         HRM_4-WorkSpaceAppCycle {
             bindings = <
-                 &none  &none  &none  &none  &none  &none  &none          &none  &none  &none
-&kp LEFT_SHIFT   &none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
-                 &none  &none  &none  &none  &none  &none  &none          &none  &none  &none
-                 &none  &none  &none  &none  &none  &none          &none  &none  &none          &none  &none
+&none           &none  &none  &none  &none  &none  &none  &none          &none  &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
+&none           &none  &none  &none  &none  &none  &none  &none          &none  &none
+                &none  &none  &none  &none  &none  &none  &none          &none  &none  &none          &none
             >;
         };
 
         HRM_4-AppWindowsCycle {
             bindings = <
-                 &none  &none  &none  &none  &none  &none  &none           &none  &none  &none
-&kp LEFT_SHIFT   &none  &none  &none  &none  &none  &none  &kp LS(LG(F9))  &none  &none  &kp LG(F9)
-                 &none  &none  &none  &none  &none  &none  &none           &none  &none  &none
-                 &none  &none  &none  &none  &none  &none           &none  &none  &none       &none  &none
+&none           &none  &none  &none  &none  &none  &none  &none           &none  &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &kp LS(LG(F9))  &none  &none  &kp LG(F9)
+&none           &none  &none  &none  &none  &none  &none  &none           &none  &none
+                &none  &none  &none  &none  &none  &none  &none           &none  &none  &none       &none
             >;
         };
 
@@ -766,10 +766,10 @@ As such, those are in use within the default layer at this time.*/
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
             bindings = <
-                 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &MacKarabinerOutdL  &kp U      &kp Y    &kp SEMI
-&kp LEFT_SHIFT   &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N               &kp E      &kp I    &kp O
-                 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M               &kp COMMA  &kp DOT  &kp FSLH
-                 &trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans   &trans    &trans  &trans
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &MacKarabinerOutdL  &kp U      &kp Y    &kp SEMI
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H               &kp N      &kp E    &kp I     &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M               &kp COMMA  &kp DOT  &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans              &trans     &trans   &trans    &trans  &trans
             >;
         };
 
@@ -777,93 +777,93 @@ As such, those are in use within the default layer at this time.*/
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
             bindings = <
-                 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &MacKarabinerOutdLU  &kp Y    &kp SEMI
-&kp LEFT_SHIFT   &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &MacKarabinerOutdLE  &kp I    &kp O
-                 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA            &kp DOT  &kp FSLH
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans   &trans    &trans  &trans
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &none   &MacKarabinerOutdLU  &kp Y                &kp SEMI
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N                &MacKarabinerOutdLE  &kp I     &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA            &kp DOT              &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans               &trans    &trans  &trans
             >;
         };
 
         iPad_Hyper_and_Layers {
             bindings = <
-                 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &iPadLayerL  &kp U      &kp Y    &kp SEMI
-&kp LEFT_SHIFT   &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N        &kp E      &kp I    &kp O
-                 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                 &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans   &trans    &trans  &trans
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &iPadLayerL  &kp U      &kp Y    &kp SEMI
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H        &kp N      &kp E    &kp I     &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M        &kp COMMA  &kp DOT  &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans   &trans    &trans  &trans
             >;
         };
 
         iPad_Hyper_and_Layer_L {
             bindings = <
-                 &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &none   &iPadLayerLU  &kp Y    &kp SEMI
-&kp LEFT_SHIFT   &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &iPadLayerLE  &kp I    &kp O
-                 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA     &kp DOT  &kp FSLH
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans   &trans    &trans  &trans
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &none   &iPadLayerLU  &kp Y         &kp SEMI
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N         &iPadLayerLE  &kp I     &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA     &kp DOT       &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans    &trans  &trans
             >;
         };
 
         mouse_layer {
             display-name = "mouse";
             bindings = <
-                 &trans  &trans  &trans  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none         &none
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &none   &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT
-                 &none   &trans  &trans  &trans  &none   &none           &msc SCRL_UP    &none            &none         &none
-                 &trans  &trans  &trans  &trans  &trans          &trans          &trans           &none         &trans           &mkp LCLK  &mkp RCLK
+&trans          &trans  &trans  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none           &none
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &none           &none           &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none           &trans  &trans  &trans  &none   &none           &msc SCRL_UP    &none            &none           &none
+                &trans  &trans  &trans  &trans  &trans          &trans          &trans           &none           &trans        &mkp LCLK        &mkp RCLK
             >;
         };
 
         mouse_warp {
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         mouse_precision {
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         mouse_regular {
             bindings = <
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         UA_Unicoded {
             bindings = <
-                 &uc UC_UK_I_SHORT  &uc UC_UK_TS                     &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N                  &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH                   &uc UC_UK_Z   &uc UC_UK_KH
-&kp LEFT_SHIFT   &uc UC_UK_F        &uc UC_UK_I                      &uc UC_UK_V  &uc UC_UK_A  &uc UC_UK_P                  &uc UC_UK_R  &uc UC_UK_O     &uc UC_UK_L                     &uc UC_UK_D   &uc UC_UK_ZH
-                 &uc UC_UK_YA       &uc UC_UK_CH                     &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y                  &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                     &uc UC_UK_YU  &trans
-                 &ControlShortcutsUnicodeWAMacro  &trans       &trans       &CmdShortcutsUnicodeWAMacro  &trans       &trans          &OptionShortcutsUnicodeWAMacro  &trans        &trans        &trans
+&uc UC_UK_I_SHORT  &uc UC_UK_TS                     &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N                  &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH                   &uc UC_UK_Z   &uc UC_UK_KH
+&kp LEFT_SHIFT     &uc UC_UK_F                      &uc UC_UK_I  &uc UC_UK_V  &uc UC_UK_A                  &uc UC_UK_P  &uc UC_UK_R     &uc UC_UK_O                     &uc UC_UK_L   &uc UC_UK_D   &uc UC_UK_ZH
+&uc UC_UK_YA       &uc UC_UK_CH                     &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y                  &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                     &uc UC_UK_YU  &trans
+                   &ControlShortcutsUnicodeWAMacro  &trans       &trans       &CmdShortcutsUnicodeWAMacro  &trans       &trans          &OptionShortcutsUnicodeWAMacro  &trans        &trans        &trans
             >;
         };
 
         UA_Uq {
             bindings = <
-                 &EscUKPhonotic     &kp I                &kp A        &kp G                &kp U                             &kp Q                     &kp K                &kp E        &kp B                &kp SEMI
-&kp LEFT_SHIFT   &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L                             &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-                 &kp P              &kp LEFT_BRACKET     &kp W        &kp D                &Sticky_CMD_Onehanded_UK_Phoneti  &kp R                     &kp V                &kp COMMA    &kp PERIOD           &kp SLASH
-                 &trans               &trans       &trans               &trans                            &trans                    &trans               &trans       &trans               &trans             &trans  &trans
+&EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                             &kp Q   &kp K                     &kp E                &kp B        &kp SEMI
+&kp LEFT_SHIFT  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N               &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P           &kp LEFT_BRACKET   &kp W                &kp D        &Sticky_CMD_Onehanded_UK_Phoneti  &kp R   &kp V                     &kp COMMA            &kp PERIOD   &kp SLASH
+                &trans             &trans               &trans       &trans                            &trans  &trans                    &trans               &trans       &trans               &trans             &trans
             >;
         };
 
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-                 &tog_on 1  &none       &tog 2      &none         &tog 6        &JumpDesktop  &trans     &trans  &none       &tog 24
-&kp LEFT_SHIFT   &none      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans     &trans  &iPadMacro  &none
-                 &trans     &trans      &tog_of 1   &kp INSERT    &out OUT_BLE  &none         &MacMacro  &trans  &none       &none
-                 &none       &none       &none         &none         &none         &none      &none   &none       &bt BT_CLR  &none  &none
+&tog_on 1       &none   &tog 2      &none       &tog 6        &JumpDesktop  &trans     &trans  &none   &tog 24
+&kp LEFT_SHIFT  &none   &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans  &trans  &iPadMacro  &none
+&trans          &trans  &tog_of 1   &kp INSERT  &out OUT_BLE  &none         &MacMacro  &trans  &none   &none
+                &none   &none       &none       &none         &none         &none      &none   &none   &bt BT_CLR  &none  &none
             >;
         };
     };
