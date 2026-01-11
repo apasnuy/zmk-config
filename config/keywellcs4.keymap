@@ -626,7 +626,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ              &kp W                &kp F        &kp P                          &kp G                    &kp J                     &kp L        &kp U        &kp Y                &kp SEMI
 &hml LEFT_SHIFT A  &hml LEFT_CONTROL R  &hml RALT S  &hml LCMD T                    &kp D                    &H_deleteWordOnDoubleTap  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_SHIFT O
 &kp Z              &lt 21 X             &lt 22 C     &lt 20 V                       &B_Sticky_CMD_Onehanded  &kp K                     &kp M        &kp COMMA    &kp DOT              &kp FSLH
-&kp CAPS           &none                &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &trans       &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
+&kp CAPS           &kp N1               &mo 25       &HyperMac_HT_Timeless 0 SPACE  &lt 10 TAB               &kp ESCAPE                &trans       &mo 9        &none                &Backspase_MacLike_mod_morph  &lt 8 ENTER  &lt 7 SPACE
             >;
         };
 
