@@ -93,14 +93,14 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "H_DELETEWORDONDOUBLETAP";
             #binding-cells = <0>;
-            bindings = <&kp H>, <&kp LA(BACKSPACE)>;
+            bindings = <&kp H>, <&kp RA(BACKSPACE)>;
         };
 
         backspaseOrDeleteWordOnDouble: backspaseOrDeleteWordOnDouble {
             compatible = "zmk,behavior-tap-dance";
             label = "BACKSPASEORDELETEWORDONDOUBLE";
             #binding-cells = <0>;
-            bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
+            bindings = <&Backspase_MacLike_mod_morph>, <&kp RA(BACKSPACE)>;
         };
 
         slash_and_backslash_EN_tapdance: slash_and_backslash_EN_tapdance {
@@ -114,7 +114,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "SLASH_AND_BACKSLASH_NONEN_TPDNC";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(SLASH))>, <&kp LA(LC(BACKSLASH))>;
+            bindings = <&kp RA(LC(SLASH))>, <&kp RA(LC(BACKSLASH))>;
         };
 
         B_Sticky_CMD_Onehanded: B_Sticky_CMD_Onehanded {
@@ -137,7 +137,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "X_DELETEWORDONDOUBLETAP";
             #binding-cells = <0>;
-            bindings = <&kp X>, <&kp LA(BACKSPACE)>;
+            bindings = <&kp X>, <&kp RA(BACKSPACE)>;
         };
 
         Sticky_CMD_Onehanded_UK_Phoneti: Sticky_CMD_Onehanded_UK_Phoneti {
@@ -606,9 +606,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on LA(LC(LCMD)) &tog_on 17>,
+                <&kt_on RA(LC(LCMD)) &tog_on 17>,
                 <&macro_pause_for_release>,
-                <&tog_of 17 &kt_off LA(LC(LCMD))>;
+                <&tog_of 17 &kt_off RA(LC(LCMD))>;
 
             label = "HYPERIPADTIMELESSMACRO";
             tap-ms = <1>;
@@ -628,7 +628,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off LA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 1 &tog_on 3 &tog_on 5>;
+            bindings = <&kt_off RA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 1 &tog_on 3 &tog_on 5>;
             label = "IPADKARABINERLU";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -637,7 +637,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off LA(LC(LCMD)) &kp CAPSLOCK &tog_of 1 &tog_of 3 &tog_of 5>;
+            bindings = <&kt_off RA(LC(LCMD)) &kp CAPSLOCK &tog_of 1 &tog_of 3 &tog_of 5>;
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -761,9 +761,9 @@ As such, those are in use within the default layer at this time.*/
 
         Symbols_UK_QWERTY {
             bindings = <
-&kp LS(N1)                 &kp UNDER                         &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LS(COMMA)))         &kp LC(LA(GRAVE))     &kp LA(N3)  &kp LA(LC(LS(PERIOD)))         &kp LA(LC(RIGHT_BRACKET))  &kp LA(N7)          &kp LA(M)
-&kp LEFT_SHIFT             &kp LEFT_SHIFT                    &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp LA(N6)  &kp LA(N4)                     &kp RIGHT_PARENTHESIS      &kp LA(LC(SEMI))    &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(RA(LEFT_SHIFT))
-&kp LA(LS(LC(BACKSLASH)))  &slash_and_backslash_NonEN_tpdnc  &kp LA(N8)                &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(COMMA))          &kp LA(LC(PERIOD))  &kp LA(LS(LC(SLASH)))
+&kp LS(N1)                 &kp UNDER                         &kp LC(RA(LEFT_BRACKET))  &kp LC(RA(LS(COMMA)))         &kp LC(RA(GRAVE))     &kp RA(N3)  &kp RA(LC(LS(PERIOD)))         &kp RA(LC(RIGHT_BRACKET))  &kp RA(N7)          &kp RA(M)
+&kp LEFT_SHIFT             &kp LEFT_SHIFT                    &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp RA(N6)  &kp RA(N4)                     &kp RIGHT_PARENTHESIS      &kp RA(LC(SEMI))    &kp LC(RA(LS(SINGLE_QUOTE)))  &kp LC(RA(LEFT_SHIFT))
+&kp RA(LS(LC(BACKSLASH)))  &slash_and_backslash_NonEN_tpdnc  &kp RA(N8)                &kp LC(RA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp RA(N2)  &kp RA(LC(LS(RIGHT_BRACKET)))  &kp RA(LC(COMMA))          &kp RA(LC(PERIOD))  &kp RA(LS(LC(SLASH)))
                            &trans                            &trans                    &trans                        &trans                &trans      &trans                         &trans                     &trans              &trans                        &trans                  &trans
             >;
         };
@@ -817,7 +817,7 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-SafGroupNav {
             bindings = <
 &none           &none  &none  &none  &none  &none  &none  &none  &none                      &none
-&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
 &none           &none  &none  &none  &none  &none  &none  &none  &none                      &none
                 &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
             >;
@@ -826,7 +826,7 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-WorkSpaceAppCycle {
             bindings = <
 &none           &none  &none  &none  &none  &none  &none  &none          &none  &none
-&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &kp LS(RA(J))  &none  &none  &kp RA(LS(K))
 &none           &none  &none  &none  &none  &none  &none  &none          &none  &none
                 &none  &none  &none  &none  &none  &none  &none          &none  &none  &none          &none
             >;
