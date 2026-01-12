@@ -723,10 +723,10 @@ As such, those are in use within the default layer at this time.*/
         UK_Phonetic_MacOS_ShortCuts_Fix {
             display-name = "UK-ShortCutsFix";
             bindings = <
-&trans          &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
-&kp LEFT_SHIFT  &trans  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &trans
-&trans          &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
-                &trans  &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans  &trans
+&trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
+&kp LEFT_SHIFT  &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
+&trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
+                &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans                            &trans
             >;
         };
 
@@ -752,10 +752,10 @@ As such, those are in use within the default layer at this time.*/
         iPad_UK_Phonetic_Shortcut_WA {
             display-name = "UK-ShortCutsFix";
             bindings = <
-&trans          &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
-&kp LEFT_SHIFT  &trans  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &trans
-&trans          &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
-                &trans  &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans  &trans
+&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+&kp LEFT_SHIFT  &iOS_Globe_non_qwerty_fix_LHRM 0 F  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &iOS_Globe_non_qwerty_fix_RHRM 0 J
+&trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
+                &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans                              &trans
             >;
         };
 
