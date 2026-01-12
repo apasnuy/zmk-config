@@ -762,7 +762,7 @@ As such, those are in use within the default layer at this time.*/
         Symbols_UK_QWERTY {
             bindings = <
 &kp LS(N1)                 &kp UNDER                         &kp LC(RA(LEFT_BRACKET))  &kp LC(RA(LS(COMMA)))         &kp LC(RA(GRAVE))     &kp RA(N3)  &kp RA(LC(LS(PERIOD)))         &kp RA(LC(RIGHT_BRACKET))  &kp RA(N7)          &kp RA(M)
-&kp LEFT_SHIFT             &kp LEFT_SHIFT                    &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp RA(N6)  &kp RA(N4)                     &kp RIGHT_PARENTHESIS      &kp RA(LC(SEMI))    &kp LC(RA(LS(SINGLE_QUOTE)))  &kp LC(RA(LEFT_SHIFT))
+&kp LEFT_SHIFT             &kp EQUAL                         &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp RA(N6)  &kp RA(N4)                     &kp RIGHT_PARENTHESIS      &kp RA(LC(SEMI))    &kp LC(RA(LS(SINGLE_QUOTE)))  &kp LC(RA(APOSTROPHE))
 &kp RA(LS(LC(BACKSLASH)))  &slash_and_backslash_NonEN_tpdnc  &kp RA(N8)                &kp LC(RA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp RA(N2)  &kp RA(LC(LS(RIGHT_BRACKET)))  &kp RA(LC(COMMA))          &kp RA(LC(PERIOD))  &kp RA(LS(LC(SLASH)))
                            &trans                            &trans                    &trans                        &trans                &trans      &trans                         &trans                     &trans              &trans                        &trans                  &trans
             >;
