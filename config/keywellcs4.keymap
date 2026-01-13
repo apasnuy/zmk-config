@@ -408,42 +408,42 @@ As such, those are in use within the default layer at this time.*/
         UK_SC {
             bindings = <&kp O>;
             key-positions = <1 18>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
 
         UK_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 13>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
 
         UK_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <13 19>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
 
         UK_G_tverde {
             bindings = <&kp GRAVE>;
             key-positions = <4 18>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
 
         UK_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <5 13>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
 
         UK_Miaki_ZNAK {
             bindings = <&kp M>;
             key-positions = <18 25>;
-            timeout-ms = <150>;
+            timeout-ms = <190>;
             layers = <1 2 4 5 3>;
         };
     };
