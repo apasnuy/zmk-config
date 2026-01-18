@@ -437,6 +437,13 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&sk LEFT_COMMAND>;
             key-positions = <24 23>;
         };
+
+        UK_JE {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <18 13>;
+            timeout-ms = <190>;
+            layers = <1 2 4 5 3>;
+        };
     };
 
     macros {
