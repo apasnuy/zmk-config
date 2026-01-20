@@ -836,7 +836,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-SafGroupNav {
+        HRM_4-BrowserGroupNav {
             bindings = <
 &none           &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &kp LEFT_SHIFT  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
