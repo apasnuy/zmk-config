@@ -454,7 +454,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         Sticky_Control {
-            bindings = <&sk LEFT_COMMAND>;
+            bindings = <&sk LEFT_CONTROL>;
             key-positions = <24 23>;
             layers = <1>;
         };
