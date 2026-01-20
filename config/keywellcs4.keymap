@@ -394,7 +394,7 @@ As such, those are in use within the default layer at this time.*/
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSWMacro>;
             key-positions = <34 25>;
-            layers = <0 2 3 6 7 4>;
+            layers = <0 2 3 6 7 4 1>;
             timeout-ms = <1500>;
         };
 
