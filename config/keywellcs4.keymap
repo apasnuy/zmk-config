@@ -718,6 +718,8 @@ As such, those are in use within the default layer at this time.*/
                 <&kt_off RIGHT_ALT &tog_of 19>;
 
             label = "WWW";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         vvvv: vvvv {
@@ -729,6 +731,8 @@ As such, those are in use within the default layer at this time.*/
                 <&kt_off RIGHT_ALT &tog_of 20>;
 
             label = "VVVV";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
