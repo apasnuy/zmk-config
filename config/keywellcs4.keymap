@@ -750,10 +750,10 @@ As such, those are in use within the default layer at this time.*/
 
         Ubuntu {
             bindings = <
-&EscQ           &kp W                &kp F                &kp P        &kp G                &kp J   &kp L                            &kp U                &kp Y        &kp SEMI
-&kp LEFT_SHIFT  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_CONTROL T  &kp D   &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
-&kp Z           &lt 27 X             &lt 28 C             &lt 26 V     &kp B                &kp K   &kp M                            &kp COMMA            &kp DOT      &kp FSLH
-                &trans               &trans               &trans       &lt 16 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
+&EscQ   &trans               &trans               &trans       &trans               &trans  &trans                           &trans               &trans       &trans
+&trans  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_CONTROL T  &trans  &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
+&trans  &lt 27 X             &lt 28 C             &lt 26 V     &trans               &trans  &trans                           &trans               &trans       &trans
+        &trans               &trans               &trans       &lt 16 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
             >;
         };
 
