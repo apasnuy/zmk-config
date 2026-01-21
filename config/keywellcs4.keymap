@@ -709,7 +709,7 @@ As such, those are in use within the default layer at this time.*/
             label = "UBUNTUMACRO";
         };
 
-        www: www {
+        UbuntuWindowsSwWA: www {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -722,7 +722,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        vvvv: vvvv {
+        UbuntuAppSwWA: vvvv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -892,10 +892,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4_Ubuntu {
             display-name = "ASDFHJKL";
             bindings = <
-&none           &www            &none             &none          &mo 17            &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp RIGHT_ALT  &kp LEFT_CONTROL  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)       &none           &none             &vvvv          &none             &kp END   &kp PAGE_DOWN                   &none     &none     &none
-                &trans          &trans            &trans         &trans            &trans    &trans                          &trans    &none     &trans        &trans     &trans
+&none           &UbuntuWindowsSwWA  &none             &none           &mo 17            &kp HOME  &kp PAGE_UP                     &none     &none     &none
+&kp LEFT_SHIFT  &kp LEFT_SHIFT      &kp LEFT_CONTROL  &kp RIGHT_ALT   &kp LEFT_CONTROL  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LC(Z)       &none               &none             &UbuntuAppSwWA  &none             &kp END   &kp PAGE_DOWN                   &none     &none     &none
+                &trans              &trans            &trans          &trans            &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
 
