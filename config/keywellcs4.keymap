@@ -919,19 +919,19 @@ As such, those are in use within the default layer at this time.*/
 
         HRM_4-WorkSpaceAppCycle_Ubuntu {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none               &none  &none
-&none  &none  &none  &none  &none  &none  &none  &kp LS(RA(ESCAPE))  &none  &none  &kp RA(ESC)
-&none  &none  &none  &none  &none  &none  &none  &none               &none  &none
-       &none  &none  &none  &none  &none  &none  &none               &none  &none  &none        &none
+&none  &none  &none  &none  &none  &none  &none  &none           &none  &none
+&none  &none  &none  &none  &none  &none  &none  &kp LS(ESCAPE)  &none  &none  &kp ESC
+&none  &none  &none  &none  &none  &none  &none  &none           &none  &none
+       &none  &none  &none  &none  &none  &none  &none           &none  &none  &none    &none
             >;
         };
 
         HRM_4-AppWindowsCycle_Ubuntu {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &none           &none  &none
-&none  &none  &none  &none  &none  &none  &none  &kp LS(RA(F6))  &none  &none  &kp RA(F6)
-&none  &none  &none  &none  &none  &none  &none  &none           &none  &none
-       &none  &none  &none  &none  &none  &none  &none           &none  &none  &none       &none
+&none  &none  &none  &none  &none  &none  &none  &none       &none  &none
+&none  &none  &none  &none  &none  &none  &none  &kp LS(F6)  &none  &none  &kp F6
+&none  &none  &none  &none  &none  &none  &none  &none       &none  &none
+       &none  &none  &none  &none  &none  &none  &none       &none  &none  &none   &none
             >;
         };
 
