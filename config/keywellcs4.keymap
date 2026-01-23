@@ -741,10 +741,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W         &kp F                &kp P                          &kp G        &kp J       &kp L                         &kp U        &kp Y        &kp SEMI
-&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
-&kp Z           &lt 27 X      &lt 28 C             &lt 26 V                       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT      &kp FSLH
-                &kp N1        &mo 31               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &none        &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
+&EscQ           &kp W         &kp F                &kp P                          &kp G        &kp J       &kp L                         &kp U        &kp Y                                 &kp SEMI
+&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E                           &hmr LEFT_CONTROL I           &hmr GLOBE O
+&kp Z           &lt 27 X      &lt 28 C             &lt 26 V                       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT                               &kp FSLH
+                &kp N1        &mo 31               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &kp GLOBE                     &mo 10       &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
             >;
         };
 
