@@ -22,6 +22,7 @@
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
+
 #define WARP  26
 #define PRESISION  27
 
@@ -542,9 +543,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 22>,
+                <&kt_on F16 &tog_on 21>,
                 <&macro_pause_for_release>,
-                <&tog_of 22 &kt_off F16>;
+                <&tog_of 21 &kt_off F16>;
 
             label = "HYPERMACTIMELESSMACRO";
             tap-ms = <1>;
@@ -634,7 +635,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off RA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 7>;
+            bindings = <&kt_off RA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
             label = "IPADKARABINERLU";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -643,7 +644,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off RA(LC(LCMD)) &kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 7>;
+            bindings = <&kt_off RA(LC(LCMD)) &kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -652,7 +653,7 @@ As such, those are in use within the default layer at this time.*/
         JumpDesktop: JumpDesktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_of 6 &kt_on LALT>;
+            bindings = <&tog_of 5 &kt_on LALT>;
             label = "JUMPDESKTOP";
         };
 
@@ -660,9 +661,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 7 &tog_of 2 &kt_on LCMD>,
+                <&tog_of 6 &tog_of 2 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 7 &tog_on 2 &kt_off LCMD>;
+                <&tog_on 6 &tog_on 2 &kt_off LCMD>;
 
             label = "CMDSHORTCUTSNONQWERTY_WA";
         };
@@ -671,9 +672,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 7 &tog_of 2 &kt_on LEFT_CONTROL>,
+                <&tog_of 6 &tog_of 2 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 7 &tog_on 2 &kt_off LEFT_CONTROL>;
+                <&tog_on 6 &tog_on 2 &kt_off LEFT_CONTROL>;
 
             label = "IPADCONTROLSHORTCUTNONQWERTY_WA";
         };
@@ -695,9 +696,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 7 &tog_of 2 &kt_on GLOBE>,
+                <&tog_of 6 &tog_of 2 &kt_on GLOBE>,
                 <&macro_pause_for_release>,
-                <&tog_on 7 &tog_on 2 &kt_off GLOBE>;
+                <&tog_on 6 &tog_on 2 &kt_off GLOBE>;
 
             label = "IPADGLOBESHORTCUTNONQWERTY_WA";
         };
@@ -705,7 +706,7 @@ As such, those are in use within the default layer at this time.*/
         UbuntuMacro: UbuntuMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 6 &tog_of 7 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
+            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
             label = "UBUNTUMACRO";
         };
 
