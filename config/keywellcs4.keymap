@@ -22,7 +22,6 @@
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
-
 #define WARP  26
 #define PRESISION  27
 
@@ -395,7 +394,7 @@ As such, those are in use within the default layer at this time.*/
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSWMacro>;
             key-positions = <34 25>;
-               layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4 5 6>;
             timeout-ms = <1500>;
         };
 
@@ -528,7 +527,7 @@ As such, those are in use within the default layer at this time.*/
         iPadMacro: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_on 5 &tog_of 6>;
+            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
             label = "IPAD";
         };
 
