@@ -1033,10 +1033,10 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop  &trans     &UbuntuMacro  &none   &tog 30
-&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans  &iPadMacro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &MacMacro  &trans        &none   &none
-           &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &none   &bt BT_CLR  &none  &none
+&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop  &trans     &UbuntuMacro  &none    &tog 30
+&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans   &iPadMacro  &none
+&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &MacMacro  &trans        &none    &none
+           &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &kt F15  &bt BT_CLR  &none  &none
             >;
         };
     };
