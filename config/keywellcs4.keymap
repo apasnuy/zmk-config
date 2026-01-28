@@ -395,7 +395,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&CmdTAbAppSWMacro>;
             key-positions = <34 25>;
             layers = <0 1 2 3 4 5 6>;
-            timeout-ms = <1500>;
+            timeout-ms = <150>;
         };
 
         UK_SC {
