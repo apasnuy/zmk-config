@@ -488,9 +488,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 30 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 29 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 30 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 29 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -499,9 +499,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 30 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 29 &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 30 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 29 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -510,9 +510,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 30 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 29 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 30 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 29 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -744,7 +744,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ           &kp W         &kp F                &kp P                          &kp G        &kp J       &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &kp Z           &lt 27 X      &lt 28 C             &lt 26 V                       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT      &kp FSLH
-                &kp N1        &mo 32               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
+                &kp N1        &mo 31               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
             >;
         };
 
@@ -893,7 +893,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "ASDFHJKL";
             bindings = <
 &none      &UbuntuWindowsSwWA  &none             &none             &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&trans     &trans              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 31  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&trans     &trans              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 30  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(Z)  &none               &none             &UbuntuAppSwWA    &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
            &trans              &trans            &trans            &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
@@ -1012,15 +1012,6 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        UA_Unicoded {
-            bindings = <
-&uc UC_UK_I_SHORT  &uc UC_UK_TS                     &uc UC_UK_U  &uc UC_UK_E  &uc UC_UK_N                  &uc UC_UK_H  &uc UC_UK_SH    &uc UC_UK_SCH                   &uc UC_UK_Z   &uc UC_UK_KH
-&trans             &uc UC_UK_F                      &uc UC_UK_I  &uc UC_UK_V  &uc UC_UK_A                  &uc UC_UK_P  &uc UC_UK_R     &uc UC_UK_O                     &uc UC_UK_L   &uc UC_UK_D   &uc UC_UK_ZH
-&uc UC_UK_YA       &uc UC_UK_CH                     &uc UC_UK_S  &uc UC_UK_M  &uc UC_UK_Y                  &uc UC_UK_T  &uc UC_UK_SOFT  &uc UC_UK_B                     &uc UC_UK_YU  &trans
-                   &ControlShortcutsUnicodeWAMacro  &trans       &trans       &CmdShortcutsUnicodeWAMacro  &trans       &trans          &OptionShortcutsUnicodeWAMacro  &trans        &trans        &trans
-            >;
-        };
-
         UA_Uq {
             bindings = <
 &EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K                     &kp E                &kp B        &kp SEMI
@@ -1042,7 +1033,7 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop  &trans     &UbuntuMacro  &none    &tog 30
+&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop  &trans     &UbuntuMacro  &none    &tog 29
 &none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans   &iPadMacro  &none
 &trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &MacMacro  &trans        &none    &none
            &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &kt F15  &bt BT_CLR  &none  &none
