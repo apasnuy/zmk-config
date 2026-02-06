@@ -744,7 +744,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ           &kp W         &kp F                &kp P                          &kp G        &kp J       &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
 &kp Z           &lt 27 X      &lt 28 C             &lt 26 V                       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT      &kp FSLH
-                &kp N1        &mo 31               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
+                &kp N1        &mo 32               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
             >;
         };
 
@@ -892,10 +892,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4_Ubuntu {
             display-name = "ASDFHJKL";
             bindings = <
-&none      &UbuntuWindowsSwWA  &none             &none             &mo 17    &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&trans     &trans              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &kp HOME  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)  &none               &none             &UbuntuAppSwWA    &none     &kp END   &kp PAGE_DOWN                   &none     &none     &none
-           &trans              &trans            &trans            &trans    &trans    &trans                          &trans    &none     &trans        &trans     &trans
+&none      &UbuntuWindowsSwWA  &none             &none             &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
+&trans     &trans              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 31  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LC(Z)  &none               &none             &UbuntuAppSwWA    &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
+           &trans              &trans            &trans            &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
 
@@ -1027,6 +1027,15 @@ As such, those are in use within the default layer at this time.*/
 &trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
 &kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V                     &kp COMMA            &kp PERIOD   &kp SLASH
                 &trans             &trans               &trans       &trans               &trans  &trans                    &trans               &trans       &trans               &trans             &trans
+            >;
+        };
+
+        HRM_4-ASDF-line-start-end {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
