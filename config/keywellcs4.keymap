@@ -444,6 +444,11 @@ As such, those are in use within the default layer at this time.*/
             key-positions = <24 23>;
             layers = <1>;
         };
+
+        LU {
+            bindings = <&none>;
+            key-positions = <6 7 33>;
+        };
     };
 
     macros {
