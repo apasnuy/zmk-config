@@ -568,6 +568,24 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
+        MacKarabinerLU: MacKarabinerLU {
+            //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
+
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp U &tog_on 2 &tog_on 3 &tog_on 4>;
+            label = "MACKARABINERLU";
+        };
+
+        MacKarabinerLE: MacKarabinerLE {
+            //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
+
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp E &tog_of 2 &tog_of 3 &tog_of 4>;
+            label = "MACKARABINERLE";
+        };
+
         HyperiPadTimelessMacro: HyperiPadTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
