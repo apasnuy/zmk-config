@@ -793,10 +793,10 @@ As such, those are in use within the default layer at this time.*/
 
         iPad {
             bindings = <
-&trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &mt CLCK SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
