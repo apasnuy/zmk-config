@@ -635,7 +635,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLU: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off RA(LC(LEFT_COMMAND)) &kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
+            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
             label = "IPADKARABINERLU";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -644,7 +644,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLE: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_off RA(LC(LCMD)) &kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
+            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -742,10 +742,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W         &kp F                &kp P                          &kp G        &kp J       &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S                    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
-&kp Z           &lt 23 X      &lt 24 C             &lt 22 V                       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT      &kp FSLH
-                &kp N1        &mo 27               &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
+&EscQ           &kp W         &kp F                &kp P          &kp G        &kp J       &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S    &hml LCMD T  &kp D       &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
+&kp Z           &lt 23 X      &lt 24 C             &lt 22 V       &kp B        &kp K       &kp M                         &kp COMMA    &kp DOT      &kp FSLH
+                &kp N1        &mo 27               &mt F16 SPACE  &lt 11 TAB   &kp ESCAPE  &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
             >;
         };
 
@@ -791,10 +791,10 @@ As such, those are in use within the default layer at this time.*/
 
         iPad {
             bindings = <
-&trans          &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans                           &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &Hyper_iPad_HT_Timeless 0 SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
