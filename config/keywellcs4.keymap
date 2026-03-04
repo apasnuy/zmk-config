@@ -598,7 +598,7 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&kt_on L &kt_on U &tog_on 2 &tog_on 3 &tog_on 4 &kt_off L &kt_off U>;
             label = "MACKARABINERLU";
-            wait-ms = <100>;
+            wait-ms = <1>;
         };
 
         MacKarabinerLE: MacKarabinerLE {
@@ -606,9 +606,9 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt L &kp E &tog_of 2 &tog_of 3 &tog_of 4 &kt L>;
+            bindings = <&kt_on L &kt_on E &tog_of 2 &tog_of 3 &tog_of 4 &kt_off L &kt_off E>;
             label = "MACKARABINERLE";
-            wait-ms = <100>;
+            wait-ms = <1>;
         };
 
         HyperiPadTimelessMacro: HyperiPadTimelessMacro {
