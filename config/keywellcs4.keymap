@@ -449,12 +449,14 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&MacKarabinerLU>;
             key-positions = <6 7>;
             layers = <21>;
+            timeout-ms = <190>;
         };
 
         MacCarabinerLE {
             bindings = <&MacKarabinerLE>;
             key-positions = <6 18>;
             layers = <21>;
+            timeout-ms = <190>;
         };
     };
 
