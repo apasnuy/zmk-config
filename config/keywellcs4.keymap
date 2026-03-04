@@ -447,13 +447,13 @@ As such, those are in use within the default layer at this time.*/
 
         MacCarabinerLU {
             bindings = <&MacKarabinerLU>;
-            key-positions = <6 7 33>;
+            key-positions = <6 7>;
             layers = <21>;
         };
 
         MacCarabinerLE {
             bindings = <&MacKarabinerLE>;
-            key-positions = <33 6 18>;
+            key-positions = <6 18>;
             layers = <21>;
         };
     };
