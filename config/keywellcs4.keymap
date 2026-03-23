@@ -461,14 +461,14 @@ As such, those are in use within the default layer at this time.*/
 
         iPadCarabinerLU {
             bindings = <&iPadLayerLU>;
-            key-positions = <6 7 33>;
+            key-positions = <6 7 33 34>;
             timeout-ms = <190>;
             layers = <0 5>;
         };
 
         iPadCarabinerLE {
             bindings = <&iPadLayerLE>;
-            key-positions = <6 18 33>;
+            key-positions = <6 18 33 34>;
             timeout-ms = <190>;
             layers = <2 3 4 6 7 0 5>;
         };
