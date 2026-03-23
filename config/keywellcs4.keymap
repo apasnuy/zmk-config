@@ -596,7 +596,7 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on L &kt_on U &tog_on 2 &tog_on 3 &tog_on 4 &kt_off L &kt_off U>;
+            bindings = <&kt_on F16 &kt_on L &kt_on U &tog_on 2 &tog_on 3 &tog_on 4 &kt_off F16 &kt_off L &kt_off U>;
             label = "MACKARABINERLU";
             wait-ms = <1>;
         };
@@ -606,7 +606,7 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on L &kt_on E &tog_of 2 &tog_of 3 &tog_of 4 &kt_off L &kt_off E>;
+            bindings = <&kt_on F16 &kt_on L &kt_on E &tog_of 2 &tog_of 3 &tog_of 4 &kt_off F16 &kt_off L &kt_off E>;
             label = "MACKARABINERLE";
             wait-ms = <1>;
         };
