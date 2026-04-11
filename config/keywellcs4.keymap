@@ -456,13 +456,13 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&MacKarabinerLE>;
             key-positions = <6 18 33>;
             layers = <2 3 4 6 7 0>;
-            timeout-ms = <170>;
+            timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         iPadCarabinerLU {
             bindings = <&iPadLayerLU>;
             key-positions = <6 7 33 34>;
-            timeout-ms = <190>;
+            timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <0 5>;
         };
 
