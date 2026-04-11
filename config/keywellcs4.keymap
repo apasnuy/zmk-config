@@ -22,8 +22,8 @@
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
-#define WARP  25
-#define PRESISION  26
+#define WARP  22
+#define PRESISION  23
 
 #include "includes/mouse.dtsi"
 
