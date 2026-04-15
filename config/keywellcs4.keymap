@@ -500,6 +500,11 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <190>;
             layers = <2 3 4 6 7 0 5>;
         };
+
+        test {
+            bindings = <&test>;
+            key-positions = <11 20>;
+        };
     };
 
     macros {
@@ -790,6 +795,13 @@ As such, those are in use within the default layer at this time.*/
             label = "P_TABS_MACRO";
             tap-ms = <1>;
             wait-ms = <1>;
+        };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F16 &kp A &kt_off F16>;
+            label = "TEST";
         };
     };
 
