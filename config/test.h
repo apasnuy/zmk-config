@@ -57,5 +57,5 @@
 #include <dt-bindings/zmk/hid_usage_pages.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-#define C_AC_NEXT_KEYBOARD_LAYOUT_SELECT_2 (ZMK_HID_USAGE(0x00ff, 0x0003))
+#define C_AC_NEXT_KEYBOARD_LAYOUT_SELECT_2 (ZMK_HID_USAGE(0x00ff, 0x029D))
 #define GLOBE_2 (C_AC_NEXT_KEYBOARD_LAYOUT_SELECT_2)
