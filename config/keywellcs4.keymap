@@ -719,9 +719,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on GLOBE>,
+                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RIGHT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off GLOBE &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 2 &tog_on 3 &kt_off RIGHT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
             wait-ms = <1>;
@@ -811,10 +811,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W         &kp F                &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml GLOBE A  &hml LEFT_CONTROL R  &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr GLOBE O
-&kp Z           &lt 23 X      &lt 24 C             &lt 22 V              &kp B        &kp K                     &kp M                         &kp COMMA    &kp DOT      &kp FSLH
-                &kp N1        &mo 27               &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER   &lt 8 SPACE
+&EscQ           &kp W                 &kp F                &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L                         &kp U        &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R  &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N  &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
+&kp Z           &lt 23 X              &lt 24 C             &lt 22 V              &kp B        &kp K                     &kp M                         &kp COMMA    &kp DOT      &kp FSLH
+                &kp N1                &mo 27               &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans                        &mo 10       &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
             >;
         };
 
@@ -831,10 +831,10 @@ As such, those are in use within the default layer at this time.*/
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-&EscUKPhonotic  &kp I                &kp A                &kp G        &kp U                &kp Q   &kp K                     &kp E                &kp B              &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml GLOBE F         &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr GLOBE J
-&kp P           &lt 23 LEFT_BRACKET  &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V                     &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
-                &trans               &trans               &trans       &trans               &trans  &trans                    &trans               &trans             &trans               &trans        &trans
+&EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K                     &kp E                &kp B              &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
+&kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V                     &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
+                &trans                &trans               &trans       &trans               &trans  &trans                    &trans               &trans             &trans               &trans                &trans
             >;
         };
 
@@ -860,10 +860,10 @@ As such, those are in use within the default layer at this time.*/
 
         iPad {
             bindings = <
-&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
+&trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans        &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
