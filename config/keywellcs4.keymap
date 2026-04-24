@@ -1050,7 +1050,7 @@ As such, those are in use within the default layer at this time.*/
         App_M_RShift_Macro: App_M_RShift_Macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp RS(M) &kt_off F17>;
+            bindings = <&kt_on F17 &kt_on M &kt_on RIGHT_SHIFT &kt_off F17 &kt_off M &kt_off RIGHT_SHIFT>;
             label = "APP_M_RSHIFT_MACRO";
             wait-ms = <1>;
             tap-ms = <1>;
