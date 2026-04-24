@@ -533,6 +533,13 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&App_W_Macro>;
         };
+
+        App_Q_td: App_Q_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APP_Q_TD";
+            #binding-cells = <0>;
+            bindings = <&App_Q_Macro>;
+        };
     };
 
     combos {
@@ -1037,311 +1044,311 @@ As such, those are in use within the default layer at this time.*/
             label = "APP_Q_MACRO";
         };
 
-        App_MM_Macro: compatible = "zmk,behavior-macro";
+        App_MM_Macro: App_M_RShift_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F18 &kp M &kt_off F18>;
+            label = "APP_M_RSHIFT_MACRO";
+        };
 
-        #binding-cells = <0>;
-        bindings = <&kt_on F18 &kp M &kt_off F18>;
+        App_MMM_Macro: App_M_RShift_RControl_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F19 &kt_on M &kt_off F19>;
+            label = "APP_M_RSHIFT_RCONTROL_MACRO";
+        };
     };
 
-    App_MMM_Macro: App_M_RShift_RControl_Macro {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&kt_on F19 &kt_on M &kt_off F19>;
-        label = "APP_M_RSHIFT_RCONTROL_MACRO";
-    };
-};
+    keymap {
+        compatible = "zmk,keymap";
 
-keymap {
-    compatible = "zmk,keymap";
-
-    EN_Colemak {
-        bindings = <
+        EN_Colemak {
+            bindings = <
 &EscQ           &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L                         &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &H_deleteWordOnDoubleTap_Mac  &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M                         &kp COMMA                       &kp DOT      &kp FSLH
                 &kp N1                &mo 27                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans                        &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
-        >;
-    };
+            >;
+        };
 
-    Ubuntu {
-        bindings = <
+        Ubuntu {
+            bindings = <
 &EscQ           &trans               &trans               &trans       &trans               &trans  &trans                           &trans               &trans       &trans
 &kp LEFT_SHIFT  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_CONTROL T  &trans  &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &trans          &lt 23 X             &lt 24 C             &lt 22 V     &trans               &trans  &trans                           &trans               &trans       &trans
                 &trans               &trans               &trans       &lt 16 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
-        >;
-    };
+            >;
+        };
 
-    UK_Phonetic {
-        // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
+        UK_Phonetic {
+            // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
-        bindings = <
+            bindings = <
 &EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K                     &kp E                &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
 &kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V                     &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
                 &trans                &trans               &trans       &trans               &trans  &trans                    &trans               &trans             &trans               &trans                &trans
-        >;
-    };
+            >;
+        };
 
-    UK_Phonetic_MacOS_ShortCuts_Fix {
-        display-name = "UK-ShortCutsFix";
-        bindings = <
+        UK_Phonetic_MacOS_ShortCuts_Fix {
+            display-name = "UK-ShortCutsFix";
+            bindings = <
 &trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
 &kp LEFT_SHIFT  &MacOS_Globe_non_en_fix_LHRM 0 F  &MacOS_Control_non_en_fix_LHRM 0 H  &trans  &MacOS_CMD_non_en_fix_LHRM 0 N  &trans  &trans  &MacOS_CMD_non_en_fix_RHRM 0 Y  &trans  &MacOS_Control_non_en_fix_RHRM 0 S  &MacOS_Globe_non_en_fix_RHRM 0 J
 &trans          &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans
                 &trans                            &trans                              &trans  &trans                          &trans  &trans  &trans                          &trans  &trans                              &trans                            &trans
-        >;
-    };
+            >;
+        };
 
-    UK_QWERTY_Symbols_thumbkey {
-        display-name = "UK_QWERTY_Symbols_thumbkey";
-        bindings = <
+        UK_QWERTY_Symbols_thumbkey {
+            display-name = "UK_QWERTY_Symbols_thumbkey";
+            bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 7 SPACE
-        >;
-    };
+            >;
+        };
 
-    iPad {
-        bindings = <
+        iPad {
+            bindings = <
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
                 &trans        &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
-        >;
-    };
+            >;
+        };
 
-    iPad_UK_Phonetic_Shortcut_WA {
-        display-name = "UK-ShortCutsFix";
-        bindings = <
+        iPad_UK_Phonetic_Shortcut_WA {
+            display-name = "UK-ShortCutsFix";
+            bindings = <
 &trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
 &kp LEFT_SHIFT  &iOS_Globe_non_qwerty_fix_LHRM 0 F  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &iOS_Globe_non_qwerty_fix_RHRM 0 J
 &trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
                 &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans                                &trans                              &trans
-        >;
-    };
+            >;
+        };
 
-    Symbols_UK_QWERTY {
-        bindings = <
+        Symbols_UK_QWERTY {
+            bindings = <
 &kp LS(N1)             &kp UNDER  &kp LC(RA(LEFT_BRACKET))  &kp LC(RA(LS(COMMA)))         &kp LC(RA(GRAVE))     &kp RA(N3)  &kp RA(LC(LS(PERIOD)))         &kp RA(LC(RIGHT_BRACKET))  &kp RA(N7)          &kp RA(M)
 &kp LEFT_SHIFT         &kp EQUAL  &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp RA(N6)  &kp RA(N4)                     &kp RIGHT_PARENTHESIS      &kp RA(LC(SEMI))    &kp LC(RA(LS(SINGLE_QUOTE)))  &kp LC(RA(APOSTROPHE))
 &kp RA(LC(BACKSLASH))  &none      &kp RA(N8)                &kp LC(RA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp RA(N2)  &kp RA(LC(LS(RIGHT_BRACKET)))  &kp RA(LC(COMMA))          &kp RA(LC(PERIOD))  &kp RA(LS(LC(SLASH)))
                        &trans     &trans                    &trans                        &trans                &trans      &trans                         &trans                     &trans              &trans                        &trans                  &trans
-        >;
-    };
+            >;
+        };
 
-    Symbols_EN {
-        bindings = <
+        Symbols_EN {
+            bindings = <
 &kp EXCL        &kp UNDER  &kp LEFT_BRACKET  &kp LESS_THAN   &kp GRAVE                           &kp HASH   &kp GREATER_THAN  &kp RIGHT_BRACKET                    &kp AMPS    &kp TILDE
 &kp LEFT_SHIFT  &kp EQUAL  &kp MINUS         &kp PLUS        &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR        &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES  &kp APOSTROPHE
 &kp BACKSLASH   &none      &kp ASTERISK      &kp LEFT_BRACE  &kp PERCENT                         &kp AT     &kp RIGHT_BRACE   &kp COMMA                            &kp PERIOD  &kp QUESTION
                 &trans     &trans            &trans          &trans                              &trans     &trans            &trans                               &trans      &trans             &trans          &trans
-        >;
-    };
+            >;
+        };
 
-    Numbers {
-        bindings = <
+        Numbers {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &none       &kp N7  &kp N8        &kp N9  &none
 &trans  &trans  &trans  &trans  &trans  &trans      &none   &kp NUMBER_4  &kp N5  &kp N6  &kp NUMBER_0
 &trans  &trans  &trans  &trans  &trans  &kp KP_DOT  &kp N1  &kp N2        &kp N3  &none
         &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans  &trans  &trans        &none
-        >;
-    };
+            >;
+        };
 
-    emoji {
-        bindings = <
+        emoji {
+            bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    HRM_4 {
-        display-name = "ASDFHJKL";
-        bindings = <
+        HRM_4 {
+            display-name = "ASDFHJKL";
+            bindings = <
 &none      &mo 14  &none             &mo 12    &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
 &trans     &trans  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LG(Z)  &none   &none             &mo 15    &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
            &trans  &trans            &trans    &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
-        >;
-    };
+            >;
+        };
 
-    HRM_4-TabsNav {
-        bindings = <
+        HRM_4-TabsNav {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &kp LG(LEFT_BRACKET)  &none            &none  &kp LG(RIGHT_BRACKET)
 &none  &none  &none  &none  &none  &none  &none                 &kp LC(LS(TAB))  &none  &none                  &kp LC(TAB)
 &none  &none  &none  &none  &none  &none  &none                 &none            &none  &none
        &none  &none  &none  &none  &none  &none                 &none            &none  &none                  &none        &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-BrowserGroupNav {
-        bindings = <
+        HRM_4-BrowserGroupNav {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &none  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
        &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-WorkSpaceAppCycle {
-        bindings = <
+        HRM_4-WorkSpaceAppCycle {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none          &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(RA(J))  &none  &none  &kp RA(LS(K))
 &none  &none  &none  &none  &none  &none  &none  &none          &none  &none
        &none  &none  &none  &none  &none  &none  &none          &none  &none  &none          &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-AppWindowsCycle {
-        bindings = <
+        HRM_4-AppWindowsCycle {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none           &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(LG(F9))  &none  &none  &kp LG(F9)
 &none  &none  &none  &none  &none  &none  &none  &none           &none  &none
        &none  &none  &none  &none  &none  &none  &none           &none  &none  &none       &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4_Ubuntu {
-        display-name = "ASDFHJKL";
-        bindings = <
+        HRM_4_Ubuntu {
+            display-name = "ASDFHJKL";
+            bindings = <
 &none      &UbuntuWindowsSwWA_Macro  &none             &none                 &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
 &trans     &trans                    &kp LEFT_CONTROL  &kp LEFT_CONTROL      &mo 26  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(Z)  &none                     &none             &UbuntuAppSwWA_Macro  &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
            &trans                    &trans            &trans                &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
-        >;
-    };
+            >;
+        };
 
-    HRM_4-TabsNav_Ubuntu {
-        bindings = <
+        HRM_4-TabsNav_Ubuntu {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &kp LG(LEFT_BRACKET)  &none            &none  &kp LG(RIGHT_BRACKET)
 &none  &none  &none  &none  &none  &none  &none                 &kp LC(LS(TAB))  &none  &none                  &kp LC(TAB)
 &none  &none  &none  &none  &none  &none  &none                 &none            &none  &none
        &none  &none  &none  &none  &none  &none                 &none            &none  &none                  &none        &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-BowserGroupNavNotExist {
-        bindings = <
+        HRM_4-BowserGroupNavNotExist {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &none  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
        &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-WorkSpaceAppCycle_Ubuntu {
-        bindings = <
+        HRM_4-WorkSpaceAppCycle_Ubuntu {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none           &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(ESCAPE)  &none  &none  &kp ESC
 &none  &none  &none  &none  &none  &none  &none  &none           &none  &none
        &none  &none  &none  &none  &none  &none  &none           &none  &none  &none    &none
-        >;
-    };
+            >;
+        };
 
-    HRM_4-AppWindowsCycle_Ubuntu {
-        bindings = <
+        HRM_4-AppWindowsCycle_Ubuntu {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none       &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(F6)  &none  &none  &kp F6
 &none  &none  &none  &none  &none  &none  &none  &none       &none  &none
        &none  &none  &none  &none  &none  &none  &none       &none  &none  &none   &none
-        >;
-    };
+            >;
+        };
 
-    mouse_layer {
-        display-name = "mouse";
-        bindings = <
+        mouse_layer {
+            display-name = "mouse";
+            bindings = <
 &trans  &trans  &trans  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none           &none
 &trans  &trans  &trans  &trans  &trans  &none           &none           &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &none   &trans  &trans  &trans  &none   &none           &msc SCRL_UP    &none            &none           &none
         &trans  &trans  &trans  &trans  &trans          &trans          &trans           &none           &trans        &mkp LCLK        &mkp RCLK
-        >;
-    };
+            >;
+        };
 
-    mouse_warp {
-        bindings = <
+        mouse_warp {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    mouse_precision {
-        bindings = <
+        mouse_precision {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    mouse_regular {
-        bindings = <
+        mouse_regular {
+            bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        >;
-    };
+            >;
+        };
 
-    UA_Uq {
-        bindings = <
+        UA_Uq {
+            bindings = <
 &EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K                     &kp E                &kp B        &kp SEMI
 &trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWordOnDoubleTap  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
 &kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V                     &kp COMMA            &kp PERIOD   &kp SLASH
                 &trans             &trans               &trans       &trans               &trans  &trans                    &trans               &trans       &trans               &trans             &trans
-        >;
-    };
+            >;
+        };
 
-    HRM_4-ASDF-line-st-end {
-        bindings = <
+        HRM_4-ASDF-line-st-end {
+            bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none     &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp HOME  &none  &none  &kp END
 &none  &none  &none  &none  &none  &none  &none  &none     &none  &none
        &none  &none  &none  &none  &none  &none  &none     &none  &none  &none    &none
-        >;
-    };
+            >;
+        };
 
-    Adjust {
-        display-name = "BT, workarounds";
-        bindings = <
+        Adjust {
+            display-name = "BT, workarounds";
+            bindings = <
 &tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop_Macro  &trans      &Ubuntu_Macro  &none    &tog 25
 &none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3        &trans      &trans         &trans   &iPad_Macro  &none
 &trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
            &sys_reset  &none       &none       &none         &none               &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
-        >;
+            >;
+        };
+
+        Apps {
+            bindings = <
+&App_Q_td  &App_W_td  &App_F_td  &App_P_td  &trans     &trans     &App_L_td  &trans     &trans     &trans
+&trans     &App_A_td  &App_R_td  &App_S_td  &App_T_td  &App_D_td  &App_H_td  &App_N_td  &App_E_td  &App_I_td  &trans
+&trans     &trans     &App_C_td  &trans     &trans     &trans     &App_M_td  &trans     &trans     &trans
+           &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans  &trans
+            >;
+        };
     };
 
-    Apps {
-        bindings = <
-&none  &App_W_td  &App_F_td  &App_P_td  &none      &none      &App_L_td  &none      &none      &none
-&none  &App_A_td  &App_R_td  &App_S_td  &App_T_td  &App_D_td  &App_H_td  &App_N_td  &App_E_td  &App_I_td  &none
-&none  &none      &App_C_td  &none      &none      &none      &App_M_td  &none      &none      &none
-       &none      &none      &none      &none      &none      &none      &none      &none      &none      &none  &none
-        >;
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        MouseWarpConditional {
+            if-layers = <22>;
+            then-layer = <21>;
+        };
+
+        MousePrecisionConditional {
+            if-layers = <23>;
+            then-layer = <21>;
+        };
+
+        MouseRegularConditional {
+            if-layers = <24>;
+            then-layer = <21>;
+        };
     };
-};
-
-conditional_layers {
-    compatible = "zmk,conditional-layers";
-
-    MouseWarpConditional {
-        if-layers = <22>;
-        then-layer = <21>;
-    };
-
-    MousePrecisionConditional {
-        if-layers = <23>;
-        then-layer = <21>;
-    };
-
-    MouseRegularConditional {
-        if-layers = <24>;
-        then-layer = <21>;
-    };
-};
-
 };
