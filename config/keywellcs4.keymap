@@ -198,7 +198,7 @@ As such, those are in use within the default layer at this time.*/
         HyperMac_HT_Timeless: holdTapMacroKp {
             compatible = "zmk,behavior-hold-tap";
             label = "Hyper";
-            bindings = <&HyperMacTimelessMacro>, <&kp>;
+            bindings = <&HyperMacTimeless_Macro>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <173>;
@@ -263,7 +263,7 @@ As such, those are in use within the default layer at this time.*/
         Hyper_iPad_HT_Timeless: Hyper_iPad_HT_Timeless {
             compatible = "zmk,behavior-hold-tap";
             label = "HYPER_IPAD_HT_TIMELESS";
-            bindings = <&HyperiPadTimelessMacro>, <&kp>;
+            bindings = <&HyperiPadTimeless_Macro>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <173>;
@@ -428,13 +428,20 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 21 22 23 24 25 31 32 34 35 33>;
         };
+
+        App_A: App_A {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APP_A";
+            #binding-cells = <0>;
+            bindings = <&App_A_Macro>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         combo_CmdTAbAppSW {
-            bindings = <&CmdTAbAppSWMacro>;
+            bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
             layers = <0 1 2 3 4 5 6>;
             timeout-ms = <150>;
@@ -502,42 +509,42 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacCarabinerLU {
-            bindings = <&MacKarabinerLU>;
+            bindings = <&MacKarabinerLU_Macro>;
             key-positions = <6 7 33>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         MacCarabinerLE {
-            bindings = <&MacKarabinerLE>;
+            bindings = <&MacKarabinerLE_Macro>;
             key-positions = <6 18 33>;
             layers = <2 3 4 6 7 0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         iPadCarabinerLU {
-            bindings = <&iPadLayerLU>;
+            bindings = <&iPadLayerLU_Macro>;
             key-positions = <6 7 33 34>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <0 5>;
         };
 
         iPadCarabinerLE {
-            bindings = <&iPadLayerLE>;
+            bindings = <&iPadLayerLE_Macro>;
             key-positions = <6 18 33 34>;
             timeout-ms = <190>;
             layers = <2 3 4 6 7 0 5>;
         };
 
         test {
-            bindings = <&test>;
+            bindings = <&App_A_Macro>;
             key-positions = <11 20>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
     };
 
     macros {
-        CmdTAbAppSWMacro: CmdTAbReleaseTabCombo {
+        CmdTAbAppSW_Macro: CmdTAbReleaseTabCombo {
             //    - ! Don't asign to holds of hold-taps as in standard user press CMD+TAB faster and it will not trigger in time
             //    - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
             //  protocol level and then processed out of order
@@ -593,28 +600,28 @@ As such, those are in use within the default layer at this time.*/
             label = "UNICODECONTROLWA";
         };
 
-        emojiPOCMacro: emojiNum1 {
+        emojiPOC_Macro: emojiNum1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp M &kp I &kp L &kp E &kp N &kp U &kp M>;
             label = "EMOJINUM1";
         };
 
-        iPadMacro: iPad {
+        iPad_Macro: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
             label = "IPAD";
         };
 
-        MacMacro: Mac {
+        Mac_Macro: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
-        HyperMacTimelessMacro: HyperMacTimelessMacro {
+        HyperMacTimeless_Macro: HyperMacTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -653,7 +660,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        MacKarabinerLU: MacKarabinerLU {
+        MacKarabinerLU_Macro: MacKarabinerLU {
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
             compatible = "zmk,behavior-macro";
@@ -663,7 +670,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        MacKarabinerLE: MacKarabinerLE {
+        MacKarabinerLE_Macro: MacKarabinerLE {
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
             compatible = "zmk,behavior-macro";
@@ -673,7 +680,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        HyperiPadTimelessMacro: HyperiPadTimelessMacro {
+        HyperiPadTimeless_Macro: HyperiPadTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -686,7 +693,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        iPadLayerL: iPadLayerL {
+        iPadLayerL_Macro: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog_on 0>, <&macro_pause_for_release>, <&tog_of 0>;
@@ -696,7 +703,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        iPadLayerLU: iPadKarabinerLU {
+        iPadLayerLU_Macro: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
@@ -705,7 +712,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        iPadLayerLE: iPadKarabinerLE {
+        iPadLayerLE_Macro: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
@@ -714,7 +721,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        JumpDesktop: JumpDesktop {
+        JumpDesktop_Macro: JumpDesktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&tog_of 5 &kt_on LALT>;
@@ -767,14 +774,14 @@ As such, those are in use within the default layer at this time.*/
             label = "IPADGLOBESHORTCUTNONQWERTY_WA";
         };
 
-        UbuntuMacro: UbuntuMacro {
+        Ubuntu_Macro: UbuntuMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
             label = "UBUNTUMACRO";
         };
 
-        UbuntuWindowsSwWA: www {
+        UbuntuWindowsSwWA_Macro: www {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -787,7 +794,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
-        UbuntuAppSwWA: vvvv {
+        UbuntuAppSwWA_Macro: vvvv {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -826,7 +833,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        test: test {
+        App_A_Macro: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt_on F17 &kp A &kt_off F17>;
@@ -934,10 +941,10 @@ As such, those are in use within the default layer at this time.*/
 
         emoji {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOCMacro  &trans  &trans  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -990,10 +997,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4_Ubuntu {
             display-name = "ASDFHJKL";
             bindings = <
-&none      &UbuntuWindowsSwWA  &none             &none             &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&trans     &trans              &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 26  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)  &none               &none             &UbuntuAppSwWA    &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
-           &trans              &trans            &trans            &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
+&none      &UbuntuWindowsSwWA_Macro  &none             &none                 &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
+&trans     &trans                    &kp LEFT_CONTROL  &kp LEFT_CONTROL      &mo 26  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LC(Z)  &none                     &none             &UbuntuAppSwWA_Macro  &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
+           &trans                    &trans            &trans                &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
 
@@ -1091,17 +1098,17 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop  &trans     &UbuntuMacro  &none    &tog 25
-&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans     &trans        &trans   &iPadMacro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &MacMacro  &trans        &none    &none
-           &sys_reset  &none       &none       &none         &none         &none      &sys_reset    &kt F15  &bt BT_CLR  &none  &none
+&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop_Macro  &trans      &Ubuntu_Macro  &none    &tog 25
+&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3        &trans      &trans         &trans   &iPad_Macro  &none
+&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
+           &sys_reset  &none       &none       &none         &none               &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
             >;
         };
 
         Apps {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &test   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &App_A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
