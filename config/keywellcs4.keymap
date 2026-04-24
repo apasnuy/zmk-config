@@ -614,13 +614,16 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: remove
+
         iPadCarabinerLU {
             bindings = <&iPadLayerLU_Macro>;
             key-positions = <6 7 33 34>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <0 5>;
         };
+
         // todo:cs4: remove
+
         iPadCarabinerLE {
             bindings = <&iPadLayerLE_Macro>;
             key-positions = <6 18 33 34>;
@@ -713,6 +716,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: rename to reflect its to support hyper by standing above hrm layer
+
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -753,6 +757,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: reviw this ant similar. seems here enough just switch to plain letter layer instead of sanding this bs?
+
         MacKarabinerLU_Macro: MacKarabinerLU {
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
@@ -773,7 +778,8 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-// todo:cs4: remove
+        // todo:cs4: remove
+
         HyperiPadTimeless_Macro: HyperiPadTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -788,6 +794,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: remove
+
         iPadLayerL_Macro: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -799,6 +806,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: remove
+
         iPadLayerLU_Macro: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -809,6 +817,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         // todo:cs4: remove
+
         iPadLayerLE_Macro: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1055,7 +1064,7 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
+&EscQ           &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
                 &kp N1                &mo 27                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
@@ -1306,20 +1315,20 @@ As such, those are in use within the default layer at this time.*/
 
         Colemak_Plain_and_Hyper {
             bindings = <
-                               &kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
-                               &kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
-                               &kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                               &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &trans
-                       >;
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &trans
+            >;
         };
 
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 7        &none  &trans      &Ubuntu_Macro  &none    &tog 25
-&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3        &trans      &trans         &trans   &iPad_Macro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
-           &sys_reset  &none       &none       &none         &none               &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
+&tog_on 2  &none       &tog 3      &none       &tog 7        &none         &trans      &Ubuntu_Macro  &none    &tog 25
+&none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &trans      &trans         &trans   &iPad_Macro  &none
+&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none         &Mac_Macro  &trans         &none    &none
+           &sys_reset  &none       &none       &none         &none         &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
             >;
         };
 
@@ -1331,8 +1340,7 @@ As such, those are in use within the default layer at this time.*/
            &none      &none      &none      &none      &none      &none      &none      &none  &none      &none  &none
             >;
         };
-
-     };
+    };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
