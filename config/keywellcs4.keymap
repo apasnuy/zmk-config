@@ -535,12 +535,6 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <190>;
             layers = <2 3 4 6 7 0 5>;
         };
-
-        test {
-            bindings = <&App_A_Macro>;
-            key-positions = <11 20>;
-            timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
-        };
     };
 
     macros {
@@ -833,11 +827,116 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        App_A_Macro: test {
+        App_A_Macro: App_A_Macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt_on F17 &kp A &kt_off F17>;
-            label = "TEST";
+            label = "APP_A_MACRO";
+        };
+
+        App_C_Macro: App_C_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp C &kt_off F17>;
+            label = "APP_C_MACRO";
+        };
+
+        App_E_Macro: App_E_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp E &kt_off F17>;
+            label = "APP_E_MACRO";
+        };
+
+        App_D_Macro: App_D_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp D &kt_off F17>;
+            label = "APP_D_MACRO";
+        };
+
+        App_F_Macro: App_F_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp F &kt_off F17>;
+            label = "APP_F_MACRO";
+        };
+
+        App_H_Macro: App_H_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp H &kt_off F17>;
+            label = "APP_H_MACRO";
+        };
+
+        App_I_Macro: App_I_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp I &kt_off F17>;
+            label = "APP_I_MACRO";
+        };
+
+        App_L_Macro: App_L_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp I &kt_off F17>;
+            label = "APP_L_MACRO";
+        };
+
+        App_M_Macro: App_M_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp M &kt_off F17>;
+            label = "APP_M_MACRO";
+        };
+
+        App_N_Macro: App_N_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp N &kt_off F17>;
+            label = "APP_N_MACRO";
+        };
+
+        App_P_Macro: App_P_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp P &kt_off F17>;
+            label = "APP_P_MACRO";
+        };
+
+        App_R_Macro: App_R_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp R &kt_off F17>;
+            label = "APP_R_MACRO";
+        };
+
+        App_S_Macro: App_S_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp S &kt_off F17>;
+            label = "APP_S_MACRO";
+        };
+
+        App_T_Macro: App_T_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp T &kt_off F17>;
+            label = "APP_T_MACRO";
+        };
+
+        App_W_Macro: App_W_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp W &kt_off F17>;
+            label = "APP_W_MACRO";
+        };
+
+        App_Q_Macro: App_Q_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp Q &kt_off F17>;
+            label = "APP_Q_MACRO";
         };
     };
 
