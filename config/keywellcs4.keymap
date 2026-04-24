@@ -984,7 +984,7 @@ As such, those are in use within the default layer at this time.*/
         App_L_Macro: App_L_Macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp I &kt_off F17>;
+            bindings = <&kt_on F17 &kp L &kt_off F17>;
             label = "APP_L_MACRO";
         };
 
