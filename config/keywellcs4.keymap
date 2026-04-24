@@ -103,13 +103,6 @@ As such, those are in use within the default layer at this time.*/
             tapping-term-ms = <302>;
         };
 
-        H_deleteWord_TD_Mac: H_deleteWord_TD_Mac {
-            compatible = "zmk,behavior-tap-dance";
-            label = "H_DELETEWORD_TD_MAC";
-            #binding-cells = <0>;
-            bindings = <&kp H>, <&kp RA(BACKSPACE)>;
-        };
-
         backspaseOrDeleteWordOnDouble: backspaseOrDeleteWordOnDouble {
             compatible = "zmk,behavior-tap-dance";
             label = "BACKSPASEORDELETEWORDONDOUBLE";
@@ -124,13 +117,6 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp Z>, <&kp ESCAPE>;
 
             tapping-term-ms = <302>;
-        };
-
-        X_deleteWord_TD: X_deleteWord_TD {
-            compatible = "zmk,behavior-tap-dance";
-            label = "X_DELETEWORD_TD";
-            #binding-cells = <0>;
-            bindings = <&kp X>, <&kp RA(BACKSPACE)>;
         };
 
         UK_Period_Symbol: UK_Period_Symbol {
@@ -1069,10 +1055,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L                 &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &H_deleteWord_TD_Mac  &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
-&kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M                 &kp COMMA                       &kp DOT      &kp FSLH
-                &kp N1                &mo 27                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans                &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
+&EscQ           &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
+&kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
+                &kp N1                &mo 27                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
             >;
         };
 
@@ -1089,10 +1075,10 @@ As such, those are in use within the default layer at this time.*/
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-&EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K             &kp E                &kp B              &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWord_TD  &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
-&kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V             &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
-                &trans                &trans               &trans       &trans               &trans  &trans            &trans               &trans             &trans               &trans                &trans
+&EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B              &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
+&kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V   &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
+                &trans                &trans               &trans       &trans               &trans  &trans  &trans               &trans             &trans               &trans                &trans
             >;
         };
 
@@ -1302,10 +1288,10 @@ As such, those are in use within the default layer at this time.*/
 
         UA_Uq {
             bindings = <
-&EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K             &kp E                &kp B        &kp SEMI
-&trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &X_deleteWord_TD  &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-&kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V             &kp COMMA            &kp PERIOD   &kp SLASH
-                &trans             &trans               &trans       &trans               &trans  &trans            &trans               &trans       &trans               &trans             &trans
+&EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
+&trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V   &kp COMMA            &kp PERIOD   &kp SLASH
+                &trans             &trans               &trans       &trans               &trans  &trans  &trans               &trans       &trans               &trans             &trans
             >;
         };
 
