@@ -429,9 +429,9 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 21 22 23 24 25 31 32 34 35 33>;
         };
 
-        App_A: App_A {
+        App_A_td: App_A_td {
             compatible = "zmk,behavior-tap-dance";
-            label = "APP_A";
+            label = "APP_A_TD";
             #binding-cells = <0>;
             bindings = <&App_A_Macro>;
         };
@@ -1107,10 +1107,10 @@ As such, those are in use within the default layer at this time.*/
 
         Apps {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &App_A  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &App_A_td  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
