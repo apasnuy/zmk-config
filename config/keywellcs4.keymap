@@ -1052,6 +1052,8 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&kt_on F17 &kp RS(M) &kt_off F17>;
             label = "APP_M_RSHIFT_MACRO";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         App_M_RShift_RControl_Macro: App_M_RShift_RControl_Macro {
