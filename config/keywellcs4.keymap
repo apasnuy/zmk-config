@@ -829,7 +829,7 @@ As such, those are in use within the default layer at this time.*/
         test: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F11 &kp A &kt_off F16>;
+            bindings = <&kt_on F17 &kp A &kt_off F17>;
             label = "TEST";
         };
     };
