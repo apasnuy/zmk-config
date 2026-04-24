@@ -22,8 +22,8 @@
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1
-#define WARP  22
-#define PRESISION  23
+#define WARP  23
+#define PRESISION  24
 
 #include "includes/mouse.dtsi"
 
@@ -613,13 +613,14 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
+        // todo:cs4: remove
         iPadCarabinerLU {
             bindings = <&iPadLayerLU_Macro>;
             key-positions = <6 7 33 34>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <1 6>;
         };
-
+        // todo:cs4: remove
         iPadCarabinerLE {
             bindings = <&iPadLayerLE_Macro>;
             key-positions = <6 18 33 34>;
@@ -700,24 +701,25 @@ As such, those are in use within the default layer at this time.*/
         iPad_Macro: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_on 6 &tog_of 7 &kt_off LEFT_ALT>;
+            bindings = <&bt BT_SEL 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_on 1 &tog_on 6 &tog_of 7>;
             label = "IPAD";
         };
 
         Mac_Macro: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &tog_of 7 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &tog_of 7 &tog_on 1 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
+        // todo:cs4: rename to reflect its to support hyper by standing above hrm layer
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 1>,
+                <&kt_on F16 &tog_on 0>,
                 <&macro_pause_for_release>,
-                <&tog_of 1 &kt_off F16>;
+                <&tog_of 0 &kt_off F16>;
 
             label = "HYPERMACTIMELESSMACRO";
             tap-ms = <1>;
@@ -750,6 +752,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
+        // todo:cs4: reviw this ant similar. seems here enough just switch to plain letter layer instead of sanding this bs?
         MacKarabinerLU_Macro: MacKarabinerLU {
             //    For rdp/vnc/remote carabiner don't work. To switch system layouts use Apple Script added as a service with shortcut
 
@@ -770,6 +773,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
+// todo:cs4: remove
         HyperiPadTimeless_Macro: HyperiPadTimelessMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -783,6 +787,7 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
+        // todo:cs4: remove
         iPadLayerL_Macro: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -793,6 +798,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
+        // todo:cs4: remove
         iPadLayerLU_Macro: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -802,6 +808,7 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <1>;
         };
 
+        // todo:cs4: remove
         iPadLayerLE_Macro: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -809,13 +816,6 @@ As such, those are in use within the default layer at this time.*/
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
-        };
-
-        JumpDesktop_Macro: JumpDesktop {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&tog_of 6 &kt_on LALT>;
-            label = "JUMPDESKTOP";
         };
 
         iPadCmdShortcutsNonQwerty_WA: CmdShortcutsNonQwerty_WA {
@@ -1316,7 +1316,7 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 3  &none       &tog 4      &none       &tog 8        &JumpDesktop_Macro  &trans      &Ubuntu_Macro  &none    &tog 26
+&tog_on 3  &none       &tog 4      &none       &tog 8        &none  &trans      &Ubuntu_Macro  &none    &tog 26
 &none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3        &trans      &trans         &trans   &iPad_Macro  &none
 &trans     &trans      &tog_of 3   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
            &sys_reset  &none       &none       &none         &none               &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
