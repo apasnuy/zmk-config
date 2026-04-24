@@ -534,7 +534,7 @@ As such, those are in use within the default layer at this time.*/
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <1 2 3 4 5 6 7>;
             timeout-ms = <150>;
         };
 
@@ -542,74 +542,74 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp O>;
             key-positions = <1 18>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         UK_JU {
             bindings = <&kp PERIOD>;
             key-positions = <7 13>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         UK_JI {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <13 19>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         UK_G_tverde {
             bindings = <&kp GRAVE>;
             key-positions = <4 18>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         UK_ZJ {
             bindings = <&kp SEMI>;
             key-positions = <5 13>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         UK_Miaki_ZNAK {
             bindings = <&kp M>;
             key-positions = <18 25>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         Sticky_CMD_Onehanded {
             bindings = <&sk LEFT_COMMAND>;
             key-positions = <24 23>;
-            layers = <0 2 3 4 7 6 9 7 8 10 11 12 13 14 15>;
+            layers = <1 3 4 5 8 7 10 8 9 11 12 13 14 15 16>;
         };
 
         UK_JE {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 13>;
             timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
+            layers = <3 4 7 8 5>;
         };
 
         Sticky_Control {
             bindings = <&sk LEFT_CONTROL>;
             key-positions = <24 23>;
-            layers = <1>;
+            layers = <2>;
         };
 
         MacCarabinerLU {
             bindings = <&MacKarabinerLU_Macro>;
             key-positions = <6 7 33>;
-            layers = <0>;
+            layers = <1>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         MacCarabinerLE {
             bindings = <&MacKarabinerLE_Macro>;
             key-positions = <6 18 33>;
-            layers = <2 3 4 6 7 0>;
+            layers = <3 4 5 7 8 1>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
@@ -617,14 +617,14 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&iPadLayerLU_Macro>;
             key-positions = <6 7 33 34>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <0 5>;
+            layers = <1 6>;
         };
 
         iPadCarabinerLE {
             bindings = <&iPadLayerLE_Macro>;
             key-positions = <6 18 33 34>;
             timeout-ms = <190>;
-            layers = <2 3 4 6 7 0 5>;
+            layers = <3 4 5 7 8 1 6>;
         };
 
         Delete_Word {
@@ -643,14 +643,14 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LCMD &mo 11 &kp TAB>,
+                <&kp LCMD &mo 12 &kp TAB>,
                 <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp TAB>,
                 <&macro_wait_time 1>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 11 &kp LCMD>;
+                <&mo 12 &kp LCMD>;
 
             label = "CMDTABRELEASETABCOMBO";
             tap-ms = <1>;  // not used as no taps
@@ -661,9 +661,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LCMD>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 26 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 26 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UnicodeCmdWA";
         };
@@ -672,9 +672,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 26 &kt_on RALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 26 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -683,9 +683,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LEFT_CONTROL>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 26 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 26 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODECONTROLWA";
         };
@@ -700,14 +700,14 @@ As such, those are in use within the default layer at this time.*/
         iPad_Macro: iPad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
+            bindings = <&bt BT_SEL 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_on 6 &tog_of 7 &kt_off LEFT_ALT>;
             label = "IPAD";
         };
 
         Mac_Macro: Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &tog_of 7 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -715,9 +715,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 0>,
+                <&kt_on F16 &tog_on 1>,
                 <&macro_pause_for_release>,
-                <&tog_of 0 &kt_off F16>;
+                <&tog_of 1 &kt_off F16>;
 
             label = "HYPERMACTIMELESSMACRO";
             tap-ms = <1>;
@@ -728,9 +728,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
+                <&tog_of 3 &tog_of 4 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 3 &tog_on 4 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSCMDSHORTCUTSNONEN_WA";
             tap-ms = <1>;
@@ -741,9 +741,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
+                <&tog_of 3 &tog_of 4 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 3 &tog_on 4 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "CONTROLSHORTCUTSNONEN_WA";
             wait-ms = <1>;
@@ -755,7 +755,7 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F16 &kt_on L &kt_on U &tog_on 2 &tog_on 3 &tog_on 4 &kt_off F16 &kt_off L &kt_off U>;
+            bindings = <&kt_on F16 &kt_on L &kt_on U &tog_on 3 &tog_on 4 &tog_on 5 &kt_off F16 &kt_off L &kt_off U>;
             label = "MACKARABINERLU";
             wait-ms = <1>;
         };
@@ -765,7 +765,7 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F16 &kt_on L &kt_on E &tog_of 2 &tog_of 3 &tog_of 4 &kt_off F16 &kt_off L &kt_off E>;
+            bindings = <&kt_on F16 &kt_on L &kt_on E &tog_of 3 &tog_of 4 &tog_of 5 &kt_off F16 &kt_off L &kt_off E>;
             label = "MACKARABINERLE";
             wait-ms = <1>;
         };
@@ -774,9 +774,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on RA(LC(LCMD)) &tog_on 0>,
+                <&kt_on RA(LC(LCMD)) &tog_on 1>,
                 <&macro_pause_for_release>,
-                <&tog_of 0 &kt_off RA(LC(LCMD))>;
+                <&tog_of 1 &kt_off RA(LC(LCMD))>;
 
             label = "HYPERIPADTIMELESSMACRO";
             tap-ms = <1>;
@@ -786,7 +786,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerL_Macro: iPadLayerL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_on 0>, <&macro_pause_for_release>, <&tog_of 0>;
+            bindings = <&tog_on 1>, <&macro_pause_for_release>, <&tog_of 1>;
 
             label = "IPADLAYERL";
             wait-ms = <1>;
@@ -796,7 +796,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLU_Macro: iPadKarabinerLU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
+            bindings = <&kp CAPSLOCK &tog_on 3 &tog_on 5 &tog_on 7>;
             label = "IPADKARABINERLU";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -805,7 +805,7 @@ As such, those are in use within the default layer at this time.*/
         iPadLayerLE_Macro: iPadKarabinerLE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
+            bindings = <&kp CAPSLOCK &tog_of 3 &tog_of 5 &tog_of 7>;
             label = "IPADKARABINERLE";
             wait-ms = <1>;
             tap-ms = <1>;
@@ -814,7 +814,7 @@ As such, those are in use within the default layer at this time.*/
         JumpDesktop_Macro: JumpDesktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_of 5 &kt_on LALT>;
+            bindings = <&tog_of 6 &kt_on LALT>;
             label = "JUMPDESKTOP";
         };
 
@@ -822,9 +822,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 6 &tog_of 2 &kt_on LCMD>,
+                <&tog_of 7 &tog_of 3 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 6 &tog_on 2 &kt_off LCMD>;
+                <&tog_on 7 &tog_on 3 &kt_off LCMD>;
 
             label = "CMDSHORTCUTSNONQWERTY_WA";
         };
@@ -833,9 +833,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 6 &tog_of 2 &kt_on LEFT_CONTROL>,
+                <&tog_of 7 &tog_of 3 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 6 &tog_on 2 &kt_off LEFT_CONTROL>;
+                <&tog_on 7 &tog_on 3 &kt_off LEFT_CONTROL>;
 
             label = "IPADCONTROLSHORTCUTNONQWERTY_WA";
         };
@@ -844,9 +844,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RIGHT_CONTROL>,
+                <&tog_of 3 &tog_of 4 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RIGHT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off RIGHT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&tog_on 3 &tog_on 4 &kt_off RIGHT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
             wait-ms = <1>;
@@ -857,9 +857,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_of 6 &tog_of 2 &kt_on GLOBE>,
+                <&tog_of 7 &tog_of 3 &kt_on GLOBE>,
                 <&macro_pause_for_release>,
-                <&tog_on 6 &tog_on 2 &kt_off GLOBE>;
+                <&tog_on 7 &tog_on 3 &kt_off GLOBE>;
 
             label = "IPADGLOBESHORTCUTNONQWERTY_WA";
         };
@@ -867,7 +867,7 @@ As such, those are in use within the default layer at this time.*/
         Ubuntu_Macro: UbuntuMacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
+            bindings = <&bt BT_SEL 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &tog_of 7 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 2>;
             label = "UBUNTUMACRO";
         };
 
@@ -875,9 +875,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 19>,
+                <&kt_on RIGHT_ALT &tog_on 20>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 19>;
+                <&kt_off RIGHT_ALT &tog_of 20>;
 
             label = "WWW";
             wait-ms = <1>;
@@ -888,9 +888,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on RIGHT_ALT &tog_on 20>,
+                <&kt_on RIGHT_ALT &tog_on 21>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_ALT &tog_of 20>;
+                <&kt_off RIGHT_ALT &tog_of 21>;
 
             label = "VVVV";
             wait-ms = <1>;
@@ -901,9 +901,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_CONTROL &tog_on 9>,
+                <&kt_on LEFT_CONTROL &tog_on 10>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &tog_of 9>;
+                <&kt_off LEFT_CONTROL &tog_of 10>;
 
             label = "D_DESKTOPS_MACRO";
             tap-ms = <1>;
@@ -914,9 +914,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on LEFT_COMMAND &tog_on 9>,
+                <&kt_on LEFT_COMMAND &tog_on 10>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_COMMAND &tog_of 9>;
+                <&kt_off LEFT_COMMAND &tog_of 10>;
 
             label = "P_TABS_MACRO";
             tap-ms = <1>;
@@ -1053,12 +1053,21 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
+        Colemak {
+            bindings = <
+&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
+&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &trans
+            >;
+        };
+
         EN_Colemak {
             bindings = <
-&EscQ           &kp W                 &Layer_Tap_Timeless_Left 28 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 28 U  &kp Y        &kp LEFT_SHIFT
+&EscQ           &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
-&kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
-                &kp N1                &mo 27                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
+&kp Z           &lt 24 X              &lt 25 C                       &lt 23 V              &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
+                &kp N1                &mo 28                         &mt F16 SPACE         &lt 12 TAB   &kp ESCAPE                &trans  &mo 11                          &trans       &Backspase_MacLike_mod_morph  &lt 10 ENTER          &lt 9 SPACE
             >;
         };
 
@@ -1066,8 +1075,8 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscQ           &trans               &trans               &trans       &trans               &trans  &trans                           &trans               &trans       &trans
 &kp LEFT_SHIFT  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_CONTROL T  &trans  &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
-&trans          &lt 23 X             &lt 24 C             &lt 22 V     &trans               &trans  &trans                           &trans               &trans       &trans
-                &trans               &trans               &trans       &lt 16 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
+&trans          &lt 24 X             &lt 25 C             &lt 23 V     &trans               &trans  &trans                           &trans               &trans       &trans
+                &trans               &trans               &trans       &lt 17 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
             >;
         };
 
@@ -1077,7 +1086,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
-&kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V   &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
+&kp P           &lt 24 LEFT_BRACKET   &lt 25 W             &lt 23 D     &kp COMMA            &kp R   &kp V   &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
                 &trans                &trans               &trans       &trans               &trans  &trans  &trans               &trans             &trans               &trans                &trans
             >;
         };
@@ -1098,7 +1107,7 @@ As such, those are in use within the default layer at this time.*/
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 7 SPACE
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 8 SPACE
             >;
         };
 
@@ -1160,9 +1169,9 @@ As such, those are in use within the default layer at this time.*/
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-&none      &mo 14  &none             &mo 12    &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
+&none      &mo 15  &none             &mo 13    &mo 14    &kp HOME          &kp PAGE_UP                     &none     &none     &none
 &trans     &trans  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LG(Z)  &none   &none             &mo 15    &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
+&kp LG(Z)  &none   &none             &mo 16    &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
            &trans  &trans            &trans    &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
@@ -1206,8 +1215,8 @@ As such, those are in use within the default layer at this time.*/
         HRM_4_Ubuntu {
             display-name = "ASDFHJKL";
             bindings = <
-&none      &UbuntuWindowsSwWA_Macro  &none             &none                 &mo 17  &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&trans     &trans                    &kp LEFT_CONTROL  &kp LEFT_CONTROL      &mo 26  &mo 18    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&none      &UbuntuWindowsSwWA_Macro  &none             &none                 &mo 18  &kp HOME  &kp PAGE_UP                     &none     &none     &none
+&trans     &trans                    &kp LEFT_CONTROL  &kp LEFT_CONTROL      &mo 27  &mo 19    &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(Z)  &none                     &none             &UbuntuAppSwWA_Macro  &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
            &trans                    &trans            &trans                &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
             >;
@@ -1307,9 +1316,9 @@ As such, those are in use within the default layer at this time.*/
         Adjust {
             display-name = "BT, workarounds";
             bindings = <
-&tog_on 2  &none       &tog 3      &none       &tog 7        &JumpDesktop_Macro  &trans      &Ubuntu_Macro  &none    &tog 25
+&tog_on 3  &none       &tog 4      &none       &tog 8        &JumpDesktop_Macro  &trans      &Ubuntu_Macro  &none    &tog 26
 &none      &none       &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3        &trans      &trans         &trans   &iPad_Macro  &none
-&trans     &trans      &tog_of 2   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
+&trans     &trans      &tog_of 3   &kp INSERT  &out OUT_BLE  &none               &Mac_Macro  &trans         &none    &none
            &sys_reset  &none       &none       &none         &none               &none       &sys_reset     &kt F15  &bt BT_CLR   &none  &none
             >;
         };
@@ -1322,33 +1331,24 @@ As such, those are in use within the default layer at this time.*/
            &none      &none      &none      &none      &none      &none      &none      &none  &none      &none  &none
             >;
         };
-
-        Colemak {
-            bindings = <
-&kp Q           &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N      &kp E    &kp I           &kp O
-&kp Z           &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans          &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         MouseWarpConditional {
-            if-layers = <22>;
-            then-layer = <21>;
+            if-layers = <23>;
+            then-layer = <22>;
         };
 
         MousePrecisionConditional {
-            if-layers = <23>;
-            then-layer = <21>;
+            if-layers = <24>;
+            then-layer = <22>;
         };
 
         MouseRegularConditional {
-            if-layers = <24>;
-            then-layer = <21>;
+            if-layers = <25>;
+            then-layer = <22>;
         };
     };
 };
