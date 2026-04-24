@@ -721,9 +721,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &tog_on 28>,
+                <&kt_on F16 &tog_on 27>,
                 <&macro_pause_for_release>,
-                <&tog_of 28 &kt_off F16>;
+                <&tog_of 27 &kt_off F16>;
 
             label = "HYPERMACTIMELESSMACRO";
             tap-ms = <1>;
