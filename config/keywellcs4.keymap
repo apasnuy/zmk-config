@@ -1325,10 +1325,10 @@ As such, those are in use within the default layer at this time.*/
 
         Apps {
             bindings = <
-&App_Q_td  &App_W_td  &App_F_td  &App_P_td  &trans     &trans     &App_L_td  &trans     &trans     &trans
-&trans     &App_A_td  &App_R_td  &App_S_td  &App_T_td  &App_D_td  &App_H_td  &App_N_td  &App_E_td  &App_I_td  &trans
-&trans     &trans     &App_C_td  &trans     &trans     &trans     &App_M_td  &trans     &trans     &trans
-           &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans  &trans
+&App_Q_td  &App_W_td  &App_F_td  &App_P_td  &none      &none      &App_L_td  &none      &none      &none
+&none      &App_A_td  &App_R_td  &App_S_td  &App_T_td  &App_D_td  &App_H_td  &App_N_td  &App_E_td  &App_I_td  &none
+&none      &none      &App_C_td  &none      &none      &none      &App_M_td  &none      &none      &none
+           &none      &none      &none      &none      &none      &none      &none      &none      &none      &none  &none
             >;
         };
     };
