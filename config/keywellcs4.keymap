@@ -489,7 +489,10 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "APP_M_TD";
             #binding-cells = <0>;
-            bindings = <&App_M_Macro>, <&App_M_Shift_Macro>;
+            bindings =
+                <&App_M_Macro>,
+                <&App_M_RShift_Macro>,
+                <&App_M_RShift_RControl_Macro>;
         };
 
         App_N_td: App_N_td {
@@ -1044,11 +1047,18 @@ As such, those are in use within the default layer at this time.*/
             label = "APP_Q_MACRO";
         };
 
-        App_M_Shift_Macro: App_M_Shift_Macro {
+        App_M_RShift_Macro: App_M_RShift_Macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp LS(M) &kt_off F17>;
-            label = "APP_M_SHIFT_MACRO";
+            bindings = <&kt_on F17 &kp RS(M) &kt_off F17>;
+            label = "APP_M_RSHIFT_MACRO";
+        };
+
+        App_M_RShift_RControl_Macro: App_M_RShift_RControl_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F17 &kp RS(RC(M)) &kt_off F17>;
+            label = "APP_M_RSHIFT_RCONTROL_MACRO";
         };
     };
 
