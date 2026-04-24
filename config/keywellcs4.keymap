@@ -1064,10 +1064,10 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ           &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P  &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S           &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
-&kp Z           &lt 23 X              &lt 24 C                       &lt 22 V              &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
-                &kp N1                &mo 28                         &mt F16 SPACE         &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
+&EscQ           &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P           &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S                    &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
+&kp Z           &lt 23 X              &lt 24 C                       &lt 22 V                       &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
+                &kp N1                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
             >;
         };
 
