@@ -426,7 +426,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "APP_C_TD";
             #binding-cells = <0>;
-            bindings = <&App_C_Macro>;
+            bindings = <&App_C_Macro>, <&App_CC_Macro>;
         };
 
         App_D_td: App_D_td {
@@ -1056,6 +1056,20 @@ As such, those are in use within the default layer at this time.*/
             #binding-cells = <0>;
             bindings = <&kt_on F19 &kt_on M &kt_off F19>;
             label = "APP_MMM_MACRO";
+        };
+
+        App_CC_Macro: App_CC_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F18 &kp C &kt_off F18>;
+            label = "APP_CC_MACRO";
+        };
+
+        App_CCC_Macro: App_CCC_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F19 &kp C &kt_off F19>;
+            label = "APP_CCC_MACRO";
         };
     };
 
