@@ -107,7 +107,7 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-tap-dance";
             label = "BACKSPASEORDELETEWORDONDOUBLE";
             #binding-cells = <0>;
-            bindings = <&Backspase_MacLike_mod_morph>, <&kp RA(BACKSPACE)>;
+            bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
         };
 
         EscUKPhonotic: EscUKPhonotic {
@@ -127,7 +127,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp SLASH>, <&none>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
 
@@ -139,7 +139,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp LS(SLASH)>, <&none>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT|MOD_LGUI|MOD_LSFT)>;
             mods = <(MOD_LCTL)>;
         };
 
@@ -148,10 +148,10 @@ As such, those are in use within the default layer at this time.*/
 
             compatible = "zmk,behavior-mod-morph";
             label = "UK_QUESTION_SYMBOL";
-            bindings = <&kp LC(RA(SLASH))>, <&kp LS(NUMBER_7)>;
+            bindings = <&kp LC(LA(SLASH))>, <&kp LS(NUMBER_7)>;
 
             #binding-cells = <0>;
-            keep-mods = <(MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -676,9 +676,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on RALT>,
+                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LALT>,
                 <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off RALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
+                <&tog_on 25 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
 
             label = "UNICODEOPTIONWA";
         };
@@ -784,9 +784,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kt_on RA(LC(LCMD)) &tog_on 0>,
+                <&kt_on LA(LC(LCMD)) &tog_on 0>,
                 <&macro_pause_for_release>,
-                <&tog_of 0 &kt_off RA(LC(LCMD))>;
+                <&tog_of 0 &kt_off LA(LC(LCMD))>;
 
             label = "HYPERIPADTIMELESSMACRO";
             tap-ms = <1>;
@@ -1079,7 +1079,7 @@ As such, those are in use within the default layer at this time.*/
         EN_Colemak {
             bindings = <
 &EscQ           &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P           &kp G        &kp J                     &kp L   &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml RALT S                    &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr RALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T  &D_Desktops_Timeless 0 D  &kp H   &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &kp Z           &lt 23 X              &lt 24 C                       &lt 22 V                       &kp B        &kp K                     &kp M   &kp COMMA                       &kp DOT      &kp FSLH
                 &kp N1                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &lt 11 TAB   &kp ESCAPE                &trans  &mo 10                          &trans       &Backspase_MacLike_mod_morph  &lt 9 ENTER           &lt 8 SPACE
             >;
@@ -1088,7 +1088,7 @@ As such, those are in use within the default layer at this time.*/
         Ubuntu {
             bindings = <
 &EscQ           &trans               &trans               &trans       &trans               &trans  &trans                           &trans               &trans       &trans
-&kp LEFT_SHIFT  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml RALT S  &hml LEFT_CONTROL T  &trans  &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr RALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
+&kp LEFT_SHIFT  &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S  &hml LEFT_CONTROL T  &trans  &H_deleteWordOnDoubleTap_Ubuntu  &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &trans          &lt 23 X             &lt 24 C             &lt 22 V     &trans               &trans  &trans                           &trans               &trans       &trans
                 &trans               &trans               &trans       &lt 16 TAB           &trans  &trans                           &trans               &trans       &trans               &trans               &trans
             >;
@@ -1099,7 +1099,7 @@ As such, those are in use within the default layer at this time.*/
 
             bindings = <
 &EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B              &kp LEFT_SHIFT
-&kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr RALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
+&kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
 &kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V   &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
                 &trans                &trans               &trans       &trans               &trans  &trans  &trans               &trans             &trans               &trans                &trans
             >;
@@ -1130,7 +1130,7 @@ As such, those are in use within the default layer at this time.*/
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &hml GLOBE A  &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans  &hmr GLOBE O
 &trans          &trans        &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans        &trans  &mt RA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
+                &trans        &trans  &mt LA(LC(LEFT_COMMAND)) SPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
             >;
         };
 
@@ -1146,9 +1146,9 @@ As such, those are in use within the default layer at this time.*/
 
         Symbols_UK_QWERTY {
             bindings = <
-&kp LS(N1)             &kp UNDER  &kp LC(RA(LEFT_BRACKET))  &kp LC(RA(LS(COMMA)))         &kp LC(RA(GRAVE))     &kp RA(N3)  &kp RA(LC(LS(PERIOD)))         &kp RA(LC(RIGHT_BRACKET))  &kp RA(N7)          &kp RA(M)
-&kp LEFT_SHIFT         &kp EQUAL  &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp RA(N6)  &kp RA(N4)                     &kp RIGHT_PARENTHESIS      &kp RA(LC(SEMI))    &kp LC(RA(LS(SINGLE_QUOTE)))  &kp LC(RA(APOSTROPHE))
-&kp RA(LC(BACKSLASH))  &none      &kp RA(N8)                &kp LC(RA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp RA(N2)  &kp RA(LC(LS(RIGHT_BRACKET)))  &kp RA(LC(COMMA))          &kp RA(LC(PERIOD))  &kp RA(LS(LC(SLASH)))
+&kp LS(N1)             &kp UNDER  &kp LC(LA(LEFT_BRACKET))  &kp LC(LA(LS(COMMA)))         &kp LC(LA(GRAVE))     &kp LA(N3)  &kp LA(LC(LS(PERIOD)))         &kp LA(LC(RIGHT_BRACKET))  &kp LA(N7)          &kp LA(M)
+&kp LEFT_SHIFT         &kp EQUAL  &kp MINUS                 &kp PLUS                      &kp LEFT_PARENTHESIS  &kp LA(N6)  &kp LA(N4)                     &kp RIGHT_PARENTHESIS      &kp LA(LC(SEMI))    &kp LC(LA(LS(SINGLE_QUOTE)))  &kp LC(LA(APOSTROPHE))
+&kp LA(LC(BACKSLASH))  &none      &kp LA(N8)                &kp LC(LA(LS(LEFT_BRACKET)))  &kp LS(N5)            &kp LA(N2)  &kp LA(LC(LS(RIGHT_BRACKET)))  &kp LA(LC(COMMA))          &kp LA(LC(PERIOD))  &kp LA(LS(LC(SLASH)))
                        &trans     &trans                    &trans                        &trans                &trans      &trans                         &trans                     &trans              &trans                        &trans                  &trans
             >;
         };
@@ -1184,7 +1184,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "ASDFHJKL";
             bindings = <
 &none      &mo 14  &none             &mo 12    &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
-&trans     &trans  &kp LEFT_CONTROL  &kp RALT  &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&trans     &trans  &kp LEFT_CONTROL  &kp LALT  &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LG(Z)  &none   &none             &mo 15    &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
            &trans  &trans            &trans    &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
             >;
@@ -1202,7 +1202,7 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-BrowserGroupNav {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
-&none  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
        &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
             >;
@@ -1211,7 +1211,7 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-WorkSpaceAppCycle {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none          &none  &none
-&none  &none  &none  &none  &none  &none  &none  &kp LS(RA(J))  &none  &none  &kp RA(LS(K))
+&none  &none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
 &none  &none  &none  &none  &none  &none  &none  &none          &none  &none
        &none  &none  &none  &none  &none  &none  &none          &none  &none  &none          &none
             >;
@@ -1248,7 +1248,7 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-BowserGroupNavNotExist {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
-&none  &none  &none  &none  &none  &none  &none  &none  &kp LG(RA(RIGHT_BRACKET))  &kp LG(RA(LEFT_BRACKET))  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
        &none  &none  &none  &none  &none  &none  &none  &none                      &none                     &none  &none
             >;
@@ -1312,7 +1312,7 @@ As such, those are in use within the default layer at this time.*/
         UA_Uq {
             bindings = <
 &EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
-&trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml RALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr RALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
 &kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V   &kp COMMA            &kp PERIOD   &kp SLASH
                 &trans             &trans               &trans       &trans               &trans  &trans  &trans               &trans       &trans               &trans             &trans
             >;
