@@ -1,11 +1,1 @@
-# Default ignored files
-# IntelliJ
-/.idea/
-/*.iml
-/?open-ide-project-?ph?.app
-/out
-/shelf/
 
-# MacOs Specific
-.Trash
-.DS_Store
