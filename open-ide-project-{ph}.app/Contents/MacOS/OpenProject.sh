@@ -9,9 +9,9 @@ if [ ! -d "$PROJECT_PATH" ]; then
   exit 1
 fi
 
-# Open WebStorm with the project directory
-echo "Opening WebStorm with project directory: $PROJECT_PATH"
-open -a "IntelliJ IDEA CE" "$PROJECT_PATH"
+# Open JetBrains with the project directory
+echo "Opening JetBrains with project directory: $PROJECT_PATH"
+open -a "CLion" "$PROJECT_PATH"
 
 
 
