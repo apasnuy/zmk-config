@@ -25,7 +25,7 @@
     <configurations />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40dbd35e-4230-43bd-9cc4-f44b735e7a88" name="Changes" comment="Set project name and so" />
+    <list default="true" id="40dbd35e-4230-43bd-9cc4-f44b735e7a88" name="Changes" comment=".gitignore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777305499914</updated>
       <workItem from="1777305501603" duration="188000" />
-      <workItem from="1777305737953" duration="574000" />
+      <workItem from="1777305737953" duration="1148000" />
     </task>
     <task id="LOCAL-00001" summary="Set project name and so">
       <option name="closed" value="true" />
@@ -113,7 +113,31 @@
       <option name="project" value="LOCAL" />
       <updated>1777306172214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1777306580821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777306580821</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1777306691566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777306691566</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1777306879510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777306879510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,8 +148,20 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set project name and so" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set project name and so" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
 </project>
