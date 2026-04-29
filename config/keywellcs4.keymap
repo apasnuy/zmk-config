@@ -1161,10 +1161,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-&none               &none   &none             &mo 12           &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
-&trans              &trans  &kp LEFT_CONTROL  &kp LALT         &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LC(DOWN_ARROW)  &none   &none             &kp LG(LA(F12))  &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
-                    &trans  &trans            &trans           &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
+&none               &none   &none             &mo 12         &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
+&trans              &trans  &kp LEFT_CONTROL  &kp LALT       &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LC(DOWN_ARROW)  &none   &none             &kp LA(LS(V))  &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
+                    &trans  &trans            &trans         &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
             >;
         };
 
