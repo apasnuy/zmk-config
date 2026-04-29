@@ -538,9 +538,9 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-on-release;
         };
 
-        HRM_4_HT_Timeles: HRM_4_HT_Timeles {
+        Thumb_HT_Timeles: Thumb_HT_Timeles {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_4_HT_TIMELES";
+            label = "THUMB_HT_TIMELES";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
@@ -1080,7 +1080,7 @@ As such, those are in use within the default layer at this time.*/
 &EscQ                          &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless 0 P           &kp G                          &kp J                  &Layer_Tap_Timeless_Right 12 L  &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &Layer_Tap_Timeless_Left 15 Z  &lt 23 X              &lt 24 C                       &lt 22 V                       &Layer_Tap_Timeless_Left 14 B  &kp K                  &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &kp N1                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &HRM_4_HT_Timeles 11 TAB       &lt 9 ESCAPE           &trans                          &mo 10                          &trans       &Backspase_MacLike_mod_morph  &kp ENTER             &lt 8 SPACE
+                               &kp N1                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_Timeles 11 TAB       &lt 9 ESCAPE           &trans                          &mo 10                          &trans       &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_Timeles 8 SPACE
             >;
         };
 
