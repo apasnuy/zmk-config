@@ -548,9 +548,9 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41>;
         };
 
-        Sticky_One_Handed_Command_CVXZ: Sticky_One_Handed_Command_CVXZ {
+        Sticky_1500ms: Sticky_1500ms {
             compatible = "zmk,behavior-sticky-key";
-            label = "STICKY_ONE_HANDED_COMMAND_CVXZ";
+            label = "STICKY_1500MS";
             bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <1500>;
@@ -609,8 +609,8 @@ As such, those are in use within the default layer at this time.*/
             layers = <2 3 6 7 4>;
         };
 
-        Sticky_Command_One_Handed_Combo {
-            bindings = <&Sticky_One_Handed_Command_CVXZ LEFT_COMMAND>;
+        Mac_OneHanded_Sticky_Command {
+            bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
             layers = <0 2 3 4 7 6 9 7 8 10 11 12 13 14 15>;
         };
@@ -622,8 +622,8 @@ As such, those are in use within the default layer at this time.*/
             layers = <2 3 6 7 4>;
         };
 
-        Sticky_Control {
-            bindings = <&sk LEFT_CONTROL>;
+        Ubuntu_OneHanded_Sticky_Control {
+            bindings = <&Sticky_1500ms LEFT_CONTROL>;
             key-positions = <24 23>;
             layers = <1>;
         };
