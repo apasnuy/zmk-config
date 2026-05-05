@@ -630,28 +630,28 @@ As such, those are in use within the default layer at this time.*/
 
         MacKarabinerLU {
             bindings = <&MacKarabinerLU_Macro>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         MacKarabinerLE {
             bindings = <&MacKarabinerLE_Macro>;
-            key-positions = <18 17>;
+            key-positions = <27 28>;
             layers = <2 3 4 6 7 0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
         iPadLU {
             bindings = <&iPadLU_Macro>;
-            key-positions = <27 28>;
+            key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <0 5>;
         };
 
         iPadLE {
             bindings = <&iPadLE_Macro>;
-            key-positions = <18 17>;
+            key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <2 3 4 6 7 0 5>;
         };
