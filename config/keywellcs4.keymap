@@ -43,7 +43,6 @@ As such, those are in use within the default layer at this time.*/
 
 / {
     behaviors {
-
         #include "includes/open_app_tap_dances.dtsi"
 
         hml: hml {
@@ -507,7 +506,6 @@ As such, those are in use within the default layer at this time.*/
     };
 
     macros {
-
         #include "includes/open_app_shortcuts_macros.dtsi"
 
         CmdTAbAppSW_Macro: CmdTAbReleaseTabCombo {
@@ -931,10 +929,10 @@ As such, those are in use within the default layer at this time.*/
 
         HRM_4-TabsNav_rhs_Layout_lhs {
             bindings = <
-&none  &none  &kp LC(F20)      &kp LA(LS(F20))  &none        &none            &Web_Page_Back  &none        &none  &Web_Page_Forward
-&none  &none  &kp LS(LC(F20))  &none            &kp LG(F20)  &kp LG(LS(F20))  &none           &kp LS(TAB)  &none  &none              &kp TAB
-&none  &none  &none            &none            &none        &none            &none           &none        &none  &none
-       &none  &none            &none            &none        &none            &none           &none        &none  &none              &none    &none
+&none  &none  &kp LC(F20)      &kp LA(LS(F20))  &none        &none            &Web_Page_Back  &none        &none        &Web_Page_Forward
+&none  &none  &kp LS(LC(F20))  &none            &kp LG(F20)  &kp LG(LS(F20))  &none           &kp LS(TAB)  &kp LS(TAB)  &kp TAB            &kp TAB
+&none  &none  &none            &none            &none        &none            &none           &none        &none        &none
+       &none  &none            &none            &none        &none            &none           &none        &none        &none              &none    &none
             >;
         };
 
@@ -1087,10 +1085,10 @@ As such, those are in use within the default layer at this time.*/
 
         Apps {
             bindings = <
-&App_Q_TD  &App_W_TD  &App_F_TD  &App_P_TD  &App_G_TD      &App_J_TD      &App_L_TD  &App_U_TD      &App_Y_TD  &none
+&App_Q_TD  &App_W_TD  &App_F_TD  &App_P_TD  &App_G_TD  &App_J_TD  &App_L_TD  &App_U_TD  &App_Y_TD  &none
 &none      &App_A_TD  &App_R_TD  &App_S_TD  &App_T_TD  &App_D_TD  &App_H_TD  &App_N_TD  &App_E_TD  &App_I_TD  &App_O_TD
-&App_Z_TD      &App_X_TD      &App_C_TD  &App_V_TD      &App_B_TD      &App_K_TD      &App_M_TD  &none      &none  &none
-           &none      &none      &none      &none      &none      &none      &none      &none  &none      &none  &none
+&App_Z_TD  &App_X_TD  &App_C_TD  &App_V_TD  &App_B_TD  &App_K_TD  &App_M_TD  &none      &none      &none
+           &none      &none      &none      &none      &none      &none      &none      &none      &none      &none      &none
             >;
         };
     };
