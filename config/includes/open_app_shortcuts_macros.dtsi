@@ -131,25 +131,25 @@ Open_App_For_Triple_F_Macro: Open_App_For_Triple_F_Macro {
 };
 
 // -----------------------------------------------------    G    -----------------------------------------------------
-Open_App_For_SingleGMacro: Open_App_For_SingleGMacro {
+Open_App_For_Single_G_Macro: Open_App_For_Single_G_Macro {
 	compatible = "zmk,behavior-macro";
 	#binding-cells = <0>;
 	bindings = <&kt_on F17 &kp G &kt_off F17>;
-	label = "OPEN_APP_FOR_SINGLEGMACRO";
+	label = "OPEN_APP_FOR_SINGLE_G_MACRO";
 };
 
-Open_App_For_DoubleGMacro: Open_App_For_DoubleGMacro {
+Open_App_For_Double_G_Macro: Open_App_For_Double_G_Macro {
 	compatible = "zmk,behavior-macro";
 	#binding-cells = <0>;
 	bindings = <&kt_on F18 &kp G &kt_off F18>;
-	label = "OPEN_APP_FOR_DOUBLEGMACRO";
+	label = "OPEN_APP_FOR_DOUBLE_G_MACRO";
 };
 
-Open_App_For_TripleGMacro: Open_App_For_TripleGMacro {
+Open_App_For_Triple_G_Macro: Open_App_For_Triple_G_Macro {
 	compatible = "zmk,behavior-macro";
 	#binding-cells = <0>;
 	bindings = <&kt_on F19 &kp G &kt_off F19>;
-	label = "OPEN_APP_FOR_TRIPLEGMACRO";
+	label = "OPEN_APP_FOR_TRIPLE_G_MACRO";
 };
 
 // -----------------------------------------------------    H    -----------------------------------------------------
