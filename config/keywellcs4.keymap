@@ -1134,9 +1134,9 @@ As such, those are in use within the default layer at this time.*/
 
         Apps {
             bindings = <
-&App_Q_td  &App_W_td  &App_F_td  &App_P_td  &none      &none      &App_L_td  &none      &none  &none
-&none      &App_A_td  &App_R_td  &App_S_td  &App_T_td  &App_D_td  &App_H_td  &App_N_td  &none  &App_I_td  &none
-&none      &none      &App_C_td  &none      &none      &none      &App_M_td  &none      &none  &none
+&App_Q_TD  &App_W_TD  &App_F_TD  &App_P_TD  &App_G_TD      &App_J_TD      &App_L_TD  &App_U_TD      &App_Y_TD  &none
+&none      &App_A_TD  &App_R_TD  &App_S_TD  &App_T_TD  &App_D_TD  &App_H_TD  &App_N_TD  &App_E_TD  &App_I_TD  &App_O_TD
+&App_Z_TD      &App_X_TD      &App_C_TD  &App_V_TD      &App_B_TD      &App_K_TD      &App_M_TD  &none      &none  &none
            &none      &none      &none      &none      &none      &none      &none      &none  &none      &none  &none
             >;
         };
