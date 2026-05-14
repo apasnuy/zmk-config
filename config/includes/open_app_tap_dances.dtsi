@@ -1,0 +1,181 @@
+App_A_TD: App_A_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_A_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_A_Macro>, <&Open_App_For_Double_A_Macro>, <&Open_App_For_Triple_A_Macro>;
+};
+
+App_B_TD: App_B_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_B_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_B_Macro>, <&Open_App_For_Double_B_Macro>, <&Open_App_For_Triple_B_Macro>;
+};
+
+App_C_TD: App_C_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_C_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_C_Macro>, <&Open_App_For_Double_C_Macro>, <&Open_App_For_Triple_C_Macro>;
+};
+
+App_D_TD: App_D_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_D_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_D_Macro>, <&Open_App_For_Double_D_Macro>, <&Open_App_For_Triple_D_Macro>;
+};
+
+App_E_TD: App_E_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_E_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_E_Macro>, <&Open_App_For_Double_E_Macro>, <&Open_App_For_Triple_E_Macro>;
+};
+
+App_F_TD: App_F_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_F_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_F_Macro>, <&Open_App_For_Double_F_Macro>, <&Open_App_For_Triple_F_Macro>;
+};
+
+App_G_TD: App_G_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_G_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_G_Macro>, <&Open_App_For_Double_G_Macro>, <&Open_App_For_Triple_G_Macro>;
+};
+
+App_H_TD: App_H_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_H_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_H_Macro>, <&Open_App_For_Double_H_Macro>, <&Open_App_For_Triple_H_Macro>;
+};
+
+App_I_TD: App_I_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_I_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_I_Macro>, <&Open_App_For_Double_I_Macro>, <&Open_App_For_Triple_I_Macro>;
+};
+
+App_J_TD: App_J_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_J_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_J_Macro>, <&Open_App_For_Double_J_Macro>, <&Open_App_For_Triple_J_Macro>;
+};
+
+App_K_TD: App_K_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_K_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_K_Macro>, <&Open_App_For_Double_K_Macro>, <&Open_App_For_Triple_K_Macro>;
+};
+
+App_L_TD: App_L_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_L_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_L_Macro>, <&Open_App_For_Double_L_Macro>, <&Open_App_For_Triple_L_Macro>;
+};
+
+App_M_TD: App_M_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_M_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_M_Macro>, <&Open_App_For_Double_M_Macro>, <&Open_App_For_Triple_M_Macro>;
+};
+
+App_N_TD: App_N_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_N_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_N_Macro>, <&Open_App_For_Double_N_Macro>, <&Open_App_For_Triple_N_Macro>;
+};
+
+App_O_TD: App_O_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_O_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_O_Macro>, <&Open_App_For_Double_O_Macro>, <&Open_App_For_Triple_O_Macro>;
+};
+
+App_P_TD: App_P_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_P_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_P_Macro>, <&Open_App_For_Double_P_Macro>, <&Open_App_For_Triple_P_Macro>;
+};
+
+App_Q_TD: App_Q_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_Q_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_Q_Macro>, <&Open_App_For_Double_Q_Macro>, <&Open_App_For_Triple_Q_Macro>;
+};
+
+App_R_TD: App_R_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_R_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_R_Macro>, <&Open_App_For_Double_R_Macro>, <&Open_App_For_Triple_R_Macro>;
+};
+
+App_S_TD: App_S_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_S_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_S_Macro>, <&Open_App_For_Double_S_Macro>, <&Open_App_For_Triple_S_Macro>;
+};
+
+App_T_TD: App_T_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_T_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_T_Macro>, <&Open_App_For_Double_T_Macro>, <&Open_App_For_Triple_T_Macro>;
+};
+
+App_U_TD: App_U_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_U_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_U_Macro>, <&Open_App_For_Double_U_Macro>, <&Open_App_For_Triple_U_Macro>;
+};
+
+App_V_TD: App_V_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_V_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_V_Macro>, <&Open_App_For_Double_V_Macro>, <&Open_App_For_Triple_V_Macro>;
+};
+
+App_W_TD: App_W_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_W_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_W_Macro>, <&Open_App_For_Double_W_Macro>, <&Open_App_For_Triple_W_Macro>;
+};
+
+App_X_TD: App_X_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_X_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_X_Macro>, <&Open_App_For_Double_X_Macro>, <&Open_App_For_Triple_X_Macro>;
+};
+
+App_Y_TD: App_Y_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_Y_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_Y_Macro>, <&Open_App_For_Double_Y_Macro>, <&Open_App_For_Triple_Y_Macro>;
+};
+
+App_Z_TD: App_Z_TD {
+	compatible = "zmk,behavior-tap-dance";
+	label = "APP_Z_TD";
+	#binding-cells = <0>;
+	bindings = <&Open_App_For_Single_Z_Macro>, <&Open_App_For_Double_Z_Macro>, <&Open_App_For_Triple_Z_Macro>;
+};

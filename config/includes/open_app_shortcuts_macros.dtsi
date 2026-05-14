@@ -1,0 +1,571 @@
+// -----------------------------------------------------    A    -----------------------------------------------------
+Open_App_For_Single_A_Macro: Open_App_For_Single_A_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp A &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_A_MACRO";
+};
+
+Open_App_For_Double_A_Macro: Open_App_For_Double_A_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp A &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_A_MACRO";
+};
+
+Open_App_For_Triple_A_Macro: Open_App_For_Triple_A_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp A &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_A_MACRO";
+};
+
+// -----------------------------------------------------    B    -----------------------------------------------------
+Open_App_For_Single_B_Macro: Open_App_For_Single_B_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp B &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_B_MACRO";
+};
+
+Open_App_For_Double_B_Macro: Open_App_For_Double_B_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp B &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_B_MACRO";
+};
+
+Open_App_For_Triple_B_Macro: Open_App_For_Triple_B_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp B &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_B_MACRO";
+};
+
+// -----------------------------------------------------    C    -----------------------------------------------------
+Open_App_For_Single_C_Macro: Open_App_For_Single_C_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp C &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_C_MACRO";
+};
+
+Open_App_For_Double_C_Macro: Open_App_For_Double_C_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp C &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_C_MACRO";
+};
+
+Open_App_For_Triple_C_Macro: Open_App_For_Triple_C_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp C &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_C_MACRO";
+};
+
+// -----------------------------------------------------    D    -----------------------------------------------------
+Open_App_For_Single_D_Macro: Open_App_For_Single_D_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp D &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_D_MACRO";
+};
+
+Open_App_For_Double_D_Macro: Open_App_For_Double_D_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp D &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_D_MACRO";
+};
+
+Open_App_For_Triple_D_Macro: Open_App_For_Triple_D_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp D &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_D_MACRO";
+};
+
+// -----------------------------------------------------    E    -----------------------------------------------------
+Open_App_For_Single_E_Macro: Open_App_For_Single_E_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp E &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_E_MACRO";
+};
+
+Open_App_For_Double_E_Macro: Open_App_For_Double_E_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp E &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_E_MACRO";
+};
+
+Open_App_For_Triple_E_Macro: Open_App_For_Triple_E_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp E &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_E_MACRO";
+};
+
+// -----------------------------------------------------    F    -----------------------------------------------------
+Open_App_For_Single_F_Macro: Open_App_For_Single_F_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp F &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_F_MACRO";
+};
+
+Open_App_For_Double_F_Macro: Open_App_For_Double_F_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp F &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_F_MACRO";
+};
+
+Open_App_For_Triple_F_Macro: Open_App_For_Triple_F_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp F &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_F_MACRO";
+};
+
+// -----------------------------------------------------    G    -----------------------------------------------------
+Open_App_For_SingleGMacro: Open_App_For_SingleGMacro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp G &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLEGMACRO";
+};
+
+Open_App_For_DoubleGMacro: Open_App_For_DoubleGMacro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp G &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLEGMACRO";
+};
+
+Open_App_For_TripleGMacro: Open_App_For_TripleGMacro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp G &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLEGMACRO";
+};
+
+// -----------------------------------------------------    H    -----------------------------------------------------
+Open_App_For_Single_H_Macro: Open_App_For_Single_H_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp H &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_H_MACRO";
+};
+
+Open_App_For_Double_H_Macro: Open_App_For_Double_H_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp H &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_H_MACRO";
+};
+
+Open_App_For_Triple_H_Macro: Open_App_For_Triple_H_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp H &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_H_MACRO";
+};
+
+// -----------------------------------------------------    I    -----------------------------------------------------
+Open_App_For_Single_I_Macro: Open_App_For_Single_I_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp I &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_I_MACRO";
+};
+
+Open_App_For_Double_I_Macro: Open_App_For_Double_I_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp I &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_I_MACRO";
+};
+
+Open_App_For_Triple_I_Macro: Open_App_For_Triple_I_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp I &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_I_MACRO";
+};
+
+// -----------------------------------------------------    J    -----------------------------------------------------
+Open_App_For_Single_J_Macro: Open_App_For_Single_J_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp J &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_J_MACRO";
+};
+
+Open_App_For_Double_J_Macro: Open_App_For_Double_J_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp J &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_J_MACRO";
+};
+
+Open_App_For_Triple_J_Macro: Open_App_For_Triple_J_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp J &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_J_MACRO";
+};
+
+// -----------------------------------------------------    K    -----------------------------------------------------
+Open_App_For_Single_K_Macro: Open_App_For_Single_K_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp K &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_K_MACRO";
+};
+
+Open_App_For_Double_K_Macro: Open_App_For_Double_K_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp K &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_K_MACRO";
+};
+
+Open_App_For_Triple_K_Macro: Open_App_For_Triple_K_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp K &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_K_MACRO";
+};
+
+// -----------------------------------------------------    L    -----------------------------------------------------
+Open_App_For_Single_L_Macro: Open_App_For_Single_L_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp L &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_L_MACRO";
+};
+
+Open_App_For_Double_L_Macro: Open_App_For_Double_L_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp L &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_L_MACRO";
+};
+
+Open_App_For_Triple_L_Macro: Open_App_For_Triple_L_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp L &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_L_MACRO";
+};
+
+// -----------------------------------------------------    M    -----------------------------------------------------
+Open_App_For_Single_M_Macro: Open_App_For_Single_M_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp M &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_M_MACRO";
+};
+
+Open_App_For_Double_M_Macro: Open_App_For_Double_M_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp M &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_M_MACRO";
+};
+
+Open_App_For_Triple_M_Macro: Open_App_For_Triple_M_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp M &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_M_MACRO";
+};
+
+// -----------------------------------------------------    N    -----------------------------------------------------
+Open_App_For_Single_N_Macro: Open_App_For_Single_N_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp N &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_N_MACRO";
+};
+
+Open_App_For_Double_N_Macro: Open_App_For_Double_N_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp N &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_N_MACRO";
+};
+
+Open_App_For_Triple_N_Macro: Open_App_For_Triple_N_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp N &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_N_MACRO";
+};
+
+// -----------------------------------------------------    O    -----------------------------------------------------
+Open_App_For_Single_O_Macro: Open_App_For_Single_O_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp O &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_O_MACRO";
+};
+
+Open_App_For_Double_O_Macro: Open_App_For_Double_O_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp O &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_O_MACRO";
+};
+
+Open_App_For_Triple_O_Macro: Open_App_For_Triple_O_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp O &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_O_MACRO";
+};
+
+// -----------------------------------------------------    P    -----------------------------------------------------
+Open_App_For_Single_P_Macro: Open_App_For_Single_P_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp P &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_P_MACRO";
+};
+
+Open_App_For_Double_P_Macro: Open_App_For_Double_P_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp P &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_P_MACRO";
+};
+
+Open_App_For_Triple_P_Macro: Open_App_For_Triple_P_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp P &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_P_MACRO";
+};
+
+// -----------------------------------------------------    Q    -----------------------------------------------------
+Open_App_For_Single_Q_Macro: Open_App_For_Single_Q_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp Q &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_Q_MACRO";
+};
+
+Open_App_For_Double_Q_Macro: Open_App_For_Double_Q_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp Q &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_Q_MACRO";
+};
+
+Open_App_For_Triple_Q_Macro: Open_App_For_Triple_Q_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp Q &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_Q_MACRO";
+};
+
+// -----------------------------------------------------    R    -----------------------------------------------------
+Open_App_For_Single_R_Macro: Open_App_For_Single_R_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp R &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_R_MACRO";
+};
+
+Open_App_For_Double_R_Macro: Open_App_For_Double_R_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp R &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_R_MACRO";
+};
+
+Open_App_For_Triple_R_Macro: Open_App_For_Triple_R_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp R &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_R_MACRO";
+};
+
+// -----------------------------------------------------    S    -----------------------------------------------------
+Open_App_For_Single_S_Macro: Open_App_For_Single_S_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp S &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_S_MACRO";
+};
+
+Open_App_For_Double_S_Macro: Open_App_For_Double_S_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp S &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_S_MACRO";
+};
+
+Open_App_For_Triple_S_Macro: Open_App_For_Triple_S_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp S &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_S_MACRO";
+};
+
+// -----------------------------------------------------    T    -----------------------------------------------------
+Open_App_For_Single_T_Macro: Open_App_For_Single_T_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp T &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_T_MACRO";
+};
+
+Open_App_For_Double_T_Macro: Open_App_For_Double_T_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp T &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_T_MACRO";
+};
+
+Open_App_For_Triple_T_Macro: Open_App_For_Triple_T_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp T &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_T_MACRO";
+};
+
+// -----------------------------------------------------    U    -----------------------------------------------------
+Open_App_For_Single_U_Macro: Open_App_For_Single_U_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp U &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_U_MACRO";
+};
+
+Open_App_For_Double_U_Macro: Open_App_For_Double_U_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp U &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_U_MACRO";
+};
+
+Open_App_For_Triple_U_Macro: Open_App_For_Triple_U_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp U &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_U_MACRO";
+};
+
+// -----------------------------------------------------    V    -----------------------------------------------------
+Open_App_For_Single_V_Macro: Open_App_For_Single_V_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp V &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_V_MACRO";
+};
+
+Open_App_For_Double_V_Macro: Open_App_For_Double_V_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp V &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_V_MACRO";
+};
+
+Open_App_For_Triple_V_Macro: Open_App_For_Triple_V_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp V &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_V_MACRO";
+};
+
+// -----------------------------------------------------    W    -----------------------------------------------------
+Open_App_For_Single_W_Macro: Open_App_For_Single_W_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp W &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_W_MACRO";
+};
+
+Open_App_For_Double_W_Macro: Open_App_For_Double_W_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp W &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_W_MACRO";
+};
+
+Open_App_For_Triple_W_Macro: Open_App_For_Triple_W_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp W &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_W_MACRO";
+};
+
+// -----------------------------------------------------    X    -----------------------------------------------------
+Open_App_For_Single_X_Macro: Open_App_For_Single_X_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp X &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_X_MACRO";
+};
+
+Open_App_For_Double_X_Macro: Open_App_For_Double_X_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp X &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_X_MACRO";
+};
+
+Open_App_For_Triple_X_Macro: Open_App_For_Triple_X_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp X &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_X_MACRO";
+};
+
+// -----------------------------------------------------    Y    -----------------------------------------------------
+Open_App_For_Single_Y_Macro: Open_App_For_Single_Y_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp Y &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_Y_MACRO";
+};
+
+Open_App_For_Double_Y_Macro: Open_App_For_Double_Y_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp Y &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_Y_MACRO";
+};
+
+Open_App_For_Triple_Y_Macro: Open_App_For_Triple_Y_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp Y &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_Y_MACRO";
+};
+
+// -----------------------------------------------------    Z    -----------------------------------------------------
+Open_App_For_Single_Z_Macro: Open_App_For_Single_Z_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F17 &kp Z &kt_off F17>;
+	label = "OPEN_APP_FOR_SINGLE_Z_MACRO";
+};
+
+Open_App_For_Double_Z_Macro: Open_App_For_Double_Z_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F18 &kp Z &kt_off F18>;
+	label = "OPEN_APP_FOR_DOUBLE_Z_MACRO";
+};
+
+Open_App_For_Triple_Z_Macro: Open_App_For_Triple_Z_Macro {
+	compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kt_on F19 &kp Z &kt_off F19>;
+	label = "OPEN_APP_FOR_TRIPLE_Z_MACRO";
+};

@@ -43,6 +43,9 @@ As such, those are in use within the default layer at this time.*/
 
 / {
     behaviors {
+
+        #include "includes/open_app_tap_dances.dtsi"
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -412,118 +415,6 @@ As such, those are in use within the default layer at this time.*/
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 15 21 22 23 24 25 31 32 34 35 33>;
         };
 
-        App_A_td: App_A_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_A_TD";
-            #binding-cells = <0>;
-            bindings = <&App_A_Macro>;
-        };
-
-        App_C_td: App_C_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_C_TD";
-            #binding-cells = <0>;
-            bindings = <&App_C_Macro>, <&App_CC_Macro>;
-        };
-
-        App_D_td: App_D_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_D_TD";
-            #binding-cells = <0>;
-            bindings = <&App_D_Macro>;
-        };
-
-        App_E_td: App_E_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_E_TD";
-            #binding-cells = <0>;
-            bindings = <&App_E_Macro>;
-        };
-
-        App_F_td: App_F_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_F_TD";
-            #binding-cells = <0>;
-            bindings = <&App_F_Macro>;
-        };
-
-        App_H_td: App_H_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_H_TD";
-            #binding-cells = <0>;
-            bindings = <&App_H_Macro>;
-        };
-
-        App_I_td: App_I_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_I_TD";
-            #binding-cells = <0>;
-            bindings = <&App_I_Macro>;
-        };
-
-        App_L_td: App_L_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_L_TD";
-            #binding-cells = <0>;
-            bindings = <&App_L_Macro>;
-        };
-
-        App_M_td: App_M_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_M_TD";
-            #binding-cells = <0>;
-            bindings = <&App_M_Macro>, <&App_MM_Macro>, <&App_MMM_Macro>;
-        };
-
-        App_N_td: App_N_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_N_TD";
-            #binding-cells = <0>;
-            bindings = <&App_N_Macro>;
-        };
-
-        App_P_td: App_P_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_P_TD";
-            #binding-cells = <0>;
-            bindings = <&App_P_Macro>;
-        };
-
-        App_R_td: App_R_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_R_TD";
-            #binding-cells = <0>;
-            bindings = <&App_R_Macro>;
-        };
-
-        App_S_td: App_S_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_S_TD";
-            #binding-cells = <0>;
-            bindings = <&App_S_Macro>;
-        };
-
-        App_T_td: App_T_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_T_TD";
-            #binding-cells = <0>;
-            bindings = <&App_T_Macro>, <&App_TT_Macro>;
-        };
-
-        App_W_td: App_W_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_W_TD";
-            #binding-cells = <0>;
-            bindings = <&App_W_Macro>;
-        };
-
-        App_Q_td: App_Q_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "APP_Q_TD";
-            #binding-cells = <0>;
-            bindings = <&App_Q_Macro>;
-        };
-
         UbuntuWindowsSwWA: UbuntuWindowsSwWA {
             compatible = "zmk,behavior-hold-tap";
             label = "UBUNTUWINDOWSSWWA";
@@ -663,6 +554,9 @@ As such, those are in use within the default layer at this time.*/
     };
 
     macros {
+
+        #include "includes/open_app_shortcuts_macros.dtsi"
+
         CmdTAbAppSW_Macro: CmdTAbReleaseTabCombo {
             //    - ! Don't asign to holds of hold-taps as in standard user press CMD+TAB faster and it will not trigger in time
             //    - wait and tap time of at least 30ms is recommended to avoid having HID notifications grouped at the BLE
@@ -928,146 +822,6 @@ As such, those are in use within the default layer at this time.*/
             wait-ms = <1>;
         };
 
-        App_A_Macro: App_A_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp A &kt_off F17>;
-            label = "APP_A_MACRO";
-        };
-
-        App_C_Macro: App_C_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp C &kt_off F17>;
-            label = "APP_C_MACRO";
-        };
-
-        App_E_Macro: App_E_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp E &kt_off F17>;
-            label = "APP_E_MACRO";
-        };
-
-        App_D_Macro: App_D_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp D &kt_off F17>;
-            label = "APP_D_MACRO";
-        };
-
-        App_F_Macro: App_F_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp F &kt_off F17>;
-            label = "APP_F_MACRO";
-        };
-
-        App_H_Macro: App_H_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp H &kt_off F17>;
-            label = "APP_H_MACRO";
-        };
-
-        App_I_Macro: App_I_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp I &kt_off F17>;
-            label = "APP_I_MACRO";
-        };
-
-        App_L_Macro: App_L_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp L &kt_off F17>;
-            label = "APP_L_MACRO";
-        };
-
-        App_M_Macro: App_M_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp M &kt_off F17>;
-            label = "APP_M_MACRO";
-        };
-
-        App_N_Macro: App_N_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp N &kt_off F17>;
-            label = "APP_N_MACRO";
-        };
-
-        App_P_Macro: App_P_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp P &kt_off F17>;
-            label = "APP_P_MACRO";
-        };
-
-        App_R_Macro: App_R_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp R &kt_off F17>;
-            label = "APP_R_MACRO";
-        };
-
-        App_S_Macro: App_S_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp S &kt_off F17>;
-            label = "APP_S_MACRO";
-        };
-
-        App_T_Macro: App_T_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp T &kt_off F17>;
-            label = "APP_T_MACRO";
-        };
-
-        App_W_Macro: App_W_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp W &kt_off F17>;
-            label = "APP_W_MACRO";
-        };
-
-        App_Q_Macro: App_Q_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F17 &kp Q &kt_off F17>;
-            label = "APP_Q_MACRO";
-        };
-
-        App_MM_Macro: App_MM_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F18 &kp M &kt_off F18>;
-            label = "APP_MM_MACRO";
-        };
-
-        App_MMM_Macro: App_MMM_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F19 &kt_on M &kt_off F19>;
-            label = "APP_MMM_MACRO";
-        };
-
-        App_CC_Macro: App_CC_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F18 &kp C &kt_off F18>;
-            label = "APP_CC_MACRO";
-        };
-
-        App_CCC_Macro: App_CCC_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F19 &kp C &kt_off F19>;
-            label = "APP_CCC_MACRO";
-        };
-
         Flycut_Macro: Flycut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1077,13 +831,6 @@ As such, those are in use within the default layer at this time.*/
                 <&kt_off LEFT_ALT &kt_off LSHFT &tog_of 11>;
 
             label = "FLYCUT";
-        };
-
-        App_TT_Macro: App_TT_Macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt_on F18 &kp T &kt_off F18>;
-            label = "APP_TT_MACRO";
         };
 
         HRM_Tabs_layer_for_tabs: Tabs_Macro {
