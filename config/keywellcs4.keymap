@@ -451,6 +451,8 @@ As such, those are in use within the default layer at this time.*/
     combos {
         compatible = "zmk,combos";
 
+        #include "includes/cyrillic_letters_combos.dtsi"
+
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
@@ -458,59 +460,10 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <150>;
         };
 
-        UK_SC {
-            bindings = <&kp O>;
-            key-positions = <1 18>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
-        UK_JU {
-            bindings = <&kp PERIOD>;
-            key-positions = <7 13>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
-        UK_JI {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <13 19>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
-        UK_G_tverde {
-            bindings = <&kp GRAVE>;
-            key-positions = <4 18>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
-        UK_ZJ {
-            bindings = <&kp SEMI>;
-            key-positions = <5 13>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
-        UK_Miaki_ZNAK {
-            bindings = <&kp M>;
-            key-positions = <18 25>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
-        };
-
         Mac_OneHanded_Sticky_Command {
             bindings = <&Sticky_1500ms LEFT_COMMAND>;
             key-positions = <24 23>;
             layers = <0 2 3 4 7 6 9 7 8 10 11 12 13 14 15>;
-        };
-
-        UK_JE {
-            bindings = <&kp APOSTROPHE>;
-            key-positions = <18 13>;
-            timeout-ms = <190>;
-            layers = <2 3 6 7 4>;
         };
 
         Ubuntu_OneHanded_Sticky_Control {
