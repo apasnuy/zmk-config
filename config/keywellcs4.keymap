@@ -1078,6 +1078,13 @@ As such, those are in use within the default layer at this time.*/
 
             label = "FLYCUT";
         };
+
+        App_TT_Macro: App_TT_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt_on F18 &kp T &kt_off F18>;
+            label = "APP_TT_MACRO";
+        };
     };
 
     keymap {
