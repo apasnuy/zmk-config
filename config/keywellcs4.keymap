@@ -105,9 +105,9 @@ As such, those are in use within the default layer at this time.*/
             tapping-term-ms = <302>;
         };
 
-        EscQTest: EscQTest {
+        TAP_DANCE_LEFT_TIMELESS_TEST: TAP_DANCE_LEFT_TIMELESS_TEST {
             compatible = "zmk,behavior_tap_dance";
-            label = "ESCQTEST";
+            label = "TAP_DANCE_LEFT_TIMELESS_TEST";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
