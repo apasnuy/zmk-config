@@ -96,24 +96,6 @@ As such, those are in use within the default layer at this time.*/
             keep-mods = <0>;       // don't send Shift with Delete
         };
 
-        EscQ: EscQ {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCQ";
-            #binding-cells = <0>;
-            bindings = <&kp Q>, <&kp ESCAPE>;
-
-            tapping-term-ms = <302>;
-        };
-
-        EscUKPhonotic: EscUKPhonotic {
-            compatible = "zmk,behavior-tap-dance";
-            label = "ESCUKPHONOTIC";
-            #binding-cells = <0>;
-            bindings = <&kp Z>, <&kp ESCAPE>;
-
-            tapping-term-ms = <302>;
-        };
-
         UK_Period_Symbol: UK_Period_Symbol {
             // Keep it consistent with EN first register only. Second  - ppo.
 
@@ -815,7 +797,7 @@ As such, those are in use within the default layer at this time.*/
 
         EN_Colemak {
             bindings = <
-&EscQ                          &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 12 L  &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
+&kp Q                          &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 12 L  &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &Layer_Tap_Timeless_Left 15 Z  &lt 23 X              &lt 24 C                       &lt 22 V                       &Layer_Tap_Timeless_Left 14 B  &kp K                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
                                &kp N1                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_Timeles 11 TAB       &Thumb_HT_Timeles 9 ESCAPE  &trans                          &mo 10                          &trans       &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_Timeles 8 SPACE
@@ -824,7 +806,7 @@ As such, those are in use within the default layer at this time.*/
 
         Ubuntu {
             bindings = <
-&EscQ                        &kp W                &kp F                &Layer_Tap_Timeless_Left 17 P  &kp G                   &trans  &trans  &trans               &trans       &trans
+&kp Q                        &kp W                &kp F                &Layer_Tap_Timeless_Left 17 P  &kp G                   &trans  &trans  &trans               &trans       &trans
 &kp LEFT_SHIFT               &hml LEFT_COMMAND A  &hml LEFT_CONTROL R  &hml LALT S                    &hml LEFT_CONTROL T     &kp D   &none   &hmr LEFT_CONTROL N  &hmr LALT E  &hmr LEFT_CONTROL I  &hmr LEFT_COMMAND O
 &UbuntuAppSwWA_Timeless 0 Z  &lt 23 X             &lt 24 C             &lt 22 V                       &UbuntuWindowsSwWA 0 B  &trans  &trans  &trans               &trans       &trans
                              &trans               &trans               &trans                         &lt 16 TAB              &trans  &trans  &trans               &trans       &trans               &trans               &trans
@@ -835,7 +817,7 @@ As such, those are in use within the default layer at this time.*/
             // Keys physically like EN Colemak, but produce UK letters. (while system set to qwerty. this allows to type on devices where only qwerty like remote macr or localy on iPad)
 
             bindings = <
-&EscUKPhonotic  &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B              &kp LEFT_SHIFT
+&kp Z           &kp I                 &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT  &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
 &kp P           &lt 23 LEFT_BRACKET   &lt 24 W             &lt 22 D     &kp COMMA            &kp R   &kp V   &UK_Comma_Symbol     &UK_Period_Symbol  &UK_Question_Symbol
                 &trans                &trans               &trans       &trans               &trans  &trans  &trans               &trans             &trans               &trans                &trans
@@ -1048,10 +1030,10 @@ As such, those are in use within the default layer at this time.*/
 
         UA_Uq {
             bindings = <
-&EscUKPhonotic  &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
-&trans          &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-&kp P           &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V   &kp COMMA            &kp PERIOD   &kp SLASH
-                &trans             &trans               &trans       &trans               &trans  &trans  &trans               &trans       &trans               &trans             &trans
+&kp Q   &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
+&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
+&kp P   &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V   &kp COMMA            &kp PERIOD   &kp SLASH
+        &trans             &trans               &trans       &trans               &trans  &trans  &trans               &trans       &trans               &trans             &trans
             >;
         };
 
