@@ -105,13 +105,6 @@ As such, those are in use within the default layer at this time.*/
             tapping-term-ms = <302>;
         };
 
-        backspaseOrDeleteWordOnDouble: backspaseOrDeleteWordOnDouble {
-            compatible = "zmk,behavior-tap-dance";
-            label = "BACKSPASEORDELETEWORDONDOUBLE";
-            #binding-cells = <0>;
-            bindings = <&Backspase_MacLike_mod_morph>, <&kp LA(BACKSPACE)>;
-        };
-
         EscUKPhonotic: EscUKPhonotic {
             compatible = "zmk,behavior-tap-dance";
             label = "ESCUKPHONOTIC";
@@ -502,6 +495,13 @@ As such, those are in use within the default layer at this time.*/
         Delete_Word_Mac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
+            layers = <0 2 3 5>;
+        };
+
+        Delete_Word_Ubuntu {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <17 18>;
+            layers = <1>;
         };
     };
 
@@ -872,7 +872,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         iPad_UK_Phonetic_Shortcut_WA {
-            display-name = "UK-ShortCutsFix";
+            display-name = "iPad-UK-ShortCutsFix";
             bindings = <
 &trans          &trans                              &trans                                &trans  &trans                            &trans  &trans  &trans                            &trans  &trans
 &kp LEFT_SHIFT  &iOS_Globe_non_qwerty_fix_LHRM 0 F  &iOS_Control_non_qwerty_fix_LHRM 0 H  &trans  &iOS_CMD_non_qwerty_fix_LHRM 0 N  &trans  &trans  &iOS_CMD_non_qwerty_fix_RHRM 0 Y  &trans  &iOS_Control_non_qwerty_fix_RHRM 0 S  &iOS_Globe_non_qwerty_fix_RHRM 0 J
@@ -920,10 +920,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4 {
             display-name = "ASDFHJKL";
             bindings = <
-&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 13    &kp HOME          &kp PAGE_UP                     &none     &none     &none
-&trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN                   &none     &none     &none
-                    &trans  &trans            &trans                    &trans    &trans            &trans                          &trans    &none     &trans        &trans     &trans
+&none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 13    &kp HOME          &kp PAGE_UP    &none     &none     &none
+&trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN  &none     &none     &none
+                    &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &trans
             >;
         };
 
@@ -966,10 +966,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4_Ubuntu {
             display-name = "ASDFHJKL";
             bindings = <
-&none   &none   &none             &none             &mo 18  &kp HOME  &kp PAGE_UP                     &none     &none     &none
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 26  &none     &backspaseOrDeleteWordOnDouble  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
-&none   &none   &none             &none             &none   &kp END   &kp PAGE_DOWN                   &none     &none     &none
-        &trans  &trans            &trans            &trans  &trans    &trans                          &trans    &none     &trans        &trans     &trans
+&none   &none   &none             &none             &mo 18  &kp HOME  &kp PAGE_UP    &none     &none     &none
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 26  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
+&none   &none   &none             &none             &none   &kp END   &kp PAGE_DOWN  &none     &none     &none
+        &trans  &trans            &trans            &trans  &trans    &trans         &trans    &none     &trans        &trans     &trans
             >;
         };
 
