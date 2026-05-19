@@ -478,7 +478,7 @@ As such, those are in use within the default layer at this time.*/
         Delete_Word_Mac {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
-            layers = <0 2 3 5>;
+            layers = <0 2 3 5 4 6>;
         };
 
         Delete_Word_Ubuntu {
