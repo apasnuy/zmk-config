@@ -43,7 +43,6 @@ As such, those are in use within the default layer at this time.*/
 
 / {
     behaviors {
-
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
@@ -995,10 +994,10 @@ As such, those are in use within the default layer at this time.*/
         mouse_layer {
             display-name = "mouse";
             bindings = <
-&trans  &trans  &trans  &none   &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none           &none
-&trans  &trans  &trans  &trans  &trans  &none           &none           &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none   &trans  &trans  &trans  &none   &none           &msc SCRL_UP    &none            &none           &none
-        &trans  &trans  &trans  &trans  &trans          &trans          &trans           &none           &trans        &mkp LCLK        &mkp RCLK
+&trans  &trans  &kp LS(LG(R))  &kp LG(I)  &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none           &none
+&trans  &trans  &kp LG(I)      &trans     &trans  &none           &none           &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none   &trans  &trans         &trans     &none   &none           &msc SCRL_UP    &none            &none           &none
+        &trans  &trans         &trans     &trans  &trans          &trans          &trans           &none           &trans        &mkp LCLK        &mkp RCLK
             >;
         };
 
