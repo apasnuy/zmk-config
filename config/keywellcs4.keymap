@@ -873,6 +873,10 @@ As such, those are in use within the default layer at this time.*/
         };
 
         Symbols_EN {
+//        &hml LEFT_COMMAND LEFT_PARENTHESIS
+//                  is to make CMD-+ shortcut (increase/decrease browrer page) layer- & key-race agnostic.
+//                  So it worked not only when you hit cmd-mo(symbol layer)-kp(+/-) but even
+//                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
             bindings = <
 &kp EXCL        &kp UNDER  &kp LEFT_BRACKET  &kp LESS_THAN   &kp GRAVE                           &kp HASH   &kp GREATER_THAN  &kp RIGHT_BRACKET                    &kp AMPS    &kp TILDE
 &kp LEFT_SHIFT  &kp EQUAL  &kp MINUS         &kp PLUS        &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR        &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &none         &kp APOSTROPHE
