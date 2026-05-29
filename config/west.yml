@@ -16,6 +16,6 @@ manifest:
     # ZMK modules
     - name: zmk-unicode
       path: modules/zmk/unicode
-      revision: 1a6dbc797a46c4a61c3c71a7a9d013a5d5aee49e # set to same as ZMK version above
+      revision: 1a6dbc797a46c4a61c3c71a7a9d013a5d5aee49e 
   self:
     path: config
