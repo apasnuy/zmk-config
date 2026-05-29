@@ -18,7 +18,7 @@
 ---
 manifest:
   defaults:
-    revision: v0.3
+#    revision: v0.3
   remotes:
     - name: urob
       url-base: https://github.com/urob
