@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_keywellcs4_LEFT
+if keywellcs4_left
 
 config ZMK_KEYBOARD_NAME
     default "keywellcs4"
@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_keywellcs4_LEFT || SHIELD_keywellcs4_RIGHT
+if keywellcs4_left || keywellcs4_right
 
 config ZMK_SPLIT
     default y
