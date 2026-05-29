@@ -17,7 +17,8 @@
 #
 ---
 manifest:
-#  defaults:
+  defaults:
+    remote: urob
 #    revision: v0.3
   remotes:
     - name: urob
