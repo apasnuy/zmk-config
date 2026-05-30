@@ -6,4 +6,4 @@
 
 # MacOs Specific
 .Trash
-.DS_Store
+**/.DS_Store
