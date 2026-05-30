@@ -150,7 +150,7 @@ As such, those are in use within the default layer at this time.*/
             display-name = "Toggle Layer On";
             toggle-mode = "on";
 //            todo:cs4
-//            locking;
+            locking;
         };
 
         tog_of: toggle_layer_of_only {
