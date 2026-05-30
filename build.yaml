@@ -20,6 +20,6 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: keywellcs4_left
+   q shield: keywellcs4_left
   - board: nice_nano//zmk
     shield: keywellcs4_right
