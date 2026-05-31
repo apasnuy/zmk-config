@@ -21,6 +21,10 @@ manifest:
       path: modules/zmk/unicode
       revision: 1a6dbc797a46c4a61c3c71a7a9d013a5d5aee49e # main (4/19/2026)
 
+    - name: zmk-leader-key
+      remote: urob
+      revision: 749f7faf65cc4105c82fbe64cfaa7e09a8a63605 # main (4/19/2026)
+
     # Zephyr modules (pinned subset, avoids pulling everything)
     - name: zephyr
       remote: zmkfirmware
