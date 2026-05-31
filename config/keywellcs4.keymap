@@ -437,7 +437,7 @@ As such, those are in use within the default layer at this time.*/
 
             reset {
                 sequence = <LET>;
-                bindings = <&kp a>;
+                bindings = <&kp A>;
             };
         };
     };
