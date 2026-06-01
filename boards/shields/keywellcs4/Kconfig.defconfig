@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if keywellcs4_left
+if SHIELD_KEYWELLCS4_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "keywellcs4"
