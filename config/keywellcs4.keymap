@@ -505,6 +505,34 @@ As such, those are in use within the default layer at this time.*/
             key-positions = <17 18>;
             layers = <1>;
         };
+
+        AppWindowsSwNext1 {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <21 14>;
+            timeout-ms = <150>;
+            layers = <0 1 2 3 4 5 6>;
+        };
+
+        AppWindowsSwPrevP1 {
+            bindings = <&kp LG(LS(GRAVE))>;
+            key-positions = <21 11>;
+            timeout-ms = <150>;
+            layers = <0 1 2 3 4 5 6>;
+        };
+
+        AppWindowsSwPrevP2 {
+            bindings = <&kp LG(LS(GRAVE))>;
+            key-positions = <21 12>;
+            timeout-ms = <150>;
+            layers = <0 1 2 3 4 5 6>;
+        };
+
+        AppWindowsSwNextP2 {
+            bindings = <&kp LG(GRAVE)>;
+            key-positions = <21 13>;
+            timeout-ms = <150>;
+            layers = <0 1 2 3 4 5 6>;
+        };
     };
 
     macros {
@@ -965,10 +993,10 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-AppWindowsCycle {
         // F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
             bindings = <
-&none  &none           &none           &none       &none       &none  &kp LS(LG(LC(F20)))  &none           &none  &none
-&none  &kp LS(LG(F9))  &kp LS(LG(F9))  &kp LG(F9)  &kp LG(F9)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(F9))  &none  &none  &kp LG(F9)
-&none  &none           &none           &none       &none       &none  &kp LA(LS(M))        &none           &none  &none
-       &none           &none           &none       &none       &none  &none                &none           &none  &none  &kp LA(LS(ENTER))  &none
+&none  &none              &none              &none          &none          &none  &kp LS(LG(LC(F20)))  &none              &none  &none
+&none  &kp LS(LG(GRAVE))  &kp LS(LG(GRAVE))  &kp LG(GRAVE)  &kp LG(GRAVE)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(GRAVE))  &none  &none  &kp LG(GRAVE)
+&none  &none              &none              &none          &none          &none  &kp LA(LS(M))        &none              &none  &none
+       &none              &none              &none          &none          &none  &none                &none              &none  &none  &kp LA(LS(ENTER))  &none
             >;
         };
 
