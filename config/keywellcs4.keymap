@@ -794,9 +794,9 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_on 9 &kt_on LEFT_COMMAND>,
+                <&kt_on LEFT_COMMAND &tog_on 9>,
                 <&macro_pause_for_release>,
-                <&tog_of 9 &kt_off LEFT_COMMAND>;
+                <&kt_off LEFT_COMMAND &tog_of 9>;
 
             label = "P_TABS_MACRO";
             tap-ms = <1>;
@@ -994,7 +994,6 @@ As such, those are in use within the default layer at this time.*/
         HRM_4-AppWindowsCycle {
             // F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
             // F11-xx - Switch between Idea/others Focus Editor (E-Editor) & last Tool Window (I-Instruments)
-
             bindings = <
 &none  &none              &none              &none          &none          &none  &kp LS(LG(LC(F20)))  &none              &none        &none
 &none  &kp LS(LG(GRAVE))  &kp LS(LG(GRAVE))  &kp LG(GRAVE)  &kp LG(GRAVE)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(GRAVE))  &kp LC(F11)  &kp LC(LS(F11))  &kp LG(GRAVE)
