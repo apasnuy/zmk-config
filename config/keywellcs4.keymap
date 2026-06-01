@@ -18,7 +18,7 @@
     Gives nothing extra except key representation in visual editor
     https://github.com/nickcoutsos/keymap-editor/wiki/Keycodes-for-other-locales
 */
-// #include "keys_uk_enhanced.h"
+// #include "includes/keys_uk_enhanced.h"
 
 #define DEFAULT 0
 #define SYMBOLS_LAYER  1

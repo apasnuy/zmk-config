@@ -11,7 +11,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if keywellcs4_left || keywellcs4_right
+if SHIELD_KEYWELLCS4_LEFT || SHIELD_KEYWELLCS4_RIGHT
 
 config ZMK_SPLIT
     default y
