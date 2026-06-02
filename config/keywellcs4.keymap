@@ -533,6 +533,34 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <150>;
             layers = <0 1 2 3 4 5 6>;
         };
+
+        MacKarabinerLESupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 27>;
+            timeout-ms = <170>;
+            layers = <0>;
+        };
+
+        MacKarabinerLUSupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 29>;
+            timeout-ms = <170>;
+            layers = <2 3>;
+        };
+
+        iPadLESupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 27>;
+            timeout-ms = <190>;
+            layers = <5>;
+        };
+
+        iPadLuSupressWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 29>;
+            timeout-ms = <190>;
+            layers = <2 3 4 6 7>;
+        };
     };
 
     macros {
