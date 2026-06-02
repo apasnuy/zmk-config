@@ -618,8 +618,8 @@ As such, those are in use within the default layer at this time.*/
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
             // Supports hyper by standing it above hrm layer. ie swithes to plain letters + hyperKey
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
             label = "HYPERMACTIMELESSMACRO";
+            #binding-cells = <0>;
             tap-ms = <0>;
             wait-ms = <0>;
             bindings =
