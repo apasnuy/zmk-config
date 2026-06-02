@@ -779,10 +779,10 @@ As such, those are in use within the default layer at this time.*/
 
         D_Tasks_Macro: D_Tasks_Macro {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
             label = "D_TASKS_MACRO";
-            tap-ms = <1>;
-            wait-ms = <1>;
+            #binding-cells = <0>;
+            tap-ms = <0>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &mo 9>,
                 <&macro_press &kp LEFT_CONTROL>,
