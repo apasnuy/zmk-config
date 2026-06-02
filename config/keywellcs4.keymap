@@ -794,14 +794,14 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_wait_time 0>,
-                <&kt_on LEFT_COMMAND &tog_on 9>,
-                <&macro_pause_for_release>,
-                <&kt_off LEFT_COMMAND &tog_of 9>;
+                <&macro_press>,
+                <&mo 9 &kp LEFT_COMMAND>,
+                <&macro_release>,
+                <&mo 9 &kp LEFT_COMMAND>;
 
             label = "P_TABS_MACRO";
-            tap-ms = <1>;
-            wait-ms = <1>;
+            tap-ms = <0>;
+            wait-ms = <0>;
         };
 
         Flycut_Macro: Flycut {
