@@ -473,11 +473,39 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
+        MacKarabinerLESupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 27>;
+            timeout-ms = <170>;
+            layers = <0>;
+        };
+
         MacKarabinerLE {
             bindings = <&MacKarabinerLE_Macro>;
             key-positions = <27 28>;
             layers = <2 3>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
+        };
+        
+        MacKarabinerLUSupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 29>;
+            timeout-ms = <170>;
+            layers = <2 3>;
+        };
+
+        iPadLE {
+            bindings = <&iPadLE_Macro>;
+            key-positions = <27 28>;
+            timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
+            layers = <2 3 4 6 7>;
+        };
+
+        iPadLESupresWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 27>;
+            timeout-ms = <190>;
+            layers = <5>;
         };
 
         iPadLU {
@@ -487,10 +515,10 @@ As such, those are in use within the default layer at this time.*/
             layers = <5>;
         };
 
-        iPadLE {
-            bindings = <&iPadLE_Macro>;
-            key-positions = <27 28>;
-            timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
+        iPadLuSupressWhenAlready {
+            bindings = <&none>;
+            key-positions = <28 29>;
+            timeout-ms = <190>;
             layers = <2 3 4 6 7>;
         };
 
@@ -532,34 +560,6 @@ As such, those are in use within the default layer at this time.*/
             key-positions = <21 13>;
             timeout-ms = <150>;
             layers = <0 1 2 3 4 5 6>;
-        };
-
-        MacKarabinerLESupresWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 27>;
-            timeout-ms = <170>;
-            layers = <0>;
-        };
-
-        MacKarabinerLUSupresWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 29>;
-            timeout-ms = <170>;
-            layers = <2 3>;
-        };
-
-        iPadLESupresWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 27>;
-            timeout-ms = <190>;
-            layers = <5>;
-        };
-
-        iPadLuSupressWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 29>;
-            timeout-ms = <190>;
-            layers = <2 3 4 6 7>;
         };
     };
 
