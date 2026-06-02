@@ -694,8 +694,6 @@ As such, those are in use within the default layer at this time.*/
 
         iPadLU_Macro: iPadLU_Macro {
             compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
             label = "IPADLUMACRO";
