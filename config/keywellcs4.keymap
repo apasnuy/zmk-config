@@ -639,8 +639,8 @@ As such, those are in use within the default layer at this time.*/
                 <&tog_on 2 &tog_on 3 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
 
             label = "MACOSCMDSHORTCUTSNONEN_WA";
-            tap-ms = <1>;
-            wait-ms = <1>;
+            tap-ms = <0>;
+            wait-ms = <0>;
         };
 
         MacControlShrtctNonEN_WA_Macro: ControlShortcutsNonEN_WA {
