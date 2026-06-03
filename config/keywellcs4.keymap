@@ -561,6 +561,13 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <150>;
             layers = <0 1 2 3 4 5 6>;
         };
+
+        MediaLayerStickLikeWP {
+            bindings = <&to 9>;
+            key-positions = <1 3>;
+            timeout-ms = <150>;
+            layers = <9>;
+        };
     };
 
     macros {
@@ -1003,9 +1010,10 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        Numbers {
-        // J/Shift hold-tap is Yutube Rewind (J), and Shift needed for Scrensot Shortcuts & moving Tabsto N-th Desktop.
-        // L - Youtube Fast Forward
+        Numbers_And_Media {
+            // J/Shift hold-tap is Yutube Rewind (J), and Shift needed for Scrensot Shortcuts & moving Tabsto N-th Desktop.
+            // L - Youtube Fast Forward
+
             bindings = <
 &kp C_MUTE            &none             &none              &kp C_PLAY_PAUSE  &none       &none       &kp N7  &kp N8        &kp N9  &trans
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L       &none   &kp NUMBER_4  &kp N5  &kp N6  &kp NUMBER_0
