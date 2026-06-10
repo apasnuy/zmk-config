@@ -582,7 +582,7 @@ As such, those are in use within the default layer at this time.*/
         };
 
         PutWordInQuotes {
-            bindings = <&OR_Macro>;
+            bindings = <&PutWordInQuotes_Macro>;
             key-positions = <19 18>;
             layers = <8 7>;
         };
