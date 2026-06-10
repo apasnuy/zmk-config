@@ -568,6 +568,24 @@ As such, those are in use within the default layer at this time.*/
             timeout-ms = <150>;
             layers = <9>;
         };
+
+        AND {
+            bindings = <&AND_macro>;
+            key-positions = <7 8>;
+            layers = <8 7>;
+        };
+
+        OR {
+            bindings = <&OR_Macro>;
+            key-positions = <21 22>;
+            layers = <8 7>;
+        };
+
+        PutWordInQuotes {
+            bindings = <&OR_Macro>;
+            key-positions = <19 18>;
+            layers = <8 7>;
+        };
     };
 
     macros {
