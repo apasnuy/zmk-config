@@ -1083,7 +1083,7 @@ As such, those are in use within the default layer at this time.*/
 &none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 13    &kp HOME          &kp PAGE_UP    &none     &none     &none
 &trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
 &kp LC(DOWN_ARROW)  &none   &none             &Flycut_Macro             &none     &kp END           &kp PAGE_DOWN  &none     &none     &none
-                    &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &PutWordInQuotes_Macro  &AND_macro
+                    &trans  &trans            &trans                    &trans    &trans            &trans         &trans    &none     &trans        &trans     &trans
             >;
         };
 
