@@ -440,6 +440,23 @@ As such, those are in use within the default layer at this time.*/
                 bindings = <&kp A>;
             };
         };
+
+        QutesOrAND: QutesOrAND {
+            compatible = "zmk,behavior-tap-dance";
+            label = "QUTESORAND";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LS(SINGLE_QUOTE)>,
+                <&DoubleQuote_Macro>,
+                <&PutWordInQuotes_Macro>;
+        };
+
+        EqualOrAND: EqualOrAND {
+            compatible = "zmk,behavior-tap-dance";
+            label = "EQUALORAND";
+            #binding-cells = <0>;
+            bindings = <&kp KP_EQUAL>, <&AND_macro>;
+        };
     };
 
     combos {
@@ -914,6 +931,33 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kt_off LEFT_CONTROL &kp LG(RIGHT_BRACKET)>;
             label = "WEB_PAGE_FORWARD";
         };
+
+        PutWordInQuotes_Macro: PutInQuotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_ARROW) &kp DOUBLE_QUOTES &kp LA(RIGHT) &kp DOUBLE_QUOTES &kp SPACE>;
+            label = "PUTINQUOTES";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        AND_macro: AND {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp LS(A) &kp LS(N) &kp LS(D) &kp SPACE>;
+            label = "AND";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
+
+        DoubleQuote_Macro: DoubleQuote_Macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
+            label = "DOUBLEQUOTE_MACRO";
+            wait-ms = <0>;
+            tap-ms = <0>;
+        };
     };
 
     keymap {
@@ -1003,10 +1047,10 @@ As such, those are in use within the default layer at this time.*/
             //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
 
             bindings = <
-&kp EXCL        &kp UNDER     &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH   &kp RIGHT_BRACKET  &kp GREATER_THAN                     &kp AMPS    &trans
-&kp LEFT_SHIFT  &kp KP_EQUAL  &kp MINUS      &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES  &kp APOSTROPHE
-&kp BACKSLASH   &kp TILDE     &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT     &kp RIGHT_BRACE    &kp COMMA                            &kp PERIOD  &kp QUESTION
-                &trans        &trans         &trans            &trans                              &trans     &trans             &trans                               &trans      &trans             &trans          &trans
+&kp EXCL        &kp UNDER    &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH   &kp RIGHT_BRACKET  &kp GREATER_THAN                     &kp AMPS    &trans
+&kp LEFT_SHIFT  &EqualOrAND  &kp MINUS      &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &QutesOrAND   &kp APOSTROPHE
+&kp BACKSLASH   &kp TILDE    &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT     &kp RIGHT_BRACE    &kp COMMA                            &kp PERIOD  &kp QUESTION
+                &trans       &trans         &trans            &trans                              &trans     &trans             &trans                               &trans      &trans        &trans          &trans
             >;
         };
 
