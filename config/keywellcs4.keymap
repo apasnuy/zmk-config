@@ -579,6 +579,7 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&OR_Macro>;
             key-positions = <21 22>;
             layers = <8 7>;
+            timeout-ms = <100>;
         };
 
         PutWordInQuotes {
