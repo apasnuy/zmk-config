@@ -21,5 +21,6 @@
 include:
   - board: nice_nano//zmk
     shield: keywellcs4_left
+    snippet: zmk-usb-logging
   - board: nice_nano//zmk
     shield: keywellcs4_right
