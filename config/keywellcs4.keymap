@@ -440,23 +440,6 @@ As such, those are in use within the default layer at this time.*/
                 bindings = <&kp A>;
             };
         };
-
-        QutesOrPutWordInQuotes: QutesOrPutWordInQuotes {
-            compatible = "zmk,behavior-tap-dance";
-            label = "QUTESORPUTWORDINQUOTES";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(SINGLE_QUOTE)>,
-                <&DoubleQuote_Macro>,
-                <&PutWordInQuotes_Macro>;
-        };
-
-        EqualOrAND: EqualOrAND {
-            compatible = "zmk,behavior-tap-dance";
-            label = "EQUALORAND";
-            #binding-cells = <0>;
-            bindings = <&kp KP_EQUAL>, <&AND_macro>;
-        };
     };
 
     combos {
@@ -950,11 +933,11 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <0>;
         };
 
-        DoubleQuote_Macro: DoubleQuote_Macro {
+        OR_Macro: OR_Macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
-            label = "DOUBLEQUOTE_MACRO";
+            bindings = <&kp SPACE &kp LS(O) &kp LS(R) &kp SPACE>;
+            label = "OR_MACRO";
             wait-ms = <0>;
             tap-ms = <0>;
         };
@@ -1047,10 +1030,10 @@ As such, those are in use within the default layer at this time.*/
             //                  when you key-rased as mo(symbol layer)- kp(cmd)-kp(+/-). Try with hands and you understand
 
             bindings = <
-&kp EXCL        &kp UNDER    &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH   &kp RIGHT_BRACKET  &kp GREATER_THAN                     &kp AMPS    &trans
-&kp LEFT_SHIFT  &EqualOrAND  &kp MINUS      &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &QutesOrPutWordInQuotes  &kp APOSTROPHE
-&kp BACKSLASH   &kp TILDE    &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT     &kp RIGHT_BRACE    &kp COMMA                            &kp PERIOD  &kp QUESTION
-                &trans       &trans         &trans            &trans                              &trans     &trans             &trans                               &trans      &trans                   &trans          &trans
+&kp EXCL        &kp UNDER     &kp LESS_THAN  &kp LEFT_BRACKET  &kp GRAVE                           &kp HASH   &kp RIGHT_BRACKET  &kp GREATER_THAN                     &kp AMPS    &trans
+&kp LEFT_SHIFT  &kp KP_EQUAL  &kp MINUS      &kp PLUS          &hml LEFT_COMMAND LEFT_PARENTHESIS  &kp CARET  &kp DOLLAR         &hmr LEFT_COMMAND RIGHT_PARENTHESIS  &kp SEMI    &kp DOUBLE_QUOTES  &kp APOSTROPHE
+&kp BACKSLASH   &kp TILDE     &kp ASTERISK   &kp LEFT_BRACE    &kp PERCENT                         &kp AT     &kp RIGHT_BRACE    &kp COMMA                            &kp PERIOD  &kp QUESTION
+                &trans        &trans         &trans            &trans                              &trans     &trans             &trans                               &trans      &trans             &trans          &trans
             >;
         };
 
