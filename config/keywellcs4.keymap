@@ -436,16 +436,6 @@ As such, those are in use within the default layer at this time.*/
             flavor = "balanced";
             hold-trigger-on-release;
         };
-
-        leader1_Test: leader1 {
-            compatible = "zmk,behavior-leader-key";
-            #binding-cells = <0>;
-
-            reset {
-                sequence = <L E T>;
-                bindings = <&kp A>;
-            };
-        };
     };
 
     combos {
