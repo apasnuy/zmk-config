@@ -175,7 +175,7 @@ As such, those are in use within the default layer at this time.*/
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -189,7 +189,7 @@ As such, those are in use within the default layer at this time.*/
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -201,7 +201,7 @@ As such, those are in use within the default layer at this time.*/
             label = "MACOS_CONTROL_NON_EN_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -214,7 +214,7 @@ As such, those are in use within the default layer at this time.*/
             label = "MACOS_CONTROL_NON_EN_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -228,7 +228,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_CMD_NON_QWERTY_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -241,7 +241,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_CMD_NON_QWERTY_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -255,7 +255,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_CONTROL_NON_QWERTY_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -269,7 +269,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_CONTROL_NON_QWERTY_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -283,7 +283,7 @@ As such, those are in use within the default layer at this time.*/
             label = "MACOS_GLOBE_NON_EN_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -296,7 +296,7 @@ As such, those are in use within the default layer at this time.*/
             label = "MACOS_GLOBE_NON_EN_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -310,7 +310,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_GLOBE_NON_QWERTY_FIX_LHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -324,7 +324,7 @@ As such, those are in use within the default layer at this time.*/
             label = "IOS_GLOBE_NON_QWERTY_FIX_RHRM";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
@@ -462,60 +462,60 @@ As such, those are in use within the default layer at this time.*/
             layers = <1>;
         };
 
-        MacKarabinerLU {
-            bindings = <&MacKarabinerLU_Macro>;
+        MacKarabinerUK {
+            bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        MacKarabinerLESupresWhenAlready {
+        MacKarabinerENSupresWhenAlready {
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <170>;
             layers = <0>;
         };
 
-        MacKarabinerLE {
-            bindings = <&MacKarabinerLE_Macro>;
+        MacKarabinerEN {
+            bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
-            layers = <2 3>;
+            layers = <4>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        MacKarabinerLUSupresWhenAlready {
+        MacKarabinerUKSupresWhenAlready {
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <2 3>;
+            layers = <4>;
         };
 
-        iPadLE {
-            bindings = <&iPadLE_Macro>;
+        iPadEN {
+            bindings = <&iPadEN_Macro>;
             key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
-            layers = <2 3 4 6 7>;
+            layers = <6>;
         };
 
-        iPadLESupresWhenAlready {
+        iPadENSupresWhenAlready {
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <190>;
             layers = <5>;
         };
 
-        iPadLU {
-            bindings = <&iPadLU_Macro>;
+        iPadUK {
+            bindings = <&iPadUK_Macro>;
             key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <5>;
         };
 
-        iPadLuSupressWhenAlready {
+        iPadUKSupressWhenAlready {
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <190>;
-            layers = <2 3 4 6 7>;
+            layers = <6>;
         };
 
         Delete_Word_Mac {
@@ -696,30 +696,34 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacCmdShortcutsNonEN_WA_Macro: MacOSCmdShortcutsNonEN_WA {
+            // f21/F22 - if you want have regular keyboard change layouts to a particular with Bigram/Hyper Layer - make it separete shortcut (like ol' LE / LU) ^16499de1
+
             compatible = "zmk,behavior-macro";
             label = "MACOSCMDSHORTCUTSNONEN_WA";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LCMD>,
+                <&kp F21 &tog_of 2 &tog_of 3 &kt_on LCMD>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off LCMD &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&kt_off LCMD &kp F22 &tog_on 2 &tog_on 3>;
         };
 
         MacControlShrtctNonEN_WA_Macro: ControlShortcutsNonEN_WA {
+            // read ^16499de1
+
             compatible = "zmk,behavior-macro";
             label = "CONTROLSHORTCUTSNONEN_WA";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on LEFT_CONTROL>,
+                <&kp F21 &tog_of 2 &tog_of 3 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&kt_off LEFT_CONTROL &kp F22 &tog_on 2 &tog_on 3>;
         };
 
-        MacKarabinerLU_Macro: MacKarabinerLU {
+        MacKarabinerUK_Macro: MacKarabinerUK {
             /*
 			Macro is mandatory. As keyboard must switch layout too (in addition to sending langeage changing key sequence
 			to karabener which is possible wo macro)
@@ -732,35 +736,37 @@ As such, those are in use within the default layer at this time.*/
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kt_on F16 &kt_on L &kt_on U &tog_on 2 &tog_on 3 &tog_on 4 &kt_off F16 &kt_off L &kt_off U>;
-            label = "MACKARABINERLU";
+            bindings = <&kp F22 &tog_on 2 &tog_on 3 &tog_on 4>;
+            label = "MACKARABINERUK";
         };
 
-        MacKarabinerLE_Macro: MacKarabinerLE {
+        MacKarabinerEN_Macro: MacKarabinerEN {
+            // read ^16499de1
+
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kt_on F16 &kt_on L &kt_on E &tog_of 2 &tog_of 3 &tog_of 4 &kt_off F16 &kt_off L &kt_off E>;
-            label = "MACKARABINERLE";
+            bindings = <&kp F21 &tog_of 2 &tog_of 3 &tog_of 4>;
+            label = "MACKARABINEREN";
         };
 
-        iPadLU_Macro: iPadLU_Macro {
+        iPadUK_Macro: iPadUK_Macro {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
-            label = "IPADLUMACRO";
+            label = "IPADUKMACRO";
         };
 
-        iPadLE_Macro: iPadLE_Macro {
+        iPadEN_Macro: iPadEN_Macro {
             tap-ms = <0>;
             wait-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
-            label = "IPADLEMACRO";
+            label = "IPADENMACRO";
         };
 
         iPadCmdShortcutsNonQwerty_WA: CmdShortcutsNonQwerty_WA {
@@ -790,14 +796,16 @@ As such, those are in use within the default layer at this time.*/
         };
 
         MacOSGlobeShortcutsNonEN_WA: MacOSGlobeShortcutsNonEN_WA {
+            // read ^16499de1
+
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&tog_of 2 &tog_of 3 &kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &kt_on RIGHT_CONTROL>,
+                <&kp F21 &tog_of 2 &tog_of 3 &kt_on RIGHT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&tog_on 2 &tog_on 3 &kt_off RIGHT_CONTROL &kt_on F16 &kt_on L &kt_on U &kt_off F16 &kt_off L &kt_off U>;
+                <&kt_off RIGHT_CONTROL &kp F22 &tog_on 2 &tog_on 3>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
         };
@@ -966,7 +974,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 12 L  &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &Layer_Tap_Timeless_Left 15 Z  &lt 23 X              &lt 24 C                       &lt 22 V                       &Layer_Tap_Timeless_Left 14 B  &kp K                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &none         &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 11 TAB     &Thumb_HT_Normal 9 ESCAPE   &none                           &mo 10                          &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 8 SPACE
+                               &none                 &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 11 TAB     &Thumb_HT_Normal 9 ESCAPE   &none                           &mo 10                          &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 8 SPACE
             >;
         };
 
