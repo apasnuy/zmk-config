@@ -974,7 +974,7 @@ As such, those are in use within the default layer at this time.*/
 &kp Q                          &kp W                 &Layer_Tap_Timeless_Left 29 F  &P_Tabs_Timeless_left 0 P      &kp G                          &kp J                       &Layer_Tap_Timeless_Right 12 L  &Layer_Tap_Timeless_Right 29 U  &kp Y        &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL A  &hml LEFT_CONTROL R            &hml LALT S                    &hml LCMD T                    &D_Tasks_Timeless_left 0 D  &kp H                           &hmr LCMD N                     &hmr LALT E  &hmr LEFT_CONTROL I           &hmr RIGHT_CONTROL O
 &Layer_Tap_Timeless_Left 15 Z  &lt 23 X              &lt 24 C                       &lt 22 V                       &Layer_Tap_Timeless_Left 14 B  &kp K                       &kp M                           &kp COMMA                       &kp DOT      &kp FSLH
-                               &none                 &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 11 TAB     &Thumb_HT_Normal 9 ESCAPE   &none                           &mo 10                          &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 8 SPACE
+                               &tog 9                &mo 28                         &HyperMac_HT_Timeless 0 SPACE  &Thumb_HT_VeryShort 11 TAB     &Thumb_HT_Normal 9 ESCAPE   &none                           &mo 10                          &none        &Backspase_MacLike_mod_morph  &kp ENTER             &Thumb_HT_VeryShort 8 SPACE
             >;
         };
 
@@ -1065,7 +1065,7 @@ As such, those are in use within the default layer at this time.*/
             // L - Youtube Fast Forward
 
             bindings = <
-&kp C_MUTE            &none             &none              &kp C_PLAY_PAUSE  &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
+&kp LEFT_ARROW        &none             &none              &kp RIGHT_ARROW   &none       &kp KP_PLUS  &kp N7        &kp N8        &kp N9  &kp KP_MULTIPLY
 &mt LEFT_SHIFT J      &kp C_PREVIOUS    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_NEXT  &kp L        &kp KP_MINUS  &kp NUMBER_4  &kp N5  &kp N6           &kp KP_DIVIDE
 &kp LS(LEFT_BRACKET)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp C_PLAY_PAUSE  &kp C_MUTE  &kp KP_DOT   &kp N1        &kp N2        &kp N3  &kp NUMBER_0
                       &none             &none              &trans            &trans      &to 0        &none         &none         &none   &trans           &trans         &trans
