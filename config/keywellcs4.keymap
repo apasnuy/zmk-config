@@ -1085,8 +1085,8 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4 {
-            display-name = "ASDFHJKL";
+        NAV-Apple {
+            display-name = "Nav-Apple";
             bindings = <
 &none               &none   &none             &HRM_Tabs_layer_for_tabs  &mo 13    &kp HOME          &kp PAGE_UP    &none     &none     &none
 &trans              &trans  &kp LEFT_CONTROL  &kp LALT                  &kp LCMD  &kp LEFT_CONTROL  &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
@@ -1095,7 +1095,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-TabsNav_rhs_Layout_lhs {
+        NAV-Apple-TabsNav_rhsLayoutLhs {
             // F20 shortcuts here is an Amethyst layots selection. See more F20 in other layots
 
             bindings = <
@@ -1106,7 +1106,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-BrowserGroupNav {
+        NAV-Apple-BrowserGroupNav {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &none  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
@@ -1115,7 +1115,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-WorkSpaceApps {
+        NAV-Apple-WorkSpaceApps {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none          &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(LA(J))  &none  &none  &kp LA(LS(K))
@@ -1124,7 +1124,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-AppWindowsCycle {
+        NAV-Apple-AppWindowsCycle {
             // F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
             // F11-xx - Switch between Idea/others Focus Editor (E-Editor) & last Tool Window (I-Instruments)
 
@@ -1136,8 +1136,8 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4_Ubuntu {
-            display-name = "ASDFHJKL";
+        NAV-Ubuntu {
+            display-name = "NAV-Ubuntu";
             bindings = <
 &none   &none   &none             &none             &mo 18  &kp HOME  &kp PAGE_UP    &none     &none     &none
 &trans  &trans  &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mo 26  &none     &none          &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT
@@ -1146,7 +1146,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-TabsNav_Ubuntu {
+        NAV-Ubuntu-TabsNav {
             bindings = <
 &none  &none  &none  &none  &none  &none  &kp LG(LEFT_BRACKET)  &none            &none  &kp LG(RIGHT_BRACKET)
 &none  &none  &none  &none  &none  &none  &none                 &kp LC(LS(TAB))  &none  &none                  &kp LC(TAB)
@@ -1155,7 +1155,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-BowserGroupNavNotExist {
+        NAV-NotExist-Ubuntu-BrowGrupNav {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &none  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
@@ -1164,7 +1164,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-WorkSpaceAppCycle_Ubuntu {
+        NAV-Ubuntu-WorkSpaceAppCycle {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none           &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(ESCAPE)  &none  &none  &kp ESC
@@ -1173,7 +1173,7 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
 
-        HRM_4-AppWindowsCycle_Ubuntu {
+        NAV-Ubuntu-AppWindowsCycle {
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none       &none  &none
 &none  &none  &none  &none  &none  &none  &none  &kp LS(F6)  &none  &none  &kp F6
