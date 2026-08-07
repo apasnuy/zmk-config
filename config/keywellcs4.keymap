@@ -1127,7 +1127,20 @@ As such, those are in use within the default layer at this time.*/
         NAV-Apple-AppWindowsCycle {
             // F20 shortcuts here is an Amethyst risizing in split view and so. See more F20 in other layots
             // F11-xx - Switch between Idea/others Focus Editor (E-Editor) & last Tool Window (I-Instruments)
-
+            // App Window Switching:
+            //        - on Right: is regular way to switch. There only left and right arrows
+            //        - on Left: a) is onehanded switcing, I need when another hand ocupied with mouse. When left hand
+            //                      enters this layer with Z, it's motorics is limited and not its not pricise. Thus I
+            //                      made for left hand more keys to switch windows than two keys for the right hand.
+            //                      They are at positions A=R and S=T.
+            //                   b) Plus, one handed swithing with layer is dublicated by AppWindowsSw.. combos.
+            //                      Because due to mentioned bad motirics, I often roll keys and have false poritives
+            //                      whet A/R/S/T resolved to taps. So I've edded combos wich envolve same keys Z+ARST
+            //                      wich handles earlier before false positive tap. In such way if I roll - combos cover
+            //                      me and make window swithch. And when I not roll - hold tap layer.
+            //         Check commits for denails: e29b7d37b4909a3cf55622e44247970dd6e427ba
+            //                                    7906a3aa615c9d78b2ecc074df472e8c55564eea
+            //                                    1f7d926b460bcf9e383ee0efb16c31db201d0cb5
             bindings = <
 &none  &none              &none              &none          &none          &none  &kp LS(LG(LC(F20)))  &none              &none        &none
 &none  &kp LS(LG(GRAVE))  &kp LS(LG(GRAVE))  &kp LG(GRAVE)  &kp LG(GRAVE)  &none  &kp LG(LA(LS(F20)))  &kp LS(LG(GRAVE))  &kp LC(F11)  &kp LC(LS(F11))  &kp LG(GRAVE)
