@@ -27,13 +27,12 @@
 
 #include "includes/mouse.dtsi"
 
+#include <zmk-unicode/keys-extra.h> // All Unicode glyphs except CJK
 // rob"s zmk unicode
-
 &uc {
     default-mode = <UC_MODE_MACOS>;
     minimum-length = <4>;
     macos-key = <LALT>;
-
     // linux-key = <LC(LS(U))>;
     // win-compose-key = <RALT>;
 };
@@ -1078,7 +1077,7 @@
         emoji {
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &uc UC_WINKING_FACE  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
                 &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
             >;
