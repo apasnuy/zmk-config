@@ -7,11 +7,6 @@
 // rob"s zmk unicode
 
 #include <behaviors/unicode.dtsi>
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/pointing.h>
 
 /* MEH...
     Keycodes for other locales
@@ -26,13 +21,20 @@
 #define PRESISION  23
 
 #include "includes/mouse.dtsi"
-
 #include <zmk-unicode/keys-extra.h> // All Unicode glyphs except CJK
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+
 // rob"s zmk unicode
+
 &uc {
     default-mode = <UC_MODE_MACOS>;
     minimum-length = <4>;
     macos-key = <LALT>;
+
     // linux-key = <LC(LS(U))>;
     // win-compose-key = <RALT>;
 };
@@ -734,7 +736,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F22 &tog_on 2 &tog_on 3 &tog_on 4>;
+            bindings = <&kp F22 &tog_on 2 &tog_on 4>;
             label = "MACKARABINERUK";
         };
 
@@ -1076,10 +1078,10 @@
 
         emoji {
             bindings = <
-&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans               &trans         &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &uc UC_WINKING_FACE  &uc 0x1F596 0  &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans               &trans         &trans
+                &trans  &trans  &trans  &trans  &trans  &trans           &trans               &trans         &trans  &trans  &trans
             >;
         };
 
