@@ -609,45 +609,6 @@
             wait-ms = <1>;  // make initial cmd press down asap
         };
 
-        CmdShortcutsUnicodeWAMacro: UnicodeCmdWA {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LCMD>,
-                <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off LCMD &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
-
-            label = "UnicodeCmdWA";
-        };
-
-        OptionShortcutsUnicodeWAMacro: UnicodeOptionWA {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LALT>,
-                <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off LALT &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
-
-            label = "UNICODEOPTIONWA";
-        };
-
-        ControlShortcutsUnicodeWAMacro: UnicodeControlWA {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings =
-                <&kt_on F16 &kt_on L &kt_on E &kt_off F16 &kt_off L &kt_off E &tog_of 25 &kt_on LEFT_CONTROL>,
-                <&macro_pause_for_release>,
-                <&tog_on 25 &kt_off LEFT_CONTROL &kt_on F16 &kt_on L &kt_on H &kt_off F16 &kt_off L &kt_off H>;
-
-            label = "UNICODECONTROLWA";
-        };
-
         emojiPOC_Macro: emojiNum1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
