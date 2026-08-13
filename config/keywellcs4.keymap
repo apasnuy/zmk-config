@@ -718,9 +718,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kp F21 &tog_of 2 &tog_of 3 &kt_on LEFT_CONTROL>,
+                <&tog_of 2 &tog_of 3 &kt_on LEFT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&kt_off LEFT_CONTROL &kp F22 &tog_on 2 &tog_on 3>;
+                <&kt_off LEFT_CONTROL &tog_on 2 &tog_on 3>;
         };
 
         MacKarabinerUK_Macro: MacKarabinerUK {
@@ -803,9 +803,9 @@
             wait-ms = <0>;
             #binding-cells = <0>;
             bindings =
-                <&kp F21 &tog_of 2 &tog_of 3 &kt_on RIGHT_CONTROL>,
+                <&tog_of 2 &tog_of 3 &kt_on RIGHT_CONTROL>,
                 <&macro_pause_for_release>,
-                <&kt_off RIGHT_CONTROL &kp F22 &tog_on 2 &tog_on 3>;
+                <&kt_off RIGHT_CONTROL &tog_on 2 &tog_on 3>;
 
             label = "MACOSGLOBESHORTCUTSNONEN_WA";
         };
