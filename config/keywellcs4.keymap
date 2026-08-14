@@ -477,7 +477,7 @@
         MacKarabinerEN {
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
-            layers = <4>;
+            layers = <3>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
@@ -485,7 +485,7 @@
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <170>;
-            layers = <4>;
+            layers = <3>;
         };
 
         iPadEN {
@@ -623,7 +623,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
+            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
             label = "IPAD";
         };
 
@@ -632,7 +632,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 5 &tog_of 6 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
         };
 
@@ -697,7 +697,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F22 &tog_on 2 &tog_on 3 &tog_on 4>;
+            bindings = <&kp F22 &tog_on 2 &tog_on 3>;
             label = "MACKARABINERUK";
         };
 
@@ -708,7 +708,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp F21 &tog_of 2 &tog_of 3 &tog_of 4>;
+            bindings = <&kp F21 &tog_of 2 &tog_of 3>;
             label = "MACKARABINEREN";
         };
 
@@ -717,7 +717,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 4 &tog_on 6>;
+            bindings = <&kp CAPSLOCK &tog_on 2 &tog_on 6>;
             label = "IPADUKMACRO";
         };
 
@@ -726,7 +726,7 @@
             wait-ms = <0>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 4 &tog_of 6>;
+            bindings = <&kp CAPSLOCK &tog_of 2 &tog_of 6>;
             label = "IPADENMACRO";
         };
 
@@ -789,7 +789,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 4 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
+            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
             label = "UBUNTUMACRO";
         };
 
@@ -955,7 +955,7 @@
 &kp Z                          &kp I                 &Layer_Tap_Timeless_Left 29 A  &P_Tabs_Timeless_left 0 G  &kp U                              &kp Q                       &Layer_Tap_Timeless_Right 12 K  &Layer_Tap_Timeless_Right 29 E  &kp B              &kp LEFT_SHIFT
 &kp LEFT_SHIFT                 &hml RIGHT_CONTROL F  &hml LEFT_CONTROL H            &hml LALT C                &hml LEFT_COMMAND N                &D_Tasks_Timeless_left 0 L  &kp X                           &hmr LEFT_COMMAND Y             &hmr LALT T        &hmr LEFT_CONTROL S  &hmr RIGHT_CONTROL J
 &Layer_Tap_Timeless_Left 15 P  &lt 23 LEFT_BRACKET   &lt 24 W                       &lt 22 D                   &Layer_Tap_Timeless_Left 14 COMMA  &kp R                       &kp V                           &UK_Comma_Symbol                &UK_Period_Symbol  &UK_Question_Symbol
-                               &trans                &trans                         &trans                     &trans                             &trans                      &trans                          &trans                          &trans             &trans               &trans                &trans
+                               &trans                &trans                         &trans                     &trans                             &trans                      &trans                          &trans                          &trans             &trans               &trans                &Thumb_HT_VeryShort 7 SPACE
             >;
         };
 
@@ -969,13 +969,13 @@
             >;
         };
 
-        UK_QWERTY_Symbols_thumbkey {
-            display-name = "UK_QWERTY_Symbols_thumbkey";
+        Unused-3 {
+            display-name = "Unused-3";
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &lt 7 SPACE
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
