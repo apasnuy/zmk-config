@@ -1131,6 +1131,8 @@
         };
 
         NAV-NotExist-Ubuntu-BrowGrupNav {
+        // On ubuntu I Use only Chrome/Firefox, and both has no option to navigate between tab groups by keyboard
+        display-name = "Not-Used. Read comments";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none                      &none
 &none  &none  &none  &none  &none  &none  &none  &none  &kp LG(LA(RIGHT_BRACKET))  &kp LG(LA(LEFT_BRACKET))  &none
