@@ -1196,7 +1196,7 @@
             >;
         };
 
-        UA_Uq {
+        Unused {
             bindings = <
 &kp Q   &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
