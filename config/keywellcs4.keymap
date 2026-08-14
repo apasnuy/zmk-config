@@ -1037,7 +1037,7 @@
             >;
         };
 
-        emoji {
+        Emoji-Unused {
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans  &trans           &trans               &trans         &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &emojiPOC_Macro  &uc UC_WINKING_FACE  &uc 0x1F596 0  &trans  &trans
