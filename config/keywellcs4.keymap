@@ -457,7 +457,7 @@
         EN_UK_greaters_and_trialgles: EN_UK_greaters_and_trialgles {
             compatible = "zmk,behavior-mod-morph";
             label = "EN_UK_GREATERS_AND_TRIALGLES";
-            bindings = <&kp KP_NUMBER_1>, <&kp N7>;
+            bindings = <&kp KP_NUMBER_1>, <&kp KP_NUMBER_1>;
 
             #binding-cells = <0>;
             keep-mods = <(MOD_LSFT|MOD_LALT|MOD_RSFT|MOD_RALT)>;
