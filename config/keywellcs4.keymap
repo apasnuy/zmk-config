@@ -1199,9 +1199,9 @@
             >;
         };
 
-        //cs4:check:   shortcuts on mouse layer is "get info" on files and open containig dir in music app and are temporary amenity while im reviewing a ton of music
 
         mouse_layer {
+        //cs4:check:   shortcuts on mouse layer is "get info" on files and open containig dir in music app and are temporary amenity while im reviewing a ton of music
             display-name = "mouse";
             bindings = <
 &trans  &trans  &kp LS(LG(R))  &kp LG(I)  &none   &none   &none           &none           &none           &none
