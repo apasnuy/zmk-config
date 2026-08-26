@@ -559,13 +559,14 @@
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <17 18>;
             layers = <0 2 3 5 4 6>;
-            require-prior-idle-ms = <190>;
+            require-prior-idle-ms = <220>;
         };
 
         Delete_Word_Ubuntu {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <17 18>;
             layers = <1>;
+            require-prior-idle-ms = <220>;
         };
 
         AppWindowsSwNext1 {
