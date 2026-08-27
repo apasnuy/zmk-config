@@ -499,28 +499,21 @@
             layers = <1>;
         };
 
-        MacKarabinerUK {
+        SwitchToUK {
             bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        MacKarabinerENSupresWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 27 17>;
-            timeout-ms = <170>;
-            layers = <0>;
-        };
-
-        MacKarabinerEN {
+        SwitchToEN {
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
             layers = <3>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        SupresUKWhenAlreadyWithDeadKey {
+        UK_Accent_DeadKey {
             // Dead Key for Ukrainian stressed letters
 
             bindings = <&kp LA(KP_NUMBER_0)>;
