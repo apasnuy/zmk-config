@@ -500,6 +500,8 @@
         };
 
         SwitchToUK {
+        //  Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
+        //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
@@ -507,6 +509,8 @@
         };
 
         SwitchToEN {
+            //  Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
+            //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
             layers = <3>;
@@ -514,8 +518,6 @@
         };
 
         UK_Accent_DeadKey {
-            // Dead Key for Ukrainian stressed letters
-
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
