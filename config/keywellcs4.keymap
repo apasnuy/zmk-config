@@ -478,8 +478,57 @@
     combos {
         compatible = "zmk,combos";
 
-        #include "includes/cyrillic_letters_combos.dtsi"
+//          #include "includes/cyrillic_letters_combos.dtsi"
 
+UK_SC {
+	bindings = <&kp O>;
+	key-positions = <1 18>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_JU {
+	bindings = <&kp PERIOD>;
+	key-positions = <7 13>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_JI {
+	bindings = <&kp RIGHT_BRACKET>;
+	key-positions = <13 19>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_G_tverde {
+	bindings = <&kp GRAVE>;
+	key-positions = <4 18>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_ZJ {
+	bindings = <&kp SEMI>;
+	key-positions = <5 13>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_Miaki_ZNAK {
+	bindings = <&kp M>;
+	key-positions = <18 25>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+
+UK_JE {
+	bindings = <&kp APOSTROPHE>;
+	key-positions = <18 13>;
+	timeout-ms = <190>;
+	layers = <2 3 6 7>;
+};
+// end of include
         combo_CmdTAbAppSW {
             bindings = <&CmdTAbAppSW_Macro>;
             key-positions = <34 25>;
@@ -521,6 +570,7 @@
         };
 
         SupresUKWhenAlreadyWithDeadKey {
+            // Dead Key for Ukrainian stressed letters
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
