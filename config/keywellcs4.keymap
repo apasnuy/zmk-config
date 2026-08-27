@@ -508,7 +508,7 @@
 
         MacKarabinerENSupresWhenAlready {
             bindings = <&none>;
-            key-positions = <28 27>;
+            key-positions = <28 27 17>;
             timeout-ms = <170>;
             layers = <0>;
         };
@@ -521,7 +521,7 @@
         };
 
         SupresUKWhenAlreadyWithDeadKey {
-            bindings = <&kp KP_NUMBER_0>;
+            bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <3>;
