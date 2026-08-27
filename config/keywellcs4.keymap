@@ -520,8 +520,8 @@
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        MacKarabinerUKSupresWhenAlready {
-            bindings = <&none>;
+        SupresUKWhenAlreadyWithDeadKey {
+            bindings = <&kp KP_NUMBER_0>;
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <3>;
