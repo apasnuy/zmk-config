@@ -1,4 +1,4 @@
-K_SC {
+UK_SC {
     bindings = <&kp O>;
     key-positions = <1 2>;
     timeout-ms = <190>;
