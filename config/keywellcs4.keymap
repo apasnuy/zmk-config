@@ -499,32 +499,34 @@
             layers = <1>;
         };
 
-        SwitchToUK {
-        //  Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
-        //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
+        Mac_SwitchToUK {
+            //  Should only possible when Ukrainian language is in use (i.e. combo active on Ua shortcuts fix layer is on).
+            //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
+
             bindings = <&MacKarabinerUK_Macro>;
             key-positions = <28 29>;
             layers = <0>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        SwitchToEN {
+        Mac_SwitchToEN {
             //  Should only possible when Englist language is in use (i.e. combo active on Colemac layer only).
             //  On this depends syncronized swithcing of OS language & ZMK layouts for iPad
+
             bindings = <&MacKarabinerEN_Macro>;
             key-positions = <27 28>;
             layers = <3>;
             timeout-ms = <170>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs.
         };
 
-        UK_Accent_DeadKey {
+        Mac_UK_Accent_DeadKey {
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
             layers = <3>;
         };
 
-        iPadEN {
+        iPad_SwitchToEN {
             bindings = <&iPadEN_Macro>;
             key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -538,7 +540,7 @@
             layers = <5>;
         };
 
-        iPadUK {
+        iPad_SwitchToUK {
             bindings = <&iPadUK_Macro>;
             key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -670,7 +672,7 @@
             tap-ms = <0>;
             wait-ms = <0>;
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 5 &tog_of 6  &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "IPAD";
         };
 
