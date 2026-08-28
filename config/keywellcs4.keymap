@@ -656,15 +656,6 @@
             tap-ms = <0>;
         };
 
-        iPad_Macro: iPad {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 5 &tog_of 6 &kt_off LEFT_ALT>;
-            label = "IPAD";
-        };
-
         Mac_Macro: Mac {
             compatible = "zmk,behavior-macro";
             tap-ms = <0>;
@@ -672,6 +663,24 @@
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &tog_of 1 &tog_of 2 &tog_of 3 &tog_of 5 &tog_of 6 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
             label = "MAC";
+        };
+
+        iPad_Macro: iPad {
+            compatible = "zmk,behavior-macro";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &tog_of 1 &tog_of 2 &tog_of 3 &tog_on 5 &tog_of 6  &bt BT_DISC 0 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4>;
+            label = "IPAD";
+        };
+
+        Ubuntu_Macro: UbuntuMacro {
+            compatible = "zmk,behavior-macro";
+            tap-ms = <0>;
+            wait-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
+            label = "UBUNTUMACRO";
         };
 
         HyperMacTimeless_Macro: HyperMacTimelessMacro {
@@ -820,15 +829,6 @@
                 <&tog_on 6 &tog_on 2 &kt_off GLOBE>;
 
             label = "IPADGLOBESHORTCUTNONQWERTY_WA";
-        };
-
-        Ubuntu_Macro: UbuntuMacro {
-            compatible = "zmk,behavior-macro";
-            tap-ms = <0>;
-            wait-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &tog_of 2 &tog_of 3 &tog_of 5 &tog_of 6 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4 &tog_on 1>;
-            label = "UBUNTUMACRO";
         };
 
         UbuntuWindowsSwWA_Macro: www {
