@@ -35,7 +35,7 @@ UK_ZJ {
 
 UK_Miaki_ZNAK {
     bindings = <&kp M>;
-    key-positions = <17 27>;
+    key-positions = <18 27>;
     timeout-ms = <190>;
     layers = <2 3 6 7>;
 };
