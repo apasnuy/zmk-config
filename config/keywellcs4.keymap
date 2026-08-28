@@ -533,25 +533,11 @@
             layers = <6>;
         };
 
-        iPadENSupresWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 27>;
-            timeout-ms = <190>;
-            layers = <5>;
-        };
-
         iPad_SwitchToUK {
             bindings = <&iPadUK_Macro>;
             key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
             layers = <5>;
-        };
-
-        iPadUKSupressWhenAlready {
-            bindings = <&none>;
-            key-positions = <28 29>;
-            timeout-ms = <190>;
-            layers = <6>;
         };
 
         Delete_Word_Mac {
