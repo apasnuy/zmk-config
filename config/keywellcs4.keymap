@@ -520,9 +520,10 @@
         };
 
         Mac_ENSupresLetterDrop {
-        // when En Seleced, combo to switch to EN disabled. When you blindly hit keys of this combo, to ensure you
-        // on EN, being on EN already, itnsead of combo you get letters typed. This is annoying to delete then.
-        // So suppress these combination of letters, by having them in a same combo as EN but producing nothing.
+            // when En Seleced, combo to switch to EN disabled. When you blindly hit keys of this combo, to ensure you
+            // on EN, being on EN already, itnsead of combo you get letters typed. This is annoying to delete then.
+            // So suppress these combination of letters, by having them in a same combo as EN but producing nothing.
+
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <170>;
@@ -530,8 +531,9 @@
         };
 
         Mac_UK_Accent_DeadKey {
-        // Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement then
-        // this role elswere.
+            // Second role is Supressor for Ua/Uk. Read in other's conterpart combos. Either not delete, or implement then
+            // this role elswere.
+
             bindings = <&kp LA(KP_NUMBER_0)>;
             key-positions = <28 29>;
             timeout-ms = <170>;
@@ -539,7 +541,8 @@
         };
 
         iPad_SwitchToEN {
-        // Read in Mac counterpat combo
+            // Read in Mac counterpat combo
+
             bindings = <&iPadEN_Macro>;
             key-positions = <27 28>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -547,7 +550,8 @@
         };
 
         iPad_SwitchToUK {
-        // Read in Mac counterpat combo
+            // Read in Mac counterpat combo
+
             bindings = <&iPadUK_Macro>;
             key-positions = <28 29>;
             timeout-ms = <190>; // must be less than hold-tap of a key that used both in hold-tap and combo. Or there will be race conditions and WATs
@@ -555,7 +559,8 @@
         };
 
         iPadENSupresWhenAlready {
-        // read mac counterpart combos or search "supress"
+            // read mac counterpart combos or search "supress"
+
             bindings = <&none>;
             key-positions = <28 27>;
             timeout-ms = <190>;
@@ -563,7 +568,8 @@
         };
 
         iPadUKSupressWhenAlready {
-        // read mac counterpart combos or search "supress"
+            // read mac counterpart combos or search "supress"
+
             bindings = <&none>;
             key-positions = <28 29>;
             timeout-ms = <190>;
@@ -1255,12 +1261,12 @@
             >;
         };
 
-        Unused {
+        F1-Fx {
             bindings = <
-&kp Q   &kp I              &kp A                &kp G        &kp U                &kp Q   &kp K   &kp E                &kp B        &kp SEMI
-&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &kp L   &kp X   &hmr LEFT_COMMAND Y  &hmr LALT T  &hmr LEFT_CONTROL S  &hmr LEFT_SHIFT J
-&kp P   &kp LEFT_BRACKET   &kp W                &kp D        &none                &kp R   &kp V   &kp COMMA            &kp PERIOD   &kp SLASH
-        &trans             &trans               &trans       &trans               &trans  &trans  &trans               &trans       &trans               &trans             &trans
+&none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
+&none   &none              &none                &none        &none                &none   &kp F1  &kp F2  &kp F3  &kp F12
+        &trans             &trans               &trans       &trans               &trans  &trans  &trans  &trans  &trans   &trans   &trans
             >;
         };
 
@@ -1318,6 +1324,11 @@
         MouseRegularConditional {
             if-layers = <24>;
             then-layer = <21>;
+        };
+
+        F1-Fx {
+            if-layers = <11 8>;
+            then-layer = <25>;
         };
     };
 };
