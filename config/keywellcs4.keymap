@@ -1261,7 +1261,7 @@
             >;
         };
 
-        F1-Fxx {
+        F1_Fx {
             bindings = <
 &none   &none              &none                &none        &none                &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &hml LEFT_SHIFT F  &hml LEFT_CONTROL H  &hml LALT C  &hml LEFT_COMMAND N  &none   &none   &kp F4  &kp F5  &kp F6   &kp F11
