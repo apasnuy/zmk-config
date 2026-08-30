@@ -1326,7 +1326,7 @@
             then-layer = <21>;
         };
 
-        F1-Fx {
+        F1_Fx {
             if-layers = <11 8>;
             then-layer = <25>;
         };
